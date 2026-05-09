@@ -19,6 +19,9 @@
       ]
     }
   ],
+  "rewrites": [
+    { "source": "/googlec79f8a5e5c355535.html", "destination": "/googlec79f8a5e5c355535.html" }
+  ],
   "redirects": [
     { "source": "/startseite", "destination": "/", "permanent": true },
     { "source": "/home", "destination": "/", "permanent": true },
