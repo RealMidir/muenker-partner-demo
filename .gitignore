@@ -1,2 +1,7 @@
 .DS_Store
 *.log
+
+# Internal SEO working files (audits, helper scripts, body templates)
+.seo-audit/
+*.ps1
+

@@ -1,2 +1,42 @@
+# Münker & Partner — robots.txt
+# https://muenker-partner.de/
+
 User-agent: *
-Disallow: /
+Allow: /
+Disallow: /wp-content/uploads/wpforms/
+Disallow: /wp-json/
+Disallow: /feed/
+Disallow: /comments/feed/
+Disallow: /xmlrpc.php
+Disallow: /*?p=
+Disallow: /*?s=
+
+# AI / LLM crawlers — explicitly allowed (selective allow strategy)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://muenker-partner.de/sitemap.xml
