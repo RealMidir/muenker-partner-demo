@@ -29,11 +29,24 @@
     { "source": "/unternehmensberatung/personalberatung", "destination": "/personalberatung/", "permanent": true },
     { "source": "/unternehmensberatung/personalberatung/", "destination": "/personalberatung/", "permanent": true },
 
-    { "source": "/unternehmensberatung/recruiting", "destination": "/recruiting-strategie/", "permanent": true },
-    { "source": "/unternehmensberatung/recruiting/", "destination": "/recruiting-strategie/", "permanent": true },
+    { "source": "/unternehmensberatung/recruiting", "destination": "/ratgeber/recruiting-strategie/", "permanent": true },
+    { "source": "/unternehmensberatung/recruiting/", "destination": "/ratgeber/recruiting-strategie/", "permanent": true },
 
     { "source": "/unternehmensberatung/vertriebsberatung", "destination": "/vertriebsberatung/", "permanent": true },
     { "source": "/unternehmensberatung/vertriebsberatung/", "destination": "/vertriebsberatung/", "permanent": true },
+
+    { "source": "/personalberatung-duesseldorf", "destination": "/ratgeber/personalberatung-duesseldorf/", "permanent": true },
+    { "source": "/personalberatung-duesseldorf/", "destination": "/ratgeber/personalberatung-duesseldorf/", "permanent": true },
+    { "source": "/personalberatung-muenchen", "destination": "/ratgeber/personalberatung-muenchen/", "permanent": true },
+    { "source": "/personalberatung-muenchen/", "destination": "/ratgeber/personalberatung-muenchen/", "permanent": true },
+    { "source": "/recruiting-duesseldorf", "destination": "/ratgeber/recruiting-duesseldorf/", "permanent": true },
+    { "source": "/recruiting-duesseldorf/", "destination": "/ratgeber/recruiting-duesseldorf/", "permanent": true },
+    { "source": "/recruiting-strategie", "destination": "/ratgeber/recruiting-strategie/", "permanent": true },
+    { "source": "/recruiting-strategie/", "destination": "/ratgeber/recruiting-strategie/", "permanent": true },
+    { "source": "/fuehrungskraeftevermittlung", "destination": "/ratgeber/fuehrungskraeftevermittlung/", "permanent": true },
+    { "source": "/fuehrungskraeftevermittlung/", "destination": "/ratgeber/fuehrungskraeftevermittlung/", "permanent": true },
+    { "source": "/unternehmensberatung-duesseldorf", "destination": "/ratgeber/unternehmensberatung-duesseldorf/", "permanent": true },
+    { "source": "/unternehmensberatung-duesseldorf/", "destination": "/ratgeber/unternehmensberatung-duesseldorf/", "permanent": true },
 
     { "source": "/feed", "destination": "/", "permanent": true },
     { "source": "/feed/", "destination": "/", "permanent": true },
