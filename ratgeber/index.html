@@ -984,6 +984,14 @@ html.avada-is-100-percent-template #main.width-100 {
     .mp-card--featured .mp-card__img-wrap { min-height: 260px; }
 }
 @media (max-width: 600px) {
+    .mp-rg-wrap {
+        padding: 0 10px 60px;
+        /* Negative margin breaks out of parent fusion-column's 0.75rem (12px) spacing,
+           so cards fill the screen edge-to-edge minus 10px hairline */
+        margin-left: -0.75rem !important;
+        margin-right: -0.75rem !important;
+        max-width: none;
+    }
     .mp-rg-grid { grid-template-columns: 1fr; gap: 20px; }
     .mp-card--featured .mp-card__img-wrap { min-height: 200px; }
 }
