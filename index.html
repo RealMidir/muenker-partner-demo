@@ -837,54 +837,56 @@ die einen Unterschied macht.</p></div></div></div></div><div class="fusion-layou
 	</section>
 <!-- FAQ Section: Unternehmensberatung -->
 <style id="mp-faq-home-css">
-.mp-faq-home-wrap { background: linear-gradient(180deg, #f7fafc 0%, #ffffff 100%); padding: clamp(48px,7vw,96px) 0; position: relative; z-index: 10; }
-.mp-faq-home { max-width: 920px; margin: 0 auto; padding: 0 clamp(16px,4vw,32px); }
-.mp-faq-home h2 { font-size: clamp(1.5em,3.2vw,2.1em); font-weight: 700; color: #003f5c; line-height: 1.25; margin: 0 0 .5em; letter-spacing: -.01em; }
-.mp-faq-home__intro { font-size: 1.02em; color: #4b5563; margin: 0 0 2.2em; line-height: 1.7; max-width: 720px; }
+.mp-faq-home-wrap { background: #f5f7fa; padding: clamp(72px,9vw,128px) clamp(20px,4vw,72px); position: relative; z-index: 10; border-radius: 1.5rem 1.5rem 0 0; margin-top: -1.5rem; }
+.mp-faq-home { max-width: 1140px; margin: 0 auto; }
+.mp-faq-home h2 { font-family: var(--awb-typography4-font-family, "sofia-pro", sans-serif); font-size: clamp(1.8em,3.6vw,2.6em); font-weight: 700; color: #003f5c; line-height: 1.2; margin: 0 0 .6em; letter-spacing: -.015em; }
+.mp-faq-home__intro { font-size: 1.05em; color: #4b5563; margin: 0 0 2.4em; line-height: 1.7; max-width: 760px; }
+.mp-faq-home__intro a { color: #1a7fc1; text-decoration: underline; font-weight: 600; }
 .mp-faq-home .mp-faq { margin: 0; }
-.mp-faq-home .mp-faq-item { border: 1px solid #e5eaf0; border-radius: 12px; margin-bottom: 12px; overflow: hidden; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.02); transition: box-shadow .2s ease, border-color .2s ease; }
-.mp-faq-home .mp-faq-item:hover { border-color: #cfdbe6; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
-.mp-faq-home .mp-faq-item summary { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 20px 24px; font-size: 1.03em; font-weight: 600; color: #003f5c; cursor: pointer; list-style: none; transition: background .15s ease; }
+.mp-faq-home .mp-faq-item { border: 1px solid #dde4ec; border-radius: 6px; margin-bottom: 10px; overflow: hidden; background: #fff; transition: border-color .2s ease; }
+.mp-faq-home .mp-faq-item:hover { border-color: #b8c8da; }
+.mp-faq-home .mp-faq-item summary { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 22px 26px; font-size: 1.05em; font-weight: 600; color: #003f5c; cursor: pointer; list-style: none; transition: background .15s ease; }
 .mp-faq-home .mp-faq-item summary::-webkit-details-marker { display: none; }
 .mp-faq-home .mp-faq-item summary:hover { background: #f9fafb; }
-.mp-faq-home .mp-faq-item summary::after { content: "+"; font-size: 1.6em; font-weight: 300; color: #1a7fc1; flex-shrink: 0; transition: transform .2s ease; line-height: 1; }
+.mp-faq-home .mp-faq-item summary::after { content: "+"; font-size: 1.7em; font-weight: 300; color: #1a7fc1; flex-shrink: 0; transition: transform .25s ease; line-height: 1; }
 .mp-faq-home .mp-faq-item[open] summary::after { transform: rotate(45deg); }
-.mp-faq-home .mp-faq-item[open] summary { background: #f0f7ff; }
-.mp-faq-home .mp-faq-item__body { padding: 4px 24px 22px; font-size: .96em; color: #374151; line-height: 1.8; border-top: 1px solid #eef2f6; }
+.mp-faq-home .mp-faq-item[open] summary { background: #eef4fb; }
+.mp-faq-home .mp-faq-item__body { padding: 6px 26px 24px; font-size: 1em; color: #374151; line-height: 1.8; border-top: 1px solid #eaeff5; }
 .mp-faq-home .mp-faq-item__body p { margin: 14px 0 0; }
-.mp-faq-home__cta { margin: 2.4em 0 0; padding: 22px 26px; background: #f0f7ff; border-radius: 12px; border: 1px solid #d6e6f5; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; }
-.mp-faq-home__cta p { margin: 0; color: #003f5c; font-size: .98em; }
-.mp-faq-home__cta a { display: inline-block; padding: 12px 22px; background: #1a7fc1; color: #fff; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: .95em; transition: background .15s ease; }
+.mp-faq-home__cta { margin: 2.6em 0 0; padding: 26px 28px; background: #fff; border-radius: 6px; border: 1px solid #dde4ec; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px; }
+.mp-faq-home__cta p { margin: 0; color: #003f5c; font-size: 1em; }
+.mp-faq-home__cta a { display: inline-block; padding: 13px 24px; background: #1a7fc1; color: #fff; text-decoration: none; border-radius: 4px; font-weight: 600; font-size: .98em; transition: background .15s ease; }
 .mp-faq-home__cta a:hover { background: #003f5c; }
 @media (max-width: 600px) {
-  .mp-faq-home .mp-faq-item summary { padding: 16px 18px; font-size: .98em; }
-  .mp-faq-home .mp-faq-item__body { padding: 2px 18px 18px; font-size: .92em; }
+  .mp-faq-home-wrap { padding: clamp(48px,8vw,72px) clamp(16px,4vw,24px); border-radius: 1rem 1rem 0 0; }
+  .mp-faq-home .mp-faq-item summary { padding: 18px 20px; font-size: 1em; }
+  .mp-faq-home .mp-faq-item__body { padding: 4px 20px 20px; font-size: .95em; }
 }
 </style>
 <section class="mp-faq-home-wrap" id="faq-unternehmensberatung" aria-labelledby="faq-home-title">
 <div class="mp-faq-home">
-<h2 id="faq-home-title">Häufige Fragen zur Unternehmensberatung</h2>
-<p class="mp-faq-home__intro">Antworten auf die häufigsten Fragen, die mittelständische Unternehmer:innen vor einem Beratungsmandat klären. Ihre Frage ist nicht dabei? <a href="/kontakt/" style="color:#1a7fc1;text-decoration:underline;font-weight:600;">Sprechen Sie uns direkt an.</a></p>
+<h2 id="faq-home-title">Häufige Fragen zu unserer Unternehmens- und Personalberatung</h2>
+<p class="mp-faq-home__intro">Antworten auf die häufigsten Fragen, die mittelständische Unternehmer:innen vor einem Mandat klären. Ihre Frage ist nicht dabei? <a href="/kontakt/">Sprechen Sie uns direkt an.</a></p>
 <div class="mp-faq">
 
 <details class="mp-faq-item">
-<summary>Was ist Unternehmensberatung und für wen lohnt sie sich?</summary>
+<summary>Was leistet unsere Unternehmensberatung — und für wen lohnt sie sich?</summary>
 <div class="mp-faq-item__body">
-<p>Unternehmensberatung ist die externe, methodische Begleitung von Geschäftsführungen und Inhabern bei strategischen und strukturellen Fragestellungen — von Strukturberatung über Vertriebsoptimierung bis hin zur Digitalisierung. Sie lohnt sich besonders für mittelständische Unternehmen, die Wachstum, Restrukturierung oder einen Generationswechsel meistern wollen und einen unabhängigen, branchenerfahrenen Sparringspartner suchen, der nicht nur Konzepte liefert, sondern Umsetzung mitverantwortet.</p>
+<p>Unsere Unternehmensberatung begleitet Geschäftsführungen und Inhaber methodisch bei strategischen und strukturellen Fragestellungen — von Strukturberatung über Vertriebsoptimierung bis hin zur Digitalisierung. Sie lohnt sich besonders für mittelständische Unternehmen, die Wachstum, Restrukturierung oder einen Generationswechsel meistern wollen und einen unabhängigen, branchenerfahrenen Sparringspartner suchen, der nicht nur Konzepte liefert, sondern Umsetzung mitverantwortet.</p>
 </div>
 </details>
 
 <details class="mp-faq-item">
-<summary>Was kostet eine Unternehmensberatung für den Mittelstand?</summary>
+<summary>Was kostet unsere Unternehmens- oder Personalberatung?</summary>
 <div class="mp-faq-item__body">
-<p>Honorare im Mittelstand bewegen sich abhängig von Projektumfang und Beraterlevel typischerweise zwischen 1.200&nbsp;€ und 2.800&nbsp;€ Tagessatz. Münker &amp; Partner arbeitet projektbezogen oder mit klar kalkulierten Festpreis-Bundles für abgegrenzte Mandate — etwa Vertriebsanalysen, Strukturchecks oder Digitalisierungs-Roadmaps. Ein erstes Sondierungsgespräch zur Klärung des Beratungsbedarfs ist immer unverbindlich und kostenfrei.</p>
+<p>Unsere Unternehmensberatung und unsere Personalberatung arbeiten ausschließlich projektbasiert — jedes Mandat schneiden wir individuell auf Anlass, Tiefe und Unternehmensgröße zu. Nach einem unverbindlichen, kostenlosen Erstgespräch erstellen wir Ihnen ein passgenaues Angebot für genau Ihr Unternehmen. So zahlen Sie nicht für Standard-Bundles, sondern für die Leistung, die Ihr Vorhaben tatsächlich nach vorn bringt.</p>
 </div>
 </details>
 
 <details class="mp-faq-item">
-<summary>Worin unterscheidet sich Unternehmensberatung von Personalberatung?</summary>
+<summary>Worin unterscheidet sich unsere Unternehmens- von unserer Personalberatung?</summary>
 <div class="mp-faq-item__body">
-<p>Unternehmensberatung adressiert strategische und strukturelle Fragestellungen — Geschäftsmodell, Prozesse, Vertrieb, Wachstumshebel. Personalberatung konzentriert sich auf die Besetzung von Fach- und Führungspositionen mit den richtigen Persönlichkeiten. Bei Münker &amp; Partner greifen beide Disziplinen bewusst ineinander: Wer eine Vertriebsstrategie neu aufsetzt, braucht oft auch die passenden Köpfe — und umgekehrt liefert eine richtig besetzte Schlüsselposition häufig den Auslöser für strukturelle Veränderungen.</p>
+<p>Unsere Unternehmensberatung adressiert strategische und strukturelle Fragestellungen — Geschäftsmodell, Prozesse, Vertrieb, Wachstumshebel. Unsere Personalberatung konzentriert sich auf die Besetzung von Fach- und Führungspositionen mit den richtigen Persönlichkeiten. Beide Disziplinen greifen bei uns bewusst ineinander: Wer eine Vertriebsstrategie neu aufsetzt, braucht oft auch die passenden Köpfe — und umgekehrt liefert eine richtig besetzte Schlüsselposition häufig den Auslöser für strukturelle Veränderungen.</p>
 </div>
 </details>
 
@@ -896,9 +898,9 @@ die einen Unterschied macht.</p></div></div></div></div><div class="fusion-layou
 </details>
 
 <details class="mp-faq-item">
-<summary>Welche Leistungen umfasst die Unternehmensberatung bei Münker &amp; Partner?</summary>
+<summary>Welche Leistungen umfassen unsere Unternehmens- und Personalberatung?</summary>
 <div class="mp-faq-item__body">
-<p>Wir bieten vier Kerndisziplinen: <strong>Strukturberatung</strong> (Geschäftsmodell, Organisation, Prozesse), <strong>Vertriebsberatung</strong> (Strategie, Pipeline-Aufbau, KPI-System), <strong>Marketingberatung</strong> (Positionierung, B2B-Brand Building) und <strong>Digitalisierungsberatung</strong> (IT-Architektur und Prozess-Digitalisierung). Jede Leistung lässt sich als Einzelmandat buchen oder als integriertes Programm — kombiniert mit Personalberatung, wenn die richtige Strategie auch die richtigen Köpfe verlangt.</p>
+<p><strong>Unsere Unternehmensberatung</strong> umfasst vier Kerndisziplinen: <strong>Strukturberatung</strong> (Geschäftsmodell, Organisation, Prozesse), <strong>Vertriebsberatung</strong> (Strategie, Pipeline-Aufbau, KPI-System), <strong>Marketingberatung</strong> (Positionierung, B2B-Brand Building) und <strong>Digitalisierungsberatung</strong> (IT-Architektur und Prozess-Digitalisierung). <strong>Unsere Personalberatung</strong> deckt <strong>Executive Search &amp; Direktansprache</strong>, <strong>Eignungsdiagnostik nach BIP</strong>, <strong>Interimsmanagement</strong> und <strong>Organisationsentwicklung</strong> ab. Jede Leistung lässt sich als Einzelmandat buchen oder als integriertes Programm aus beiden Bereichen — je nachdem, was Ihre Situation verlangt.</p>
 </div>
 </details>
 
@@ -910,9 +912,9 @@ die einen Unterschied macht.</p></div></div></div></div><div class="fusion-layou
 </details>
 
 <details class="mp-faq-item">
-<summary>Wie läuft ein typisches Beratungsprojekt bei Münker &amp; Partner ab?</summary>
+<summary>Wie läuft ein typisches Mandat bei uns ab?</summary>
 <div class="mp-faq-item__body">
-<p>Jedes Mandat beginnt mit einem strukturierten Sondierungsgespräch zur Klärung von Anlass, Erwartung und Erfolgskriterien. Es folgt eine kompakte Diagnose-Phase (zwei bis vier Wochen), in der wir Datenlage, Strukturen und Stakeholder verstehen. Auf dieser Basis entwickeln wir gemeinsam mit Ihnen Maßnahmen, priorisieren sie nach Wirkung und Aufwand und begleiten die Umsetzung mit klaren Milestones. Berichtet wird in Geschäftsführungs-Meetings — kurz, ehrlich, ergebnisorientiert.</p>
+<p>Jedes Mandat beginnt mit einem kostenlosen Sondierungsgespräch zur Klärung von Anlass, Erwartung und Erfolgskriterien. Es folgt eine kompakte Diagnose-Phase (zwei bis vier Wochen), in der wir Datenlage, Strukturen und Stakeholder verstehen. Auf dieser Basis entwickeln wir gemeinsam mit Ihnen Maßnahmen, priorisieren sie nach Wirkung und Aufwand und begleiten die Umsetzung mit klaren Milestones. Berichtet wird in Geschäftsführungs-Meetings — kurz, ehrlich, ergebnisorientiert.</p>
 </div>
 </details>
 
@@ -925,7 +927,7 @@ die einen Unterschied macht.</p></div></div></div></div><div class="fusion-layou
 
 </div>
 </section>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","@id":"https://muenker-partner.de/#faq-unternehmensberatung","mainEntity":[{"@type":"Question","name":"Was ist Unternehmensberatung und für wen lohnt sie sich?","acceptedAnswer":{"@type":"Answer","text":"Unternehmensberatung ist die externe, methodische Begleitung von Geschäftsführungen und Inhabern bei strategischen und strukturellen Fragestellungen — von Strukturberatung über Vertriebsoptimierung bis hin zur Digitalisierung. Sie lohnt sich besonders für mittelständische Unternehmen, die Wachstum, Restrukturierung oder einen Generationswechsel meistern wollen und einen unabhängigen, branchenerfahrenen Sparringspartner suchen, der nicht nur Konzepte liefert, sondern Umsetzung mitverantwortet."}},{"@type":"Question","name":"Was kostet eine Unternehmensberatung für den Mittelstand?","acceptedAnswer":{"@type":"Answer","text":"Honorare im Mittelstand bewegen sich abhängig von Projektumfang und Beraterlevel typischerweise zwischen 1.200 € und 2.800 € Tagessatz. Münker & Partner arbeitet projektbezogen oder mit klar kalkulierten Festpreis-Bundles für abgegrenzte Mandate — etwa Vertriebsanalysen, Strukturchecks oder Digitalisierungs-Roadmaps. Ein erstes Sondierungsgespräch zur Klärung des Beratungsbedarfs ist immer unverbindlich und kostenfrei."}},{"@type":"Question","name":"Worin unterscheidet sich Unternehmensberatung von Personalberatung?","acceptedAnswer":{"@type":"Answer","text":"Unternehmensberatung adressiert strategische und strukturelle Fragestellungen — Geschäftsmodell, Prozesse, Vertrieb, Wachstumshebel. Personalberatung konzentriert sich auf die Besetzung von Fach- und Führungspositionen mit den richtigen Persönlichkeiten. Bei Münker & Partner greifen beide Disziplinen bewusst ineinander: Wer eine Vertriebsstrategie neu aufsetzt, braucht oft auch die passenden Köpfe — und umgekehrt liefert eine richtig besetzte Schlüsselposition häufig den Auslöser für strukturelle Veränderungen."}},{"@type":"Question","name":"Wann lohnt sich eine externe Unternehmensberatung?","acceptedAnswer":{"@type":"Answer","text":"Typische Anlässe sind stagnierende Umsätze trotz Marktwachstum, gescheiterte Vertriebsoffensiven, ein anstehender Generationswechsel, hoher Digitalisierungsdruck oder ein erkennbarer Schiefstand zwischen Strategie und operativer Struktur. Eine externe Beratung bringt frische Perspektive, methodische Disziplin und Umsetzungserfahrung in Situationen, in denen interne Ressourcen entweder fehlen, gebunden oder schlicht zu betriebsblind sind, um den blinden Fleck selbst zu erkennen."}},{"@type":"Question","name":"Welche Leistungen umfasst die Unternehmensberatung bei Münker & Partner?","acceptedAnswer":{"@type":"Answer","text":"Münker & Partner bietet vier Kerndisziplinen: Strukturberatung (Geschäftsmodell, Organisation, Prozesse), Vertriebsberatung (Strategie, Pipeline-Aufbau, KPI-System), Marketingberatung (Positionierung, B2B-Brand Building) und Digitalisierungsberatung (IT-Architektur und Prozess-Digitalisierung). Jede Leistung lässt sich als Einzelmandat buchen oder als integriertes Programm — kombiniert mit Personalberatung, wenn die richtige Strategie auch die richtigen Köpfe verlangt."}},{"@type":"Question","name":"Worauf sollte ich bei der Auswahl einer Unternehmensberatung achten?","acceptedAnswer":{"@type":"Answer","text":"Drei Kriterien sind entscheidend: Erstens nachgewiesene Branchenerfahrung im Mittelstand — nicht jede Konzernerfahrung skaliert nach unten. Zweitens Umsetzungsorientierung statt reiner Folienproduktion: Referenzprojekte und konkrete Ergebnisse zeigen lassen. Drittens kulturelle Passung: Beratung im Mittelstand bedeutet enge, oft mehrjährige Zusammenarbeit auf Augenhöhe — das funktioniert nur, wenn die Chemie zwischen Beratern, Geschäftsführung und Team stimmt."}},{"@type":"Question","name":"Wie läuft ein typisches Beratungsprojekt bei Münker & Partner ab?","acceptedAnswer":{"@type":"Answer","text":"Jedes Mandat beginnt mit einem strukturierten Sondierungsgespräch zur Klärung von Anlass, Erwartung und Erfolgskriterien. Es folgt eine kompakte Diagnose-Phase (zwei bis vier Wochen), in der Datenlage, Strukturen und Stakeholder verstanden werden. Auf dieser Basis werden Maßnahmen entwickelt, nach Wirkung und Aufwand priorisiert und in der Umsetzung mit klaren Milestones begleitet. Berichtet wird in Geschäftsführungs-Meetings — kurz, ehrlich, ergebnisorientiert."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","@id":"https://muenker-partner.de/#faq-unternehmensberatung","mainEntity":[{"@type":"Question","name":"Was leistet unsere Unternehmensberatung — und für wen lohnt sie sich?","acceptedAnswer":{"@type":"Answer","text":"Unsere Unternehmensberatung begleitet Geschäftsführungen und Inhaber methodisch bei strategischen und strukturellen Fragestellungen — von Strukturberatung über Vertriebsoptimierung bis hin zur Digitalisierung. Sie lohnt sich besonders für mittelständische Unternehmen, die Wachstum, Restrukturierung oder einen Generationswechsel meistern wollen und einen unabhängigen, branchenerfahrenen Sparringspartner suchen, der nicht nur Konzepte liefert, sondern Umsetzung mitverantwortet."}},{"@type":"Question","name":"Was kostet unsere Unternehmens- oder Personalberatung?","acceptedAnswer":{"@type":"Answer","text":"Unsere Unternehmensberatung und unsere Personalberatung arbeiten ausschließlich projektbasiert — jedes Mandat schneiden wir individuell auf Anlass, Tiefe und Unternehmensgröße zu. Nach einem unverbindlichen, kostenlosen Erstgespräch erstellen wir Ihnen ein passgenaues Angebot für genau Ihr Unternehmen. So zahlen Sie nicht für Standard-Bundles, sondern für die Leistung, die Ihr Vorhaben tatsächlich nach vorn bringt."}},{"@type":"Question","name":"Worin unterscheidet sich unsere Unternehmens- von unserer Personalberatung?","acceptedAnswer":{"@type":"Answer","text":"Unsere Unternehmensberatung adressiert strategische und strukturelle Fragestellungen — Geschäftsmodell, Prozesse, Vertrieb, Wachstumshebel. Unsere Personalberatung konzentriert sich auf die Besetzung von Fach- und Führungspositionen mit den richtigen Persönlichkeiten. Beide Disziplinen greifen bei uns bewusst ineinander: Wer eine Vertriebsstrategie neu aufsetzt, braucht oft auch die passenden Köpfe — und umgekehrt liefert eine richtig besetzte Schlüsselposition häufig den Auslöser für strukturelle Veränderungen."}},{"@type":"Question","name":"Wann lohnt sich eine externe Unternehmensberatung?","acceptedAnswer":{"@type":"Answer","text":"Typische Anlässe sind stagnierende Umsätze trotz Marktwachstum, gescheiterte Vertriebsoffensiven, ein anstehender Generationswechsel, hoher Digitalisierungsdruck oder ein erkennbarer Schiefstand zwischen Strategie und operativer Struktur. Eine externe Beratung bringt frische Perspektive, methodische Disziplin und Umsetzungserfahrung in Situationen, in denen interne Ressourcen entweder fehlen, gebunden oder schlicht zu betriebsblind sind, um den blinden Fleck selbst zu erkennen."}},{"@type":"Question","name":"Welche Leistungen umfassen unsere Unternehmens- und Personalberatung?","acceptedAnswer":{"@type":"Answer","text":"Unsere Unternehmensberatung umfasst vier Kerndisziplinen: Strukturberatung (Geschäftsmodell, Organisation, Prozesse), Vertriebsberatung (Strategie, Pipeline-Aufbau, KPI-System), Marketingberatung (Positionierung, B2B-Brand Building) und Digitalisierungsberatung (IT-Architektur und Prozess-Digitalisierung). Unsere Personalberatung deckt Executive Search & Direktansprache, Eignungsdiagnostik nach BIP, Interimsmanagement und Organisationsentwicklung ab. Jede Leistung lässt sich als Einzelmandat buchen oder als integriertes Programm aus beiden Bereichen."}},{"@type":"Question","name":"Worauf sollte ich bei der Auswahl einer Unternehmensberatung achten?","acceptedAnswer":{"@type":"Answer","text":"Drei Kriterien sind entscheidend: Erstens nachgewiesene Branchenerfahrung im Mittelstand — nicht jede Konzernerfahrung skaliert nach unten. Zweitens Umsetzungsorientierung statt reiner Folienproduktion: Referenzprojekte und konkrete Ergebnisse zeigen lassen. Drittens kulturelle Passung: Beratung im Mittelstand bedeutet enge, oft mehrjährige Zusammenarbeit auf Augenhöhe — das funktioniert nur, wenn die Chemie zwischen Beratern, Geschäftsführung und Team stimmt."}},{"@type":"Question","name":"Wie läuft ein typisches Mandat bei uns ab?","acceptedAnswer":{"@type":"Answer","text":"Jedes Mandat beginnt mit einem kostenlosen Sondierungsgespräch zur Klärung von Anlass, Erwartung und Erfolgskriterien. Es folgt eine kompakte Diagnose-Phase (zwei bis vier Wochen), in der Datenlage, Strukturen und Stakeholder verstanden werden. Auf dieser Basis werden Maßnahmen entwickelt, nach Wirkung und Aufwand priorisiert und in der Umsetzung mit klaren Milestones begleitet. Berichtet wird in Geschäftsführungs-Meetings — kurz, ehrlich, ergebnisorientiert."}}]}</script>
 						
 					</div>  <!-- fusion-row -->
 				</main>  <!-- #main -->
