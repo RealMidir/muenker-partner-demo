@@ -932,7 +932,9 @@ html.avada-is-100-percent-template #main.width-100 {
 .mp-faq-sub .mp-faq-item__body p:first-child { margin-top: 12px; }
 @media (max-width: 600px) {
   .mp-faq-sub-wrap { padding: clamp(48px,8vw,72px) clamp(16px,4vw,24px); border-radius: 1rem 1rem 0 0; }
-  .mp-faq-sub .mp-faq-item summary { padding: 16px 20px; font-size: .98em; }
+  .mp-faq-sub h2 { font-size: clamp(1.35em,5.5vw,1.7em); hyphens: auto; word-break: normal; -webkit-hyphens: auto; }
+  .mp-faq-sub__intro { font-size: 0.98em; hyphens: auto; -webkit-hyphens: auto; }
+  .mp-faq-sub .mp-faq-item summary { padding: 16px 20px; font-size: .98em; hyphens: auto; -webkit-hyphens: auto; }
   .mp-faq-sub .mp-faq-item__body { padding: 2px 20px 18px; font-size: .94em; }
 }
 </style>
