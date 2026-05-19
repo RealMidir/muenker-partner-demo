@@ -40,3 +40,6 @@ User-agent: CCBot
 Allow: /
 
 Sitemap: https://muenker-partner.de/sitemap.xml
+
+# AI-Crawler Site Summary (https://llmstxt.org/)
+# llms.txt: https://muenker-partner.de/llms.txt
