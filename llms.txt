@@ -76,6 +76,14 @@ Projektbasiert. Nach einem unverbindlichen, kostenlosen Sondierungsgespräch ers
 - [Recruiting Düsseldorf](https://muenker-partner.de/ratgeber/recruiting-duesseldorf/)
 - [Unternehmensberatung Düsseldorf Guide](https://muenker-partner.de/ratgeber/unternehmensberatung-duesseldorf/)
 
+
+## Standorte mit dedizierten Landing-Pages
+
+- [Standort-Hub (alle 3 Standorte)](https://muenker-partner.de/standorte/): Übersicht aller Standorte mit Ansprechpartnern
+- [Düsseldorf Unternehmensberatung](https://muenker-partner.de/unternehmensberatung/duesseldorf/): Tobias Münker, Martin-Luther-Platz 22
+- [Personalberatung Düsseldorf](https://muenker-partner.de/personalberatung/duesseldorf/): Tobias Münker, Martin-Luther-Platz 22
+- [Unternehmensberatung Wesel](https://muenker-partner.de/unternehmensberatung/wesel/): Verena Münker, Jahnstraße 18 (Niederrhein)
+
 ## Sitemap
 
 Vollständige URL-Liste: [https://muenker-partner.de/sitemap.xml](https://muenker-partner.de/sitemap.xml)
