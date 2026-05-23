@@ -57,7 +57,7 @@ p{margin:0 0 1em}
 .site-nav__link{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:var(--r-sm);font-size:.95em;font-weight:500;color:var(--c-dark-2);transition:all .15s ease}
 .site-nav__link:hover,.site-nav__link[aria-current="page"]{background:rgba(26,127,193,.08);color:var(--c-blue)}
 .site-nav__caret{width:10px;height:10px;opacity:.6}
-.site-nav__sub{display:none;position:absolute;top:100%;left:0;min-width:240px;background:#fff;border-radius:var(--r-md);box-shadow:var(--shadow-lg);padding:8px;list-style:none;margin:6px 0 0;z-index:50}
+.site-nav__item::after{content:"";position:absolute;top:100%;left:0;right:0;height:14px;display:none}.site-nav__item:hover::after,.site-nav__item:focus-within::after{display:block}.site-nav__sub{display:none;position:absolute;top:calc(100% + 6px);left:0;min-width:240px;background:#fff;border-radius:var(--r-md);box-shadow:var(--shadow-lg);padding:8px;list-style:none;margin:0;z-index:50}
 .site-nav__item:hover .site-nav__sub,.site-nav__item:focus-within .site-nav__sub{display:block}
 .site-nav__sub-link{display:block;padding:10px 14px;border-radius:var(--r-sm);color:var(--c-dark-2);font-size:.9em;font-weight:500}
 .site-nav__sub-link:hover{background:var(--c-bg-light);color:var(--c-blue)}
@@ -308,13 +308,13 @@ p{margin:0 0 1em}
 <div class="container">
 <div class="hero__inner">
   <div class="hero__breadcrumb"><a href="/">Home</a> · <a href="/tools/">Tools</a> · <span>Vertriebs-KPI-Check</span></div>
-  <span class="hero__eyebrow">Tool · Vertriebsberatung</span>
-  <h1 class="hero__title">Vertriebs-KPI-Check für B2B-Mittelständler</h1>
-  <p class="hero__subtitle">12 Fragen, 5 Minuten, Sofort-Score: Wie professionell ist Ihr B2B-Vertriebssystem im Vergleich zum Mittelstands-Benchmark? Inklusive Performance-Band und drei konkreten Sofortmaßnahmen.</p>
+  <span class="hero__eyebrow">Vertriebsberatung · Diagnose</span>
+  <h1 class="hero__title">Wo Ihr Vertrieb wirklich steht.</h1>
+  <p class="hero__subtitle">Zwölf Fragen zu Pipeline, Forecast und Steuerung. Sofortiger Score gegen den Mittelstands-Benchmark — mit drei Sofortmaßnahmen je Performance-Band.</p>
   <div class="hero__pills">
-    <span class="hero__pill"><span class="hero__pill-dot"></span> 12 Fragen · 5 Min</span>
+    <span class="hero__pill"><span class="hero__pill-dot"></span> 5 Minuten</span>
     <span class="hero__pill"><span class="hero__pill-dot"></span> Score 0–100</span>
-    <span class="hero__pill"><span class="hero__pill-dot"></span> PDF-Report optional</span>
+    <span class="hero__pill"><span class="hero__pill-dot"></span> Detailreport optional</span>
   </div>
 </div>
 </div>
@@ -340,13 +340,13 @@ p{margin:0 0 1em}
 <aside class="tool-card-side" aria-label="Hintergrund zum Check">
 <div class="tool-side-info">
 <div class="tool-side-info__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></div>
-<h4>Wie wir scoren</h4>
-<p>Jede Frage prüft eine Komponente professioneller B2B-Vertriebssteuerung: ICP, Pipeline, Forecast, KPI-Disziplin und Coaching-Kultur. „Ja" gibt 2 Punkte, „teilweise" 1 Punkt, „nein" 0. Wir normalisieren auf 0–100 und ordnen einem Performance-Band zu.</p>
-<p>Das Modell stammt aus 25 Jahren Münker-Vertriebsmandaten im DACH-Mittelstand.</p>
+<h4>Scoring-Logik</h4>
+<p>Zwölf Komponenten professioneller B2B-Vertriebssteuerung: ICP, Pipeline, Forecast, KPI-Disziplin, Coaching. Ja = 2, teilweise = 1, nein = 0. Normalisierung auf 0–100, Zuordnung zu einem Performance-Band.</p>
+<p>Basis: 25 Jahre Münker-Vertriebsmandate im DACH-Mittelstand.</p>
 </div>
 <div class="tool-side-info">
-<h4>Was Sie damit machen können</h4>
-<p>Der Score ist keine Wertung Ihrer Vertriebsleute — er zeigt, welche Steuerungs-Komponenten fehlen. Damit haben Sie eine sachliche Diskussions-Grundlage für die nächste Vertriebsleitungs-Runde.</p>
+<h4>Wozu der Score?</h4>
+<p>Sachliche Diskussionsgrundlage für die nächste Vertriebsleitungs-Runde. Der Score bewertet System-Komponenten, nicht Menschen — und zeigt, welche Steuerungs-Bausteine fehlen.</p>
 </div>
 </aside>
 
@@ -380,9 +380,9 @@ p{margin:0 0 1em}
 
 <div class="lead-gate" id="leadGate">
 <div class="lead-gate__inner">
-<p class="lead-gate__eyebrow">Detaillierter PDF-Report</p>
-<h3>Vollständigen Bericht inklusive Frage-Details anfordern?</h3>
-<p class="lead-gate__lead">Sie bekommen einen 6-seitigen PDF-Report mit Ihrer Auswertung pro Frage, einem Mittelstands-Benchmark-Vergleich (Maschinenbau, IT, Chemie, Pharma, Versicherung) und einem 90-Tage-Plan zur Schließung der wichtigsten Lücken. Keine Newsletter, kein Folge-Spam.</p>
+<p class="lead-gate__eyebrow">Detailreport</p>
+<h3>Auswertung als PDF per E-Mail.</h3>
+<p class="lead-gate__lead">Sechs Seiten mit Auswertung pro Frage, Mittelstands-Benchmark für Maschinenbau, IT, Chemie, Pharma und Versicherung und einem 90-Tage-Plan zur Schließung der wichtigsten Lücken.</p>
 <form class="lead-gate__form" id="leadForm" onsubmit="leadSubmit(event)">
   <input type="email" name="email" placeholder="Ihre geschäftliche E-Mail" required>
   <button type="submit">Report anfordern</button>
@@ -451,8 +451,8 @@ Sie bekommen den Report innerhalb von 24 Stunden an Werktagen. Falls Sie direkt 
 <div class="container">
 <div class="section__head">
 <span class="section__eyebrow">Ansprechpartner</span>
-<h2>Vertriebsberatung aus München</h2>
-<p class="section__intro">Wenn der Score Sie ins Grübeln bringt: 45 Minuten Sondierungsgespräch direkt mit unserem Senior Partner — vertraulich und ohne Kosten.</p>
+<h2>Vertriebsberatung aus München.</h2>
+<p class="section__intro">Falls der Score Sie ins Grübeln bringt: vierzig Minuten direkt mit dem Senior Partner, vertraulich.</p>
 </div>
 <div class="lead-card">
 <a href="/team/maximilian-binderberger/" class="lead-card__photo" aria-label="Profil von Maximilian Binderberger">
@@ -462,10 +462,10 @@ Sie bekommen den Report innerhalb von 24 Stunden an Werktagen. Falls Sie direkt 
 <p class="lead-card__eyebrow">Senior Partner · Vertriebsberatung</p>
 <h2>Maximilian Binderberger</h2>
 <p class="lead-card__role">Senior Partner · Leopoldstraße 22, München</p>
-<p class="lead-card__bio">Maximilian verantwortet Vertriebsberatungs-Mandate im DACH-Mittelstand persönlich — von der ICP-Definition über Pipeline-Aufbau bis zum Erfolgshonorar-basierten KPI-Mandat. Schwerpunkt: B2B-Mittelständler mit komplexen Sales-Cycles im Maschinenbau, IT/SaaS, Pharma und Versicherung.</p>
+<p class="lead-card__bio">Senior Partner für Vertriebsmandate im DACH-Mittelstand. Begleitet Mandate persönlich von der ICP-Definition über Pipeline-Aufbau bis zum erfolgshonorar-basierten KPI-Mandat. Schwerpunkt: B2B-Mittelstand mit komplexen Sales-Cycles in Maschinenbau, IT, SaaS, Pharma und Versicherungswirtschaft.</p>
 <div class="lead-card__cta-row">
-<a href="/kontakt/#münchen" class="btn btn--primary">Kostenloses Erstgespräch <span class="btn__arrow">→</span></a>
-<a href="/vertriebsberatung/" class="btn btn--ghost-light">Vertriebsberatung ansehen</a>
+<a href="/kontakt/#münchen" class="btn btn--primary">Erstgespräch vereinbaren <span class="btn__arrow">→</span></a>
+<a href="/vertriebsberatung/" class="btn btn--ghost-light">Vertriebsberatung</a>
 </div>
 <p class="lead-card__contact"><strong>Direkt erreichbar:</strong> <a href="tel:+498921524920">+49 89 2152492-0</a> · <a href="mailto:kontakt@muenker-partner.de?subject=Anfrage%20Vertriebs-Check">kontakt@muenker-partner.de</a></p>
 </div>
@@ -490,11 +490,11 @@ Sie bekommen den Report innerhalb von 24 Stunden an Werktagen. Falls Sie direkt 
 <section class="section">
 <div class="container">
 <div class="final-cta">
-<h2>Bereit für ein Sondierungsgespräch?</h2>
-<p class="final-cta__intro">45 Minuten, unverbindlich, vertraulich — direkt mit Maximilian Binderberger. Wir hören erst zu, bevor wir etwas vorschlagen.</p>
+<h2>Sondierungsgespräch.</h2>
+<p class="final-cta__intro">Vierzig Minuten mit Maximilian Binderberger. Vertraulich, unverbindlich — wir hören zuerst zu.</p>
 <div class="cta-row">
-<a href="/kontakt/#münchen" class="btn btn--primary">Termin anfragen <span class="btn__arrow">→</span></a>
-<a href="/tools/" class="btn btn--ghost-light">Weitere Tools ansehen</a>
+<a href="/kontakt/#münchen" class="btn btn--primary">Termin vereinbaren <span class="btn__arrow">→</span></a>
+<a href="/tools/" class="btn btn--ghost-light">Weitere Tools</a>
 </div>
 </div>
 </div>

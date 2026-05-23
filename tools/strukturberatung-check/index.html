@@ -58,7 +58,7 @@ p{margin:0 0 1em}
 .site-nav__link{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:var(--r-sm);font-size:.95em;font-weight:500;color:var(--c-dark-2);transition:all .15s ease}
 .site-nav__link:hover,.site-nav__link[aria-current="page"]{background:rgba(26,127,193,.08);color:var(--c-blue)}
 .site-nav__caret{width:10px;height:10px;opacity:.6}
-.site-nav__sub{display:none;position:absolute;top:100%;left:0;min-width:240px;background:#fff;border-radius:var(--r-md);box-shadow:var(--shadow-lg);padding:8px;list-style:none;margin:6px 0 0;z-index:50}
+.site-nav__item::after{content:"";position:absolute;top:100%;left:0;right:0;height:14px;display:none}.site-nav__item:hover::after,.site-nav__item:focus-within::after{display:block}.site-nav__sub{display:none;position:absolute;top:calc(100% + 6px);left:0;min-width:240px;background:#fff;border-radius:var(--r-md);box-shadow:var(--shadow-lg);padding:8px;list-style:none;margin:0;z-index:50}
 .site-nav__item:hover .site-nav__sub,.site-nav__item:focus-within .site-nav__sub{display:block}
 .site-nav__sub-link{display:block;padding:10px 14px;border-radius:var(--r-sm);color:var(--c-dark-2);font-size:.9em;font-weight:500}
 .site-nav__sub-link:hover{background:var(--c-bg-light);color:var(--c-blue)}
@@ -311,13 +311,13 @@ p{margin:0 0 1em}
 <div class="container">
 <div class="hero__inner">
   <div class="hero__breadcrumb"><a href="/">Home</a> · <a href="/tools/">Tools</a> · <span>Strukturberatungs-Signale-Check</span></div>
-  <span class="hero__eyebrow">Tool · Strukturberatung</span>
-  <h1 class="hero__title">Strukturberatungs-Signale-Check</h1>
-  <p class="hero__subtitle">Brauchen wir wirklich externe Strukturberatung? Die 7 typischen Signale als interaktive Selbst-Diagnose mit sofortiger Ampel-Heatmap und priorisiertem Handlungsbedarf.</p>
+  <span class="hero__eyebrow">Strukturberatung · Diagnose</span>
+  <h1 class="hero__title">Die sieben Signale für Strukturarbeit.</h1>
+  <p class="hero__subtitle">Einundzwanzig Fragen aus dem Geschäftsalltag. Ampel-Heatmap mit priorisiertem Handlungsbedarf — vertraulich, ohne Anmeldung.</p>
   <div class="hero__pills">
-    <span class="hero__pill"><span class="hero__pill-dot"></span> 21 Fragen · 6 Min</span>
+    <span class="hero__pill"><span class="hero__pill-dot"></span> 6 Minuten</span>
     <span class="hero__pill"><span class="hero__pill-dot"></span> Ampel-Heatmap</span>
-    <span class="hero__pill"><span class="hero__pill-dot"></span> PDF-Report optional</span>
+    <span class="hero__pill"><span class="hero__pill-dot"></span> Detailreport optional</span>
   </div>
 </div>
 </div>
@@ -328,8 +328,8 @@ p{margin:0 0 1em}
 
 <div class="tool-card-main">
 <div class="tool-intro">
-<h2>Wie das funktioniert</h2>
-<p>Sie beantworten für jedes der 7 Signale drei Ja/Nein-Fragen aus Ihrem Geschäftsalltag. Daraus errechnen wir eine Ampel-Heatmap, die zeigt, wo Sie strukturell entspannt sein können — und wo Handlungsdruck besteht. <strong>„Ja" bedeutet: Das Symptom ist bei uns präsent.</strong></p>
+<h2>So funktioniert es</h2>
+<p>Pro Signal drei Ja/Nein-Fragen aus dem Geschäftsalltag. Die Ampel-Heatmap zeigt, wo strukturell alles im Lot ist — und wo Handlungsdruck besteht. <strong>„Ja" bedeutet: Das Symptom ist bei Ihnen präsent.</strong></p>
 </div>
 
 <form id="quiz" onsubmit="return false;"></form>
@@ -343,13 +343,13 @@ p{margin:0 0 1em}
 <aside class="tool-card-side" aria-label="Hintergrund zur Diagnose">
 <div class="tool-side-info">
 <div class="tool-side-info__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></div>
-<h4>Die 7 Signale</h4>
-<p>Wir destillieren aus 25 Jahren Mittelstands-Strukturberatung sieben Muster, an denen sich verlässlich erkennen lässt, ob ein Unternehmen strukturell „aus dem Tritt" geraten ist. Jedes Signal hat drei Symptome — die fragen wir hier ab.</p>
-<p>Mehr Hintergrund: <a href="/ratgeber/strukturberatung-7-signale/">Ratgeber-Artikel zu den 7 Signalen</a>.</p>
+<h4>Die sieben Signale</h4>
+<p>Aus 25 Jahren Mittelstands-Strukturberatung destilliert: sieben Muster, an denen sich verlässlich erkennen lässt, ob ein Unternehmen strukturell aus dem Tritt geraten ist. Jedes Signal mit drei Symptomen.</p>
+<p>Mehr Hintergrund: <a href="/ratgeber/strukturberatung-7-signale/">Ratgeber zu den 7 Signalen</a>.</p>
 </div>
 <div class="tool-side-info">
-<h4>Was bedeuten die Farben?</h4>
-<p><strong style="color:var(--c-green)">Grün</strong> — alle 3 Fragen mit „nein". Signal ist nicht aktiv.<br><strong style="color:var(--c-amber)">Gelb</strong> — 1 „ja". Frühindikator, beobachten.<br><strong style="color:var(--c-red)">Rot</strong> — 2 oder 3 „ja". Handlungsbedarf.</p>
+<h4>Ampel-Lesart</h4>
+<p><strong style="color:var(--c-green)">Grün</strong> — alle drei Antworten Nein. Signal nicht aktiv.<br><strong style="color:var(--c-amber)">Gelb</strong> — ein Ja. Frühindikator, beobachten.<br><strong style="color:var(--c-red)">Rot</strong> — zwei oder drei Ja. Handlungsbedarf.</p>
 </div>
 </aside>
 
@@ -371,9 +371,9 @@ p{margin:0 0 1em}
 
 <div class="lead-gate" id="leadGate">
 <div class="lead-gate__inner">
-<p class="lead-gate__eyebrow">Detaillierter PDF-Report</p>
-<h3>Heatmap inklusive Handlungsempfehlungen per E-Mail anfordern?</h3>
-<p class="lead-gate__lead">Sie bekommen einen 8-seitigen PDF-Report mit Ihrer Heatmap, einer Detail-Analyse pro „rotem" Signal und einem priorisierten 90-Tage-Strukturplan für die zwei dringendsten Themen. Keine Newsletter, kein Folge-Spam.</p>
+<p class="lead-gate__eyebrow">Detailreport</p>
+<h3>Heatmap und Strukturplan als PDF.</h3>
+<p class="lead-gate__lead">Acht Seiten mit Ihrer Heatmap, Detail-Analyse pro rotem Signal und einem priorisierten 90-Tage-Strukturplan für die zwei dringendsten Themen.</p>
 <form class="lead-gate__form" id="leadForm" onsubmit="leadSubmit(event)">
   <input type="email" name="email" placeholder="Ihre geschäftliche E-Mail" required>
   <button type="submit">Report anfordern</button>
@@ -442,8 +442,8 @@ Sie bekommen den Report innerhalb von 24 Stunden an Werktagen. Falls Sie direkt 
 <div class="container">
 <div class="section__head">
 <span class="section__eyebrow">Ansprechpartner</span>
-<h2>Strukturberatung aus Düsseldorf</h2>
-<p class="section__intro">Wenn die Heatmap rot leuchtet: 45 Minuten Sondierungsgespräch mit unserem Geschäftsführer, vertraulich und ohne Kosten.</p>
+<h2>Strukturberatung aus Düsseldorf.</h2>
+<p class="section__intro">Falls die Heatmap rot leuchtet: vierzig Minuten direkt mit dem Geschäftsführer, vertraulich.</p>
 </div>
 <div class="lead-card">
 <a href="/team/tobias-muenker/" class="lead-card__photo" aria-label="Profil von Tobias Münker">
@@ -453,10 +453,10 @@ Sie bekommen den Report innerhalb von 24 Stunden an Werktagen. Falls Sie direkt 
 <p class="lead-card__eyebrow">Geschäftsführer · Strukturberatung</p>
 <h2>Tobias Münker</h2>
 <p class="lead-card__role">Gründer &amp; Geschäftsführer · Martin-Luther-Platz 22, Düsseldorf</p>
-<p class="lead-card__bio">Tobias Münker führt Struktur- und Generationswechsel-Mandate im DACH-Mittelstand persönlich — vom 7-Signale-Audit über Org-Design bis zur 90-Tage-Begleitung nach Go-Live. Schwerpunkt: Familienunternehmen 50–1.000 Mitarbeitende in Maschinenbau, Chemie, Pharma und IT/Software. Inhabergeführt. Senior-Level. Keine Junior-Teams.</p>
+<p class="lead-card__bio">Gründer und Geschäftsführer von Münker &amp; Partner. Begleitet Struktur- und Generationswechsel-Mandate im DACH-Mittelstand persönlich — vom 7-Signale-Audit über Org-Design bis zur 90-Tage-Begleitung nach Go-Live. Schwerpunkt: Familienunternehmen mit 50 bis 1.000 Mitarbeitenden in Maschinenbau, Chemie, Pharma und IT.</p>
 <div class="lead-card__cta-row">
-<a href="/kontakt/" class="btn btn--primary">Kostenloses Erstgespräch <span class="btn__arrow">→</span></a>
-<a href="/unternehmensberatung/strukturberatung/" class="btn btn--ghost-light">Strukturberatung ansehen</a>
+<a href="/kontakt/" class="btn btn--primary">Erstgespräch vereinbaren <span class="btn__arrow">→</span></a>
+<a href="/unternehmensberatung/strukturberatung/" class="btn btn--ghost-light">Strukturberatung</a>
 </div>
 <p class="lead-card__contact"><strong>Direkt erreichbar:</strong> <a href="tel:+492115455610">+49 211 545561-0</a> · <a href="mailto:kontakt@muenker-partner.de?subject=Anfrage%20Strukturberatung-Check">kontakt@muenker-partner.de</a></p>
 </div>
@@ -481,11 +481,11 @@ Sie bekommen den Report innerhalb von 24 Stunden an Werktagen. Falls Sie direkt 
 <section class="section">
 <div class="container">
 <div class="final-cta">
-<h2>Bereit für ein Sondierungsgespräch?</h2>
-<p class="final-cta__intro">45 Minuten, unverbindlich, vertraulich — direkt mit Tobias Münker. Wir nehmen Ihr Mandat nur an, wenn wir den Unterschied machen können.</p>
+<h2>Sondierungsgespräch.</h2>
+<p class="final-cta__intro">Vierzig Minuten mit Tobias Münker. Vertraulich, unverbindlich — wir nehmen Mandate nur an, wenn wir den Unterschied machen können.</p>
 <div class="cta-row">
-<a href="/kontakt/" class="btn btn--primary">Termin anfragen <span class="btn__arrow">→</span></a>
-<a href="/tools/" class="btn btn--ghost-light">Weitere Tools ansehen</a>
+<a href="/kontakt/" class="btn btn--primary">Termin vereinbaren <span class="btn__arrow">→</span></a>
+<a href="/tools/" class="btn btn--ghost-light">Weitere Tools</a>
 </div>
 </div>
 </div>

@@ -57,7 +57,7 @@ p{margin:0 0 1em}
 .site-nav__link{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:var(--r-sm);font-size:.95em;font-weight:500;color:var(--c-dark-2);transition:all .15s ease}
 .site-nav__link:hover,.site-nav__link[aria-current="page"]{background:rgba(26,127,193,.08);color:var(--c-blue)}
 .site-nav__caret{width:10px;height:10px;opacity:.6}
-.site-nav__sub{display:none;position:absolute;top:100%;left:0;min-width:240px;background:#fff;border-radius:var(--r-md);box-shadow:var(--shadow-lg);padding:8px;list-style:none;margin:6px 0 0;z-index:50}
+.site-nav__item::after{content:"";position:absolute;top:100%;left:0;right:0;height:14px;display:none}.site-nav__item:hover::after,.site-nav__item:focus-within::after{display:block}.site-nav__sub{display:none;position:absolute;top:calc(100% + 6px);left:0;min-width:240px;background:#fff;border-radius:var(--r-md);box-shadow:var(--shadow-lg);padding:8px;list-style:none;margin:0;z-index:50}
 .site-nav__item:hover .site-nav__sub,.site-nav__item:focus-within .site-nav__sub{display:block}
 .site-nav__sub-link{display:block;padding:10px 14px;border-radius:var(--r-sm);color:var(--c-dark-2);font-size:.9em;font-weight:500}
 .site-nav__sub-link:hover{background:var(--c-bg-light);color:var(--c-blue)}
@@ -199,13 +199,13 @@ p{margin:0 0 1em}
 <section class="hero">
 <div class="container">
 <div class="hero__inner">
-  <span class="hero__eyebrow">Tools &amp; Selbst-Diagnosen · Kostenlos</span>
-  <h1 class="hero__title">Drei Tools für klügere Entscheidungen im Mittelstand</h1>
-  <p class="hero__subtitle">Selbst-Diagnose statt Pitch. In wenigen Minuten zur belastbaren Einschätzung Ihrer Vertriebs-, Recruiting- und Organisations-Situation — kostenlos, anonym, ohne Anmeldung. Auf Wunsch detaillierter Report per E-Mail.</p>
+  <span class="hero__eyebrow">Strategy Tools</span>
+  <h1 class="hero__title">Diagnose vor Entscheidung.</h1>
+  <p class="hero__subtitle">Drei Selbst-Diagnosen für Geschäftsführungen im Mittelstand. Recruiting-Kosten, Vertriebs-Performance, strukturelle Engpässe — in wenigen Minuten zum Maßstab.</p>
   <div class="hero__pills">
-    <span class="hero__pill"><span class="hero__pill-dot"></span> Sofort-Auswertung</span>
-    <span class="hero__pill"><span class="hero__pill-dot"></span> Keine Anmeldung nötig</span>
+    <span class="hero__pill"><span class="hero__pill-dot"></span> Sofort verfügbar</span>
     <span class="hero__pill"><span class="hero__pill-dot"></span> Mittelstands-Benchmarks</span>
+    <span class="hero__pill"><span class="hero__pill-dot"></span> Vertraulich</span>
   </div>
 </div>
 </div>
@@ -214,9 +214,9 @@ p{margin:0 0 1em}
 <section class="section" id="tools">
 <div class="container">
 <div class="section__head">
-<span class="section__eyebrow">Was es zu entscheiden gibt</span>
-<h2>Wählen Sie das Tool, das zu Ihrer Frage passt</h2>
-<p class="section__intro">Jedes Tool ist auf eine konkrete Frage zugeschnitten, die wir aus 25 Jahren Mittelstands-Mandaten kennen.</p>
+<span class="section__eyebrow">Drei Diagnosen</span>
+<h2>Welche Frage steht bei Ihnen an?</h2>
+<p class="section__intro">Jedes Tool ist auf eine konkrete Geschäftsführungs-Frage zugeschnitten — destilliert aus 25 Jahren Mittelstands-Mandaten.</p>
 </div>
 
 <div class="tools-grid">
@@ -227,11 +227,11 @@ p{margin:0 0 1em}
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
 </div>
 <h3 class="tool-card__title">Recruiting-Kosten-Rechner</h3>
-<p class="tool-card__lead">Was kostet eine offene Schlüsselposition oder eine Fehlbesetzung wirklich? In 60 Sekunden zum belastbaren Euro-Betrag.</p>
+<p class="tool-card__lead">Was eine Vakanz im Mittelstand wirklich kostet — von der Stellenanzeige bis zum Fehlbesetzungs-Risiko. Sechzig Sekunden bis zum belastbaren Betrag.</p>
 <ul class="tool-card__features">
-<li>Direkte Kosten (Stellenanzeigen, HR-Aufwand, Onboarding)</li>
-<li>Opportunitätskosten pro Vakanz-Tag</li>
-<li>Fehlbesetzungs-Risiko nach Position</li>
+<li>Direktkosten: Anzeigen, HR-Aufwand, Onboarding</li>
+<li>Opportunitätskosten je Vakanz-Tag</li>
+<li>Fehlbesetzungs-Risiko nach Hierarchie-Ebene</li>
 </ul>
 </div>
 <div class="tool-card__meta">
@@ -248,11 +248,11 @@ p{margin:0 0 1em}
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
 </div>
 <h3 class="tool-card__title">Vertriebs-KPI-Check</h3>
-<p class="tool-card__lead">Wie professionell ist Ihr B2B-Vertrieb wirklich? 12 Ja/Nein-Fragen, sofortiger Score gegen den Mittelstands-Benchmark.</p>
+<p class="tool-card__lead">Wo Ihr B2B-Vertrieb wirklich steht. Zwölf Fragen, sofortiger Score gegen den Mittelstands-Benchmark, drei Sofortmaßnahmen je Performance-Band.</p>
 <ul class="tool-card__features">
-<li>Pipeline-, Forecast- und ICP-Hygiene</li>
+<li>ICP-, Pipeline- und Forecast-Hygiene</li>
 <li>Score 0–100 mit Performance-Band</li>
-<li>3 konkrete Sofortmaßnahmen je Band</li>
+<li>Drei priorisierte Sofortmaßnahmen</li>
 </ul>
 </div>
 <div class="tool-card__meta">
@@ -269,11 +269,11 @@ p{margin:0 0 1em}
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
 </div>
 <h3 class="tool-card__title">Strukturberatungs-Signale-Check</h3>
-<p class="tool-card__lead">Brauchen wir wirklich externe Strukturberatung? Die 7 typischen Signale als interaktive Selbst-Diagnose mit Ampel-Heatmap.</p>
+<p class="tool-card__lead">Die sieben Signale für strukturelle Engpässe — interaktiv. Einundzwanzig Fragen, Ampel-Heatmap, priorisierter Handlungsbedarf.</p>
 <ul class="tool-card__features">
-<li>21 Fragen zu Wachstum, Verantwortung, Prozessen</li>
-<li>Ampel-Heatmap je Signal (grün/gelb/rot)</li>
-<li>Priorisierter Handlungsbedarf</li>
+<li>Wachstum, Verantwortung, Prozesse, Reporting</li>
+<li>Ampel-Heatmap je Signal (grün / gelb / rot)</li>
+<li>Konkrete Reihenfolge für die nächsten Schritte</li>
 </ul>
 </div>
 <div class="tool-card__meta">
@@ -291,15 +291,15 @@ p{margin:0 0 1em}
 <section class="section section--alt" id="warum">
 <div class="container">
 <div class="section__head">
-<span class="section__eyebrow">Warum diese Tools</span>
-<h2>Aus 25 Jahren Mittelstands-Mandaten</h2>
-<p class="section__intro">Jedes Tool basiert auf den drei Fragen, die uns Geschäftsführer in Sondierungsgesprächen am häufigsten stellen — übersetzt in eine Selbst-Diagnose, die Sie ohne Termin und ohne Verkaufsdruck nutzen können.</p>
+<span class="section__eyebrow">Hintergrund</span>
+<h2>Aus der Beratungspraxis abgeleitet.</h2>
+<p class="section__intro">Die drei Tools spiegeln die Fragen, mit denen Geschäftsführungen im Mittelstand in Sondierungsgesprächen am häufigsten kommen — in ein Modell übersetzt, damit Sie die Antwort vor dem Gespräch haben.</p>
 </div>
 <div class="intro-grid">
-<div class="intro-item"><div class="intro-item__num">100 %</div><h3 class="intro-item__title">Kostenlos &amp; anonym</h3><p class="intro-item__text">Keine Anmeldung nötig. E-Mail nur, wenn Sie einen PDF-Report wollen — und auch dann ohne Folge-Spam.</p></div>
-<div class="intro-item"><div class="intro-item__num">25</div><h3 class="intro-item__title">Jahre Erfahrung im Modell</h3><p class="intro-item__text">Scoring-Logik, Benchmarks und Empfehlungen stammen aus realen Mittelstands-Mandaten — nicht aus Lehrbüchern.</p></div>
-<div class="intro-item"><div class="intro-item__num">0 €</div><h3 class="intro-item__title">Verkaufsdruck</h3><p class="intro-item__text">Sie entscheiden, ob aus dem Tool ein Sondierungsgespräch wird. Wir melden uns nicht ungefragt.</p></div>
-<div class="intro-item"><div class="intro-item__num">24 h</div><h3 class="intro-item__title">Antwortzeit auf Anfragen</h3><p class="intro-item__text">Falls Sie nach dem Tool ein Gespräch wollen: garantierte Antwort innerhalb von 24 Stunden an Werktagen.</p></div>
+<div class="intro-item"><div class="intro-item__num">100 %</div><h3 class="intro-item__title">Kostenlos</h3><p class="intro-item__text">Tool und Detailreport kosten nichts. E-Mail-Adresse nur, wenn Sie den Report bekommen möchten.</p></div>
+<div class="intro-item"><div class="intro-item__num">25</div><h3 class="intro-item__title">Jahre Beratungspraxis</h3><p class="intro-item__text">Scoring-Logik und Benchmarks aus realen Mittelstands-Mandaten — nicht aus Lehrbüchern.</p></div>
+<div class="intro-item"><div class="intro-item__num">0</div><h3 class="intro-item__title">Folge-Kontakt</h3><p class="intro-item__text">Wir melden uns nicht ungefragt. Sie entscheiden, ob ein Gespräch folgt.</p></div>
+<div class="intro-item"><div class="intro-item__num">24 h</div><h3 class="intro-item__title">Antwortzeit</h3><p class="intro-item__text">Falls Sie ein Gespräch wünschen: Antwort innerhalb von 24 Stunden an Werktagen.</p></div>
 </div>
 </div>
 </section>
@@ -308,9 +308,9 @@ p{margin:0 0 1em}
 <div class="container">
 <div class="final-cta">
 <h2>Lieber direkt sprechen?</h2>
-<p class="final-cta__intro">45 Minuten Sondierungsgespräch, unverbindlich, vertraulich. Wir hören erst zu, bevor wir etwas vorschlagen.</p>
+<p class="final-cta__intro">Vierzig Minuten Sondierungsgespräch. Vertraulich, unverbindlich, ohne Vorab-Vorschlag — wir hören zuerst zu.</p>
 <div class="cta-row">
-<a href="/kontakt/" class="btn btn--primary">Erstgespräch anfragen <span class="btn__arrow">→</span></a>
+<a href="/kontakt/" class="btn btn--primary">Erstgespräch vereinbaren <span class="btn__arrow">→</span></a>
 <a href="/ratgeber/" class="btn btn--ghost-light">Zum Ratgeber</a>
 </div>
 </div>
