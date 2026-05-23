@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Strukturberatungs-Signale-Check: Brauchen wir externe Hilfe? | Münker &amp; Partner</title>
+<meta name="description" content="Die 7 typischen Signale für Strukturberatung als interaktive Selbst-Diagnose. 21 Fragen, sofortige Ampel-Heatmap mit priorisiertem Handlungsbedarf. Kostenlos und vertraulich.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://muenker-partner.de/tools/strukturberatung-check/">
+
+<meta property="og:url" content="https://muenker-partner.de/tools/strukturberatung-check/">
+<meta property="og:site_name" content="Münker & Partner">
+<meta property="og:locale" content="de_DE">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Strukturberatungs-Signale-Check für den Mittelstand | Münker & Partner">
+<meta property="og:description" content="Die 7 Signale als interaktive Selbst-Diagnose mit Ampel-Heatmap.">
+<meta property="og:image" content="https://muenker-partner.de/wp-content/uploads/2025/12/muenker-partner_logo.svg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Strukturberatungs-Signale-Check | Münker & Partner">
+<meta name="twitter:description" content="Die 7 Signale für Strukturberatung mit sofortiger Ampel-Heatmap.">
+
+<link rel="icon" href="/wp-content/uploads/2025/12/favicon-96x96-1.png" type="image/png">
+<link rel="apple-touch-icon" href="/wp-content/uploads/2025/12/apple-touch-icon.png">
+
+<style>
+:root {
+  --c-dark:#0b2b3d; --c-dark-2:#003f5c; --c-blue:#1a7fc1; --c-blue-light:#6ab7e5;
+  --c-bg-light:#f5f7fa; --c-text:#1a2937; --c-text-muted:#4b5563;
+  --c-border:#dde4ec; --c-border-soft:#eaeff5;
+  --c-green:#16a34a; --c-amber:#d97706; --c-red:#dc2626;
+  --c-green-soft:#dcfce7; --c-amber-soft:#fef3c7; --c-red-soft:#fee2e2;
+  --font-body:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --r-sm:6px; --r-md:10px; --r-lg:16px; --r-xl:24px;
+  --shadow-sm:0 1px 3px rgba(11,43,61,.06);
+  --shadow-md:0 4px 16px rgba(11,43,61,.08);
+  --shadow-lg:0 8px 32px rgba(11,43,61,.12);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--font-body);font-size:17px;line-height:1.65;color:var(--c-text);background:#fff;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--c-blue);text-decoration:none;transition:color .15s ease}
+a:hover{color:var(--c-dark-2)}
+h1,h2,h3{line-height:1.2;margin:0 0 .55em;color:var(--c-dark-2);font-weight:700;letter-spacing:-.015em}
+h1{font-size:clamp(2em,5.5vw,3.6em)}
+h2{font-size:clamp(1.5em,3.4vw,2.3em)}
+h3{font-size:clamp(1.1em,2.2vw,1.4em)}
+p{margin:0 0 1em}
+.container{max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,56px)}
+
+.site-header{position:sticky;top:0;z-index:100;background:rgba(247,250,252,.96);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--c-border-soft)}
+.site-header__inner{display:flex;align-items:center;justify-content:space-between;padding:14px clamp(20px,4vw,56px);max-width:1440px;margin:0 auto;gap:24px}
+.site-header__logo img{width:132px;height:auto}
+.site-nav{display:flex;gap:4px;list-style:none;padding:0;margin:0;align-items:center;flex-wrap:wrap}
+.site-nav__item{position:relative}
+.site-nav__link{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:var(--r-sm);font-size:.95em;font-weight:500;color:var(--c-dark-2);transition:all .15s ease}
+.site-nav__link:hover,.site-nav__link[aria-current="page"]{background:rgba(26,127,193,.08);color:var(--c-blue)}
+.site-nav__caret{width:10px;height:10px;opacity:.6}
+.site-nav__sub{display:none;position:absolute;top:100%;left:0;min-width:240px;background:#fff;border-radius:var(--r-md);box-shadow:var(--shadow-lg);padding:8px;list-style:none;margin:6px 0 0;z-index:50}
+.site-nav__item:hover .site-nav__sub,.site-nav__item:focus-within .site-nav__sub{display:block}
+.site-nav__sub-link{display:block;padding:10px 14px;border-radius:var(--r-sm);color:var(--c-dark-2);font-size:.9em;font-weight:500}
+.site-nav__sub-link:hover{background:var(--c-bg-light);color:var(--c-blue)}
+.site-cta{display:inline-flex;align-items:center;gap:10px;padding:10px 22px;border-radius:var(--r-sm);background:var(--c-dark-2);color:#fff !important;font-weight:600;font-size:.92em;transition:all .15s ease}
+.site-cta:hover{background:var(--c-dark);transform:translateY(-1px)}
+.site-cta__arrow{transition:transform .2s ease}
+.site-cta:hover .site-cta__arrow{transform:translateX(2px)}
+.site-nav__mobile-toggle{display:none;background:transparent;border:0;width:40px;height:40px;padding:8px;cursor:pointer;color:var(--c-dark-2)}
+@media (max-width:980px){
+  .site-nav{display:none}
+  .site-nav.is-open{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:#fff;padding:16px;box-shadow:var(--shadow-lg)}
+  .site-nav.is-open .site-nav__item,.site-nav.is-open .site-nav__link{width:100%}
+  .site-nav.is-open .site-nav__sub{position:static;box-shadow:none;padding-left:12px;display:block}
+  .site-nav__mobile-toggle{display:block}
+  .site-cta{display:none}
+}
+
+.hero{position:relative;background:radial-gradient(ellipse at 80% 50%,rgba(26,127,193,.22),transparent 60%),linear-gradient(135deg,var(--c-dark) 0%,var(--c-dark-2) 45%,#155174 100%);color:#fff;padding:clamp(64px,10vw,120px) 0 clamp(56px,8vw,96px);overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(115deg,rgba(255,255,255,.04) 0 2px,transparent 2px 14px);pointer-events:none;opacity:.7}
+.hero__inner{position:relative;z-index:2;max-width:880px}
+.hero__breadcrumb{display:flex;gap:6px;margin-bottom:1.6em;font-size:.86em;color:rgba(255,255,255,.65)}
+.hero__breadcrumb a{color:rgba(255,255,255,.85)}
+.hero__breadcrumb a:hover{color:#fff}
+.hero__eyebrow{display:inline-block;padding:6px 14px;background:rgba(106,183,229,.16);border:1px solid rgba(106,183,229,.32);border-radius:100px;font-size:.82em;font-weight:600;letter-spacing:.04em;color:var(--c-blue-light);margin-bottom:1.2em}
+.hero__title{color:#fff;font-size:clamp(2em,5vw,3.4em);font-weight:800;margin:0 0 .4em;letter-spacing:-.02em;line-height:1.1}
+.hero__subtitle{font-size:clamp(1em,1.5vw,1.18em);color:rgba(255,255,255,.85);font-weight:400;max-width:720px;margin:0 0 1.6em;line-height:1.55}
+.hero__pills{display:flex;flex-wrap:wrap;gap:10px;margin:0}
+.hero__pill{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:100px;font-size:.85em;font-weight:500;color:rgba(255,255,255,.92)}
+.hero__pill-dot{width:8px;height:8px;border-radius:50%;background:#5dd897}
+
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 30px;border-radius:var(--r-sm);font-weight:600;font-size:1em;transition:all .2s ease;cursor:pointer;border:0;font-family:inherit;text-align:center;justify-content:center}
+.btn--primary{background:var(--c-blue);color:#fff !important;box-shadow:var(--shadow-md)}
+.btn--primary:hover{background:#2496e0;transform:translateY(-2px);box-shadow:var(--shadow-lg);color:#fff !important}
+.btn--ghost-light{background:transparent;color:#fff !important;border:2px solid rgba(255,255,255,.32)}
+.btn--ghost-light:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.6);color:#fff !important}
+.btn--full{width:100%}
+.btn--lg{padding:18px 36px;font-size:1.05em}
+.btn__arrow{transition:transform .2s ease}
+.btn:hover .btn__arrow{transform:translateX(3px)}
+
+.section{padding:clamp(56px,9vw,112px) 0}
+.section--alt{background:var(--c-bg-light)}
+.section__head{max-width:760px;margin:0 auto clamp(40px,6vw,72px);text-align:center}
+.section__eyebrow{display:inline-block;font-size:.82em;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--c-blue);margin-bottom:1em}
+.section__intro{font-size:1.08em;color:var(--c-text-muted);margin-top:.5em}
+
+/* TOOL UI */
+.tool-shell{display:grid;grid-template-columns:1fr 360px;gap:clamp(24px,3vw,40px);align-items:start;max-width:1100px;margin:0 auto;position:relative;top:-72px;z-index:5}
+@media (max-width:900px){.tool-shell{grid-template-columns:1fr;top:-40px}}
+.tool-card-main{background:#fff;border-radius:var(--r-xl);box-shadow:var(--shadow-lg);padding:clamp(28px,4vw,48px);border:1px solid var(--c-border-soft)}
+.tool-card-side{position:sticky;top:96px;display:flex;flex-direction:column;gap:16px}
+@media (max-width:900px){.tool-card-side{position:static}}
+
+.tool-intro{padding-bottom:24px;border-bottom:1px solid var(--c-border-soft);margin-bottom:32px}
+.tool-intro h2{font-size:1.25em;margin:0 0 .4em;color:var(--c-dark-2)}
+.tool-intro p{margin:0;color:var(--c-text-muted);font-size:.96em}
+
+.signal-block{margin-bottom:36px}
+.signal-block:last-of-type{margin-bottom:0}
+.signal-block__head{display:flex;align-items:center;gap:14px;margin:0 0 14px;padding-bottom:10px;border-bottom:1px dashed var(--c-border-soft)}
+.signal-block__num{width:34px;height:34px;border-radius:var(--r-sm);background:linear-gradient(135deg,var(--c-blue) 0%,#2496e0 100%);color:#fff;font-weight:700;font-size:.92em;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
+.signal-block__title{font-size:1.08em;font-weight:700;color:var(--c-dark-2);margin:0}
+.signal-block__sub{font-size:.86em;color:var(--c-text-muted);margin-left:auto;font-weight:500}
+
+.q-item{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 16px;border-radius:var(--r-sm);background:var(--c-bg-light);margin-bottom:8px;transition:background .15s ease}
+.q-item:hover{background:#eef4fb}
+.q-item__text{color:var(--c-text);font-size:.96em;flex:1;margin:0;line-height:1.5}
+.q-item__answers{display:inline-flex;gap:6px;flex-shrink:0}
+.q-btn{padding:8px 16px;border-radius:var(--r-sm);border:1px solid var(--c-border);background:#fff;font-size:.86em;font-weight:600;cursor:pointer;font-family:inherit;color:var(--c-text-muted);transition:all .15s ease;min-width:60px}
+.q-btn:hover{border-color:var(--c-blue-light);color:var(--c-blue)}
+.q-btn.is-active-ja{background:var(--c-red);border-color:var(--c-red);color:#fff}
+.q-btn.is-active-nein{background:var(--c-green);border-color:var(--c-green);color:#fff}
+
+.tool-submit{margin-top:32px;padding-top:24px;border-top:1px solid var(--c-border-soft)}
+.tool-submit__hint{font-size:.86em;color:var(--c-text-muted);margin:0 0 14px;text-align:center}
+.tool-submit__progress{font-weight:600;color:var(--c-dark-2)}
+
+.tool-side-info{background:#fff;border-radius:var(--r-lg);padding:24px;border:1px solid var(--c-border-soft);box-shadow:var(--shadow-sm)}
+.tool-side-info h4{font-size:.98em;margin:0 0 12px;color:var(--c-dark-2)}
+.tool-side-info p{font-size:.9em;color:var(--c-text-muted);margin:0 0 .8em;line-height:1.6}
+.tool-side-info p:last-child{margin-bottom:0}
+.tool-side-info__icon{width:40px;height:40px;border-radius:var(--r-sm);background:rgba(26,127,193,.1);color:var(--c-blue);display:inline-flex;align-items:center;justify-content:center;margin-bottom:14px}
+
+/* RESULT */
+.result{display:none;background:#fff;border-radius:var(--r-xl);box-shadow:var(--shadow-lg);padding:clamp(28px,4vw,56px);border:1px solid var(--c-border-soft);max-width:1100px;margin:48px auto 0}
+.result.is-visible{display:block;animation:fadeUp .5s ease}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+.result__eyebrow{display:inline-block;font-size:.82em;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--c-blue);margin-bottom:.8em}
+.result__title{font-size:clamp(1.8em,3.4vw,2.4em);font-weight:700;color:var(--c-dark-2);margin:0 0 .4em}
+.result__lead{color:var(--c-text-muted);font-size:1.05em;margin:0 0 2em;max-width:720px}
+
+.heatmap{display:grid;gap:12px;margin-bottom:32px}
+.heatmap__row{display:grid;grid-template-columns:1fr 200px;gap:24px;align-items:center;padding:18px 22px;border-radius:var(--r-md);border-left:6px solid var(--c-border)}
+.heatmap__row--green{background:var(--c-green-soft);border-left-color:var(--c-green)}
+.heatmap__row--amber{background:var(--c-amber-soft);border-left-color:var(--c-amber)}
+.heatmap__row--red{background:var(--c-red-soft);border-left-color:var(--c-red)}
+.heatmap__name{font-weight:600;color:var(--c-dark-2);margin:0}
+.heatmap__name strong{display:block;font-size:1.04em;margin-bottom:.2em}
+.heatmap__name span{font-size:.86em;color:var(--c-text-muted);font-weight:500}
+.heatmap__lights{display:flex;gap:6px;align-items:center;justify-content:flex-end}
+.heatmap__light{width:14px;height:14px;border-radius:50%;background:#e7ebf0;border:1px solid #d3d8df}
+.heatmap__light.is-on-red{background:var(--c-red);border-color:var(--c-red)}
+.heatmap__light.is-on-amber{background:var(--c-amber);border-color:var(--c-amber)}
+.heatmap__badge{display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:100px;font-size:.78em;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-left:8px}
+.heatmap__badge--green{background:var(--c-green);color:#fff}
+.heatmap__badge--amber{background:var(--c-amber);color:#fff}
+.heatmap__badge--red{background:var(--c-red);color:#fff}
+@media (max-width:640px){.heatmap__row{grid-template-columns:1fr;gap:10px}.heatmap__lights{justify-content:flex-start}}
+
+.result__verdict{background:var(--c-bg-light);border-radius:var(--r-md);padding:24px;margin-bottom:24px;border-left:3px solid var(--c-blue)}
+.result__verdict h3{margin:0 0 .4em;color:var(--c-dark-2);font-size:1.15em}
+.result__verdict p{margin:0;color:var(--c-text-muted)}
+
+.lead-gate{background:linear-gradient(135deg,var(--c-dark) 0%,#155174 100%);color:#fff;border-radius:var(--r-lg);padding:clamp(28px,4vw,44px);margin-top:32px;position:relative;overflow:hidden}
+.lead-gate::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 100% 0%,rgba(26,127,193,.25),transparent 60%);pointer-events:none}
+.lead-gate__inner{position:relative;z-index:2}
+.lead-gate__eyebrow{font-size:.82em;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--c-blue-light);margin:0 0 .8em}
+.lead-gate h3{color:#fff;font-size:1.5em;margin:0 0 .4em}
+.lead-gate__lead{color:rgba(255,255,255,.85);margin:0 0 1.5em;max-width:560px}
+.lead-gate__form{display:flex;flex-wrap:wrap;gap:12px;max-width:560px}
+.lead-gate__form input{flex:1 1 240px;padding:14px 16px;border:1px solid rgba(255,255,255,.2);border-radius:var(--r-sm);background:rgba(255,255,255,.08);color:#fff;font-size:1em;font-family:inherit}
+.lead-gate__form input::placeholder{color:rgba(255,255,255,.5)}
+.lead-gate__form input:focus{outline:none;border-color:var(--c-blue-light);background:rgba(255,255,255,.12)}
+.lead-gate__form button{padding:14px 28px;background:var(--c-blue);border:0;border-radius:var(--r-sm);color:#fff;font-weight:600;font-size:1em;cursor:pointer;font-family:inherit;transition:background .15s ease,transform .15s ease}
+.lead-gate__form button:hover{background:#2496e0;transform:translateY(-1px)}
+.lead-gate__legal{font-size:.78em;color:rgba(255,255,255,.55);margin:1em 0 0;max-width:560px;line-height:1.5}
+.lead-gate__legal a{color:rgba(255,255,255,.75)}
+.lead-gate__success{display:none;padding:24px;background:rgba(93,216,151,.12);border:1px solid rgba(93,216,151,.3);border-radius:var(--r-md);color:#dcf5e6}
+.lead-gate__success.is-visible{display:block}
+.lead-gate__success strong{color:#fff;display:block;font-size:1.1em;margin-bottom:.3em}
+
+/* VIDEO EMBEDS */
+.video-section{padding:clamp(56px,8vw,96px) 0;background:var(--c-bg-light)}
+.video-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,3vw,36px)}
+@media (max-width:820px){.video-grid{grid-template-columns:1fr}}
+.video-card{background:#fff;border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-sm);border:1px solid var(--c-border-soft)}
+.video-card__head{display:flex;align-items:center;gap:12px;padding:18px 24px;border-bottom:1px solid var(--c-border-soft)}
+.video-card__icon{width:32px;height:32px;border-radius:var(--r-sm);display:inline-flex;align-items:center;justify-content:center;color:#fff}
+.video-card__icon--yt{background:#ff0000}
+.video-card__icon--li{background:#0a66c2}
+.video-card__title{font-weight:600;font-size:.98em;color:var(--c-dark-2);margin:0}
+.video-card__subtitle{font-size:.85em;color:var(--c-text-muted);margin:.1em 0 0}
+.video-card__wrap{position:relative;aspect-ratio:16/9;background:linear-gradient(135deg,#e8eef5 0%,#dde7f1 100%);display:flex;align-items:center;justify-content:center;color:#7a8a9c;font-size:.92em;font-weight:500}
+.video-card__wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video-card__placeholder{text-align:center;padding:20px}
+.video-card__placeholder svg{margin:0 auto 12px;color:#9aa8b9}
+.video-card__placeholder strong{color:var(--c-dark-2);display:block;font-weight:600;margin-bottom:.2em}
+.video-card__placeholder span{font-size:.85em;color:var(--c-text-muted)}
+
+/* LEAD CARD */
+.lead-card{background:linear-gradient(135deg,var(--c-dark) 0%,#155174 100%);color:#fff;border-radius:var(--r-xl);padding:clamp(40px,5vw,72px);display:grid;grid-template-columns:240px 1fr;gap:clamp(32px,5vw,64px);align-items:center;box-shadow:var(--shadow-lg);position:relative;overflow:hidden}
+.lead-card::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 100% 0%,rgba(26,127,193,.3),transparent 60%);pointer-events:none}
+.lead-card__photo{width:240px;height:240px;border-radius:50%;overflow:hidden;box-shadow:var(--shadow-lg);position:relative;z-index:2}
+.lead-card__photo img{width:100%;height:100%;object-fit:cover}
+.lead-card__body{position:relative;z-index:2}
+.lead-card__eyebrow{font-size:.82em;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--c-blue-light);margin:0 0 .8em}
+.lead-card h2{color:#fff;margin-bottom:.15em}
+.lead-card__role{font-size:1.05em;color:rgba(184,212,232,1);margin-bottom:1.2em}
+.lead-card__bio{color:rgba(255,255,255,.92);font-size:1em;line-height:1.7;margin-bottom:1.8em;max-width:640px}
+.lead-card__cta-row{display:flex;flex-wrap:wrap;gap:14px}
+.lead-card__contact{font-size:.9em;color:rgba(255,255,255,.7);margin-top:1.2em}
+.lead-card__contact a{color:var(--c-blue-light)}
+.lead-card__contact a:hover{color:#fff}
+@media (max-width:720px){.lead-card{grid-template-columns:1fr;text-align:center;padding:clamp(28px,6vw,40px)}.lead-card__photo{margin:0 auto;width:180px;height:180px}.lead-card__bio{margin-left:auto;margin-right:auto}.lead-card__cta-row{justify-content:center}}
+
+.faq{max-width:880px;margin:0 auto}
+.faq__item{background:#fff;border:1px solid var(--c-border);border-radius:var(--r-md);margin-bottom:12px;overflow:hidden}
+.faq__item:hover{border-color:#b8c8da}
+.faq__summary{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:20px 26px;font-size:1.04em;font-weight:600;color:var(--c-dark-2);cursor:pointer;list-style:none;user-select:none}
+.faq__summary::-webkit-details-marker{display:none}
+.faq__summary::after{content:"+";font-size:1.7em;font-weight:300;color:var(--c-blue);flex-shrink:0;transition:transform .25s ease;line-height:1}
+.faq__item[open] .faq__summary{background:#eef4fb}
+.faq__item[open] .faq__summary::after{transform:rotate(45deg)}
+.faq__body{padding:4px 26px 22px;font-size:.96em;line-height:1.75;color:var(--c-text-muted);border-top:1px solid var(--c-border-soft)}
+.faq__body p{margin:14px 0 0}
+.faq__body p:first-child{margin-top:14px}
+
+.final-cta{background:linear-gradient(135deg,var(--c-dark) 0%,var(--c-dark-2) 100%);border-radius:var(--r-xl);padding:clamp(48px,6vw,80px);color:#fff;text-align:center;box-shadow:var(--shadow-lg)}
+.final-cta h2{color:#fff}
+.final-cta__intro{font-size:1.08em;color:rgba(255,255,255,.86);max-width:600px;margin:0 auto 2em}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+
+.site-footer{background:var(--c-dark);color:rgba(255,255,255,.7);padding:60px 0 24px;font-size:.92em}
+.site-footer__grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px}
+.site-footer__brand img{width:160px;margin-bottom:18px}
+.site-footer__brand p{color:rgba(255,255,255,.6);margin:0;max-width:280px}
+.site-footer__col h4{color:#fff;font-size:1em;margin:0 0 16px;font-weight:600}
+.site-footer__list{list-style:none;padding:0;margin:0}
+.site-footer__list li{margin-bottom:10px}
+.site-footer__list a{color:rgba(255,255,255,.7)}
+.site-footer__list a:hover{color:#fff}
+.site-footer__bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.85em;color:rgba(255,255,255,.5)}
+.site-footer__bottom a{color:rgba(255,255,255,.7)}
+@media (max-width:760px){.site-footer__grid{grid-template-columns:1fr 1fr;gap:28px}}
+@media (max-width:480px){.site-footer__grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header class="site-header" role="banner">
+<div class="site-header__inner">
+  <a href="/" class="site-header__logo" aria-label="Münker & Partner Startseite">
+    <img src="/wp-content/uploads/2025/12/muenker-partner_logo.svg" alt="Münker & Partner Logo">
+  </a>
+  <nav aria-label="Hauptnavigation">
+    <button class="site-nav__mobile-toggle" aria-label="Menü öffnen" aria-expanded="false" onclick="document.querySelector('.site-nav').classList.toggle('is-open');this.setAttribute('aria-expanded',document.querySelector('.site-nav').classList.contains('is-open'))">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <ul class="site-nav" role="menubar">
+      <li class="site-nav__item">
+        <a href="/personalberatung/" class="site-nav__link">Personalberatung<svg class="site-nav__caret" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></a>
+        <ul class="site-nav__sub">
+          <li><a href="/personalberatung/suche-und-auswahl/" class="site-nav__sub-link">Suche &amp; Auswahl</a></li>
+          <li><a href="/personalberatung/eignungsdiagnostik/" class="site-nav__sub-link">Eignungsdiagnostik</a></li>
+          <li><a href="/personalberatung/organisationsentwicklung/" class="site-nav__sub-link">Organisationsentwicklung</a></li>
+          <li><a href="/personalberatung/interimsmanagement/" class="site-nav__sub-link">Interimsmanagement</a></li>
+          <li><a href="/personalberatung/muenchen/" class="site-nav__sub-link">Personalberatung München</a></li>
+        </ul>
+      </li>
+      <li class="site-nav__item">
+        <a href="/unternehmensberatung/" class="site-nav__link">Unternehmensberatung<svg class="site-nav__caret" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></a>
+        <ul class="site-nav__sub">
+          <li><a href="/unternehmensberatung/strukturberatung/" class="site-nav__sub-link">Strukturberatung</a></li>
+          <li><a href="/vertriebsberatung/" class="site-nav__sub-link">Vertriebsberatung</a></li>
+          <li><a href="/unternehmensberatung/digitalisierungberatung/" class="site-nav__sub-link">Digitalisierungsberatung</a></li>
+          <li><a href="/unternehmensberatung/marketingberatung/" class="site-nav__sub-link">Marketingberatung</a></li>
+          <li><a href="/unternehmensberatung/muenchen/" class="site-nav__sub-link">Unternehmensberatung München</a></li>
+        </ul>
+      </li>
+      <li class="site-nav__item">
+        <a href="/tools/" class="site-nav__link" aria-current="page">Tools<svg class="site-nav__caret" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></a>
+        <ul class="site-nav__sub">
+          <li><a href="/tools/recruiting-kosten-rechner/" class="site-nav__sub-link">Recruiting-Kosten-Rechner</a></li>
+          <li><a href="/tools/vertriebs-check/" class="site-nav__sub-link">Vertriebs-KPI-Check</a></li>
+          <li><a href="/tools/strukturberatung-check/" class="site-nav__sub-link" aria-current="page">Strukturberatungs-Check</a></li>
+        </ul>
+      </li>
+      <li><a href="/ratgeber/" class="site-nav__link">Ratgeber</a></li>
+      <li><a href="/ueber-uns/" class="site-nav__link">Über uns</a></li>
+      <li><a href="/kontakt/" class="site-nav__link">Kontakt</a></li>
+    </ul>
+  </nav>
+  <a href="/kontakt/" class="site-cta">Erstgespräch <span class="site-cta__arrow">→</span></a>
+</div>
+</header>
+
+<main id="main">
+
+<section class="hero">
+<div class="container">
+<div class="hero__inner">
+  <div class="hero__breadcrumb"><a href="/">Home</a> · <a href="/tools/">Tools</a> · <span>Strukturberatungs-Signale-Check</span></div>
+  <span class="hero__eyebrow">Tool · Strukturberatung</span>
+  <h1 class="hero__title">Strukturberatungs-Signale-Check</h1>
+  <p class="hero__subtitle">Brauchen wir wirklich externe Strukturberatung? Die 7 typischen Signale als interaktive Selbst-Diagnose mit sofortiger Ampel-Heatmap und priorisiertem Handlungsbedarf.</p>
+  <div class="hero__pills">
+    <span class="hero__pill"><span class="hero__pill-dot"></span> 21 Fragen · 6 Min</span>
+    <span class="hero__pill"><span class="hero__pill-dot"></span> Ampel-Heatmap</span>
+    <span class="hero__pill"><span class="hero__pill-dot"></span> PDF-Report optional</span>
+  </div>
+</div>
+</div>
+</section>
+
+<div class="container">
+<div class="tool-shell">
+
+<div class="tool-card-main">
+<div class="tool-intro">
+<h2>Wie das funktioniert</h2>
+<p>Sie beantworten für jedes der 7 Signale drei Ja/Nein-Fragen aus Ihrem Geschäftsalltag. Daraus errechnen wir eine Ampel-Heatmap, die zeigt, wo Sie strukturell entspannt sein können — und wo Handlungsdruck besteht. <strong>„Ja" bedeutet: Das Symptom ist bei uns präsent.</strong></p>
+</div>
+
+<form id="quiz" onsubmit="return false;"></form>
+
+<div class="tool-submit">
+<p class="tool-submit__hint"><span class="tool-submit__progress" id="progLabel">0 von 21 Fragen beantwortet</span></p>
+<button type="button" class="btn btn--primary btn--lg btn--full" id="btnSubmit" disabled onclick="auswerten()">Heatmap anzeigen <span class="btn__arrow">→</span></button>
+</div>
+</div>
+
+<aside class="tool-card-side" aria-label="Hintergrund zur Diagnose">
+<div class="tool-side-info">
+<div class="tool-side-info__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></div>
+<h4>Die 7 Signale</h4>
+<p>Wir destillieren aus 25 Jahren Mittelstands-Strukturberatung sieben Muster, an denen sich verlässlich erkennen lässt, ob ein Unternehmen strukturell „aus dem Tritt" geraten ist. Jedes Signal hat drei Symptome — die fragen wir hier ab.</p>
+<p>Mehr Hintergrund: <a href="/ratgeber/strukturberatung-7-signale/">Ratgeber-Artikel zu den 7 Signalen</a>.</p>
+</div>
+<div class="tool-side-info">
+<h4>Was bedeuten die Farben?</h4>
+<p><strong style="color:var(--c-green)">Grün</strong> — alle 3 Fragen mit „nein". Signal ist nicht aktiv.<br><strong style="color:var(--c-amber)">Gelb</strong> — 1 „ja". Frühindikator, beobachten.<br><strong style="color:var(--c-red)">Rot</strong> — 2 oder 3 „ja". Handlungsbedarf.</p>
+</div>
+</aside>
+
+</div>
+</div>
+
+<div class="container">
+<div id="result" class="result" aria-live="polite">
+<span class="result__eyebrow">Ihre Diagnose</span>
+<h2 class="result__title" id="r-title">—</h2>
+<p class="result__lead" id="r-lead">—</p>
+
+<div class="heatmap" id="heatmap"></div>
+
+<div class="result__verdict" id="r-verdict">
+<h3 id="r-verdict-title">—</h3>
+<p id="r-verdict-text">—</p>
+</div>
+
+<div class="lead-gate" id="leadGate">
+<div class="lead-gate__inner">
+<p class="lead-gate__eyebrow">Detaillierter PDF-Report</p>
+<h3>Heatmap inklusive Handlungsempfehlungen per E-Mail anfordern?</h3>
+<p class="lead-gate__lead">Sie bekommen einen 8-seitigen PDF-Report mit Ihrer Heatmap, einer Detail-Analyse pro „rotem" Signal und einem priorisierten 90-Tage-Strukturplan für die zwei dringendsten Themen. Keine Newsletter, kein Folge-Spam.</p>
+<form class="lead-gate__form" id="leadForm" onsubmit="leadSubmit(event)">
+  <input type="email" name="email" placeholder="Ihre geschäftliche E-Mail" required>
+  <button type="submit">Report anfordern</button>
+</form>
+<p class="lead-gate__legal">Mit dem Absenden stimmen Sie zu, dass wir Ihnen den Report einmalig zusenden. <a href="/datenschutzerklaerung/">Datenschutzerklärung</a>.</p>
+<div class="lead-gate__success" id="leadSuccess">
+<strong>Vielen Dank — Ihre Anfrage ist eingegangen.</strong>
+Sie bekommen den Report innerhalb von 24 Stunden an Werktagen. Falls Sie direkt sprechen möchten: <a href="/kontakt/" style="color:#fff;text-decoration:underline;">Termin anfragen</a>.
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<section class="video-section">
+<div class="container">
+<div class="section__head">
+<span class="section__eyebrow">Hintergrund &amp; Praxis</span>
+<h2>Wie wir aus den Signalen Mandate machen</h2>
+<p class="section__intro">Zwei kurze Videos zu den 7 Signalen und der typischen ersten 90 Tage in einem Strukturberatungs-Mandat.</p>
+</div>
+<div class="video-grid">
+
+<div class="video-card">
+<div class="video-card__head">
+<div class="video-card__icon video-card__icon--yt"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2c-.3-1-1-1.8-2-2.1C19.7 3.5 12 3.5 12 3.5s-7.7 0-9.5.6c-1 .3-1.7 1.1-2 2.1C0 8 0 12 0 12s0 4 .5 5.8c.3 1 1 1.8 2 2.1 1.8.6 9.5.6 9.5.6s7.7 0 9.5-.6c1-.3 1.7-1.1 2-2.1.5-1.8.5-5.8.5-5.8s0-4-.5-5.8zM9.6 15.6V8.4l6.4 3.6-6.4 3.6z"/></svg></div>
+<div>
+<p class="video-card__title">Die 7 Signale: Wann Strukturberatung wirklich hilft</p>
+<p class="video-card__subtitle">YouTube · ca. 10 Min</p>
+</div>
+</div>
+<div class="video-card__wrap">
+<!-- TODO: YouTube Embed Code hier einfügen -->
+<div class="video-card__placeholder">
+<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+<strong>YouTube-Video folgt</strong>
+<span>Embed-Code in der HTML einfügen</span>
+</div>
+</div>
+</div>
+
+<div class="video-card">
+<div class="video-card__head">
+<div class="video-card__icon video-card__icon--li"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg></div>
+<div>
+<p class="video-card__title">Generationswechsel &amp; Struktur · LinkedIn-Post</p>
+<p class="video-card__subtitle">LinkedIn · Video-Post</p>
+</div>
+</div>
+<div class="video-card__wrap">
+<!-- TODO: LinkedIn Embed Code hier einfügen -->
+<div class="video-card__placeholder">
+<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="2"/><line x1="8" y1="11" x2="8" y2="17"/><line x1="8" y1="7" x2="8.01" y2="7"/><line x1="16" y1="17" x2="16" y2="13"/><line x1="12" y1="17" x2="12" y2="11"/></svg>
+<strong>LinkedIn-Post folgt</strong>
+<span>Embed-Code in der HTML einfügen</span>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="section__head">
+<span class="section__eyebrow">Ansprechpartner</span>
+<h2>Strukturberatung aus Düsseldorf</h2>
+<p class="section__intro">Wenn die Heatmap rot leuchtet: 45 Minuten Sondierungsgespräch mit unserem Geschäftsführer, vertraulich und ohne Kosten.</p>
+</div>
+<div class="lead-card">
+<a href="/team/tobias-muenker/" class="lead-card__photo" aria-label="Profil von Tobias Münker">
+<img src="/wp-content/uploads/2025/12/Tobias-Muenker_hoch-800x1200.jpg" alt="Tobias Münker, Geschäftsführer Münker & Partner Düsseldorf">
+</a>
+<div class="lead-card__body">
+<p class="lead-card__eyebrow">Geschäftsführer · Strukturberatung</p>
+<h2>Tobias Münker</h2>
+<p class="lead-card__role">Gründer &amp; Geschäftsführer · Martin-Luther-Platz 22, Düsseldorf</p>
+<p class="lead-card__bio">Tobias Münker führt Struktur- und Generationswechsel-Mandate im DACH-Mittelstand persönlich — vom 7-Signale-Audit über Org-Design bis zur 90-Tage-Begleitung nach Go-Live. Schwerpunkt: Familienunternehmen 50–1.000 Mitarbeitende in Maschinenbau, Chemie, Pharma und IT/Software. Inhabergeführt. Senior-Level. Keine Junior-Teams.</p>
+<div class="lead-card__cta-row">
+<a href="/kontakt/" class="btn btn--primary">Kostenloses Erstgespräch <span class="btn__arrow">→</span></a>
+<a href="/unternehmensberatung/strukturberatung/" class="btn btn--ghost-light">Strukturberatung ansehen</a>
+</div>
+<p class="lead-card__contact"><strong>Direkt erreichbar:</strong> <a href="tel:+492115455610">+49 211 545561-0</a> · <a href="mailto:kontakt@muenker-partner.de?subject=Anfrage%20Strukturberatung-Check">kontakt@muenker-partner.de</a></p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section section--alt">
+<div class="container">
+<div class="section__head"><span class="section__eyebrow">Häufige Fragen zum Check</span><h2>FAQ</h2></div>
+<div class="faq">
+<details class="faq__item"><summary class="faq__summary">Wer sollte den Check ausfüllen?</summary><div class="faq__body"><p>Idealerweise die Geschäftsführung gemeinsam mit der zweiten Führungsebene. Erfahrungsgemäß sind die größten Erkenntnisse dort, wo GF und 2. Ebene zu unterschiedlichen Einschätzungen kommen — genau dort liegen die strukturellen Sollbruchstellen.</p></div></details>
+<details class="faq__item"><summary class="faq__summary">Ist „Ja" immer schlecht?</summary><div class="faq__body"><p>Nein — manche Signale sind in Wachstums- oder Übergangsphasen normal und auch heilbar. „Ja" heißt nur: <em>Das Symptom ist präsent.</em> Erst wenn pro Signal zwei oder drei Symptome zusammenkommen (Ampel rot), wird es strukturell relevant. Einzelne gelbe Signale sind in den meisten Mittelständlern Alltag.</p></div></details>
+<details class="faq__item"><summary class="faq__summary">Was sagt eine „rote" Ampel konkret aus?</summary><div class="faq__body"><p>Eine rote Ampel auf einem Signal bedeutet: Das strukturelle Muster ist verfestigt, nicht mehr nur ein Frühindikator. Heißt nicht automatisch „Sie brauchen externe Beratung" — aber: Sie brauchen einen bewussten Plan, wie Sie das Thema in den nächsten 6–12 Monaten angehen. Ob intern oder mit externer Unterstützung, ist eine Folge-Entscheidung.</p></div></details>
+<details class="faq__item"><summary class="faq__summary">Bekommt man bei mehreren roten Signalen automatisch einen Pitch?</summary><div class="faq__body"><p>Nein. Wir melden uns nicht automatisch nach dem Tool. Wenn Sie nach dem Tool ein Sondierungsgespräch wollen, fragen Sie es aktiv an. Und auch dann: Wir lehnen Mandate ab, an denen wir zweifeln, dass wir den Unterschied machen — das ist eines unserer drei Versprechen.</p></div></details>
+<details class="faq__item"><summary class="faq__summary">Können wir das Ergebnis als Diskussions-Grundlage in der Geschäftsführung nutzen?</summary><div class="faq__body"><p>Genau dafür ist es gedacht. Der PDF-Report ist so formuliert, dass er als Vorlage für die nächste GF-Klausur oder Beirats-Sitzung funktioniert — ohne dass wir darin auftauchen. Aus der Heatmap lässt sich direkt ein Maßnahmen-Backlog ableiten.</p></div></details>
+<details class="faq__item"><summary class="faq__summary">Was, wenn alle Ampeln grün sind?</summary><div class="faq__body"><p>Dann gratulieren wir aufrichtig — das ist im Mittelstand selten und auf jeden Fall ein guter Moment zur Konsolidierung. In dem Fall ist eher unsere Vertriebs- oder Personalberatung relevant. Das <a href="/tools/vertriebs-check/">Vertriebs-KPI-Check-Tool</a> oder ein Executive-Search-Sondierungsgespräch wären die nächsten logischen Schritte.</p></div></details>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="final-cta">
+<h2>Bereit für ein Sondierungsgespräch?</h2>
+<p class="final-cta__intro">45 Minuten, unverbindlich, vertraulich — direkt mit Tobias Münker. Wir nehmen Ihr Mandat nur an, wenn wir den Unterschied machen können.</p>
+<div class="cta-row">
+<a href="/kontakt/" class="btn btn--primary">Termin anfragen <span class="btn__arrow">→</span></a>
+<a href="/tools/" class="btn btn--ghost-light">Weitere Tools ansehen</a>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+<div class="container">
+<div class="site-footer__grid">
+<div class="site-footer__brand">
+<img src="/wp-content/uploads/2025/12/muenker-partner_logo.svg" alt="Münker & Partner Logo">
+<p>Personal- und Unternehmensberatung für den Mittelstand. Familienbetrieb in zweiter Generation. Düsseldorf · München · Wesel.</p>
+</div>
+<div class="site-footer__col">
+<h4>Tools &amp; Diagnosen</h4>
+<ul class="site-footer__list">
+<li><a href="/tools/recruiting-kosten-rechner/">Recruiting-Kosten-Rechner</a></li>
+<li><a href="/tools/vertriebs-check/">Vertriebs-KPI-Check</a></li>
+<li><a href="/tools/strukturberatung-check/">Strukturberatungs-Check</a></li>
+<li><a href="/ratgeber/">Ratgeber-Übersicht</a></li>
+</ul>
+</div>
+<div class="site-footer__col">
+<h4>Leistungen</h4>
+<ul class="site-footer__list">
+<li><a href="/unternehmensberatung/strukturberatung/">Strukturberatung</a></li>
+<li><a href="/vertriebsberatung/">Vertriebsberatung</a></li>
+<li><a href="/personalberatung/suche-und-auswahl/">Executive Search</a></li>
+<li><a href="/personalberatung/eignungsdiagnostik/">Eignungsdiagnostik</a></li>
+</ul>
+</div>
+<div class="site-footer__col">
+<h4>Münker &amp; Partner</h4>
+<ul class="site-footer__list">
+<li><a href="/ueber-uns/">Über uns</a></li>
+<li><a href="/standorte/">Standorte</a></li>
+<li><a href="/branchenexpertise/">Branchenexpertise</a></li>
+<li><a href="/kontakt/">Kontakt</a></li>
+</ul>
+</div>
+</div>
+<div class="site-footer__bottom">
+<div>© 2026 Münker &amp; Partner – Personal- &amp; Unternehmensberatung. Alle Rechte vorbehalten.</div>
+<div><a href="/impressum/">Impressum</a> · <a href="/datenschutzerklaerung/">Datenschutz</a></div>
+</div>
+</div>
+</footer>
+
+<script>
+const SIGNALS = [
+  { n:1, title:"Wachstumsplateau", hint:"Umsatz und Profitabilität stagnieren oder verflachen.", qs:[
+    "Unser Umsatz stagniert seit mindestens 18 Monaten — trotz stabilem oder wachsendem Markt.",
+    "Unsere EBIT-Marge sinkt, obwohl der Umsatz stabil bleibt.",
+    "Wachstumsinitiativen verpuffen wiederholt ohne nachhaltige Wirkung."
+  ]},
+  { n:2, title:"Verantwortlichkeits-Konfusion", hint:"Unklarheit, wer entscheidet.", qs:[
+    "Es ist unklar, wer wichtige Entscheidungen final treffen darf.",
+    "Wichtige Themen „fallen runter", weil sich niemand zuständig fühlt.",
+    "Doppelarbeit zwischen Teams oder Bereichen kommt regelmäßig vor."
+  ]},
+  { n:3, title:"Prozess-Reibungen", hint:"Standardvorgänge dauern überproportional lange.", qs:[
+    "Kunden beschweren sich über lange Reaktions- oder Lieferzeiten.",
+    "Mitarbeitende klagen über interne Schleifen, Genehmigungen oder Abstimmungen.",
+    "Standardvorgänge dauern heute spürbar länger als vor zwei Jahren."
+  ]},
+  { n:4, title:"Schlüsselpersonen-Abhängigkeit", hint:"Wissen und Prozesse hängen an einzelnen Personen.", qs:[
+    "Bestimmte Prozesse oder Themen stoppen bei Urlaub oder Krankheit einer einzelnen Person.",
+    "Wissen über Kunden oder Lieferanten steckt nur in Köpfen, nicht in Systemen.",
+    "Die Geschäftsführung wird täglich operativ in Detail-Themen eingebunden."
+  ]},
+  { n:5, title:"Tool-Patchwork", hint:"Daten leben in vielen Systemen ohne Synchronität.", qs:[
+    "Wichtige Daten leben in mehreren Tools oder Excel-Listen ohne saubere Synchronität.",
+    "Reporting kostet wöchentlich mehr als 4 Stunden reine Sammelarbeit.",
+    "Es gibt keine „eine Wahrheit" für die wichtigsten Kennzahlen."
+  ]},
+  { n:6, title:"Reporting-Lücken", hint:"Steuerung erfolgt mit Verzug oder nach Bauchgefühl.", qs:[
+    "Wir merken erst spät, wenn ein Quartals- oder Jahresziel verfehlt wird.",
+    "Kennzahlen kommen mit mehr als 2 Wochen Verzug auf den Tisch.",
+    "Wir steuern in der Praxis eher nach Bauchgefühl als nach Zahlen."
+  ]},
+  { n:7, title:"Generationswechsel im Horizont", hint:"GF-Übergabe steht an oder ist absehbar.", qs:[
+    "Eine GF- oder Eigentümer-Übergabe steht in den nächsten 5 Jahren an.",
+    "Es gibt noch keinen formalen, schriftlichen Übergabe-Plan.",
+    "Strukturen sind heute zu personenabhängig für eine geordnete Übergabe."
+  ]}
+];
+
+const TOTAL_QS = SIGNALS.reduce((s,sig) => s + sig.qs.length, 0);
+const answers = {};
+
+function renderQuiz() {
+  const quiz = document.getElementById('quiz');
+  let html = '';
+  SIGNALS.forEach((sig,si) => {
+    html += `<div class="signal-block">
+      <div class="signal-block__head">
+        <span class="signal-block__num">${sig.n}</span>
+        <h3 class="signal-block__title">Signal ${sig.n}: ${sig.title}</h3>
+        <span class="signal-block__sub">${sig.hint}</span>
+      </div>`;
+    sig.qs.forEach((q,qi) => {
+      const id = `s${si}_q${qi}`;
+      html += `<div class="q-item">
+        <p class="q-item__text">${q}</p>
+        <div class="q-item__answers">
+          <button type="button" class="q-btn" data-id="${id}" data-val="ja" onclick="setAns('${id}','ja')">Ja</button>
+          <button type="button" class="q-btn" data-id="${id}" data-val="nein" onclick="setAns('${id}','nein')">Nein</button>
+        </div>
+      </div>`;
+    });
+    html += '</div>';
+  });
+  quiz.innerHTML = html;
+}
+
+function setAns(id, val) {
+  answers[id] = val;
+  document.querySelectorAll(`[data-id="${id}"]`).forEach(btn => {
+    btn.classList.remove('is-active-ja','is-active-nein');
+    if (btn.dataset.val === val) btn.classList.add('is-active-' + val);
+  });
+  const cnt = Object.keys(answers).length;
+  document.getElementById('progLabel').textContent = `${cnt} von ${TOTAL_QS} Fragen beantwortet`;
+  document.getElementById('btnSubmit').disabled = cnt < TOTAL_QS;
+}
+
+function auswerten() {
+  const rows = [];
+  let totalRed = 0, totalAmber = 0, totalGreen = 0;
+  SIGNALS.forEach((sig,si) => {
+    let jas = 0;
+    sig.qs.forEach((_,qi) => { if (answers[`s${si}_q${qi}`] === 'ja') jas++; });
+    let band, badge;
+    if (jas === 0) { band = 'green'; badge = 'OK'; totalGreen++; }
+    else if (jas === 1) { band = 'amber'; badge = 'Beobachten'; totalAmber++; }
+    else { band = 'red'; badge = 'Handlungsbedarf'; totalRed++; }
+    rows.push({sig, jas, band, badge});
+  });
+
+  // Render Heatmap
+  const hm = document.getElementById('heatmap');
+  hm.innerHTML = rows.map(r => {
+    const lights = [0,1,2].map(i => {
+      const on = i < r.jas;
+      const cls = on ? (r.band === 'red' ? 'is-on-red' : 'is-on-amber') : '';
+      return `<span class="heatmap__light ${cls}" aria-hidden="true"></span>`;
+    }).join('');
+    return `<div class="heatmap__row heatmap__row--${r.band}">
+      <p class="heatmap__name"><strong>Signal ${r.sig.n}: ${r.sig.title}</strong><span>${r.sig.hint}</span></p>
+      <div class="heatmap__lights">${lights}<span class="heatmap__badge heatmap__badge--${r.band}">${r.badge}</span></div>
+    </div>`;
+  }).join('');
+
+  // Verdict
+  let title, lead, verdictTitle, verdictText;
+  if (totalRed >= 3) {
+    title = 'Strukturelle Handlungsdringlichkeit';
+    lead = `Sie haben ${totalRed} Signale im roten Bereich. Das deutet auf strukturelle Muster hin, die sich erfahrungsgemäß nicht von allein auflösen — eher verfestigen sie sich weiter, je länger man wartet.`;
+    verdictTitle = 'Was wir Ihnen empfehlen würden';
+    verdictText = 'Bei drei oder mehr roten Signalen lohnt sich ein externer Blick fast immer — und sei es nur, um die Priorität intern zu schärfen. Ein 45-minütiges Sondierungsgespräch (kostenlos, unverbindlich) ist hier der pragmatische nächste Schritt. Sie verlieren maximal 45 Minuten, gewinnen aber eine externe Einschätzung zu Reihenfolge und Tiefe der Themen.';
+  } else if (totalRed >= 1) {
+    title = 'Fokussierter Handlungsbedarf';
+    lead = `Sie haben ${totalRed} Signal${totalRed===1?'':'e'} im roten Bereich. Das ist im Mittelstand kein Ausnahmezustand — aber es lohnt sich, das/die Thema/Themen bewusst auf die nächsten Quartals-Agenden zu setzen, bevor weitere Signale „kippen".`;
+    verdictTitle = 'Was wir Ihnen empfehlen würden';
+    verdictText = 'Bei einzelnen roten Signalen ist die wichtigste Frage: Haben Sie intern Ressourcen und Kapazität, das Thema in den nächsten 6 Monaten anzugehen? Falls ja — die Heatmap ist Ihre Prioritäten-Liste. Falls nein, oder falls Sie unsicher sind über Reihenfolge und Tiefe: ein Sondierungsgespräch klärt das in 45 Minuten.';
+  } else if (totalAmber >= 3) {
+    title = 'Mehrere Frühindikatoren — Beobachtungs-Modus';
+    lead = `Sie haben ${totalAmber} Signale im gelben Bereich und kein einziges im roten. Das ist eine typische Konstellation in Wachstumsphasen: Symptome sind da, aber noch nicht verfestigt.`;
+    verdictTitle = 'Was wir Ihnen empfehlen würden';
+    verdictText = 'Jetzt ist der richtige Moment, intern strukturierte Beobachtungs-Routinen zu etablieren — z. B. quartalsweise diese Heatmap neu auszufüllen. Wenn ein gelbes Signal nach 12 Monaten ins Rote rutscht, haben Sie früh genug reagiert. Externe Beratung ist hier in der Regel nicht prioritär.';
+  } else {
+    title = 'Strukturell entspannte Lage';
+    lead = `Sie haben überwiegend grüne Signale — das ist im Mittelstand selten und ein gutes Zeichen für die strukturelle Reife Ihres Unternehmens.`;
+    verdictTitle = 'Was wir Ihnen empfehlen würden';
+    verdictText = 'Strukturarbeit hat aktuell keine Priorität. Die typischen nächsten Hebel in dieser Konstellation: Vertriebs-System-Reife oder Schlüsselbesetzungen für die nächste Wachstumsphase. Schauen Sie sich gerne unseren Vertriebs-KPI-Check oder Executive-Search-Service an.';
+  }
+
+  document.getElementById('r-title').textContent = title;
+  document.getElementById('r-lead').textContent = lead;
+  document.getElementById('r-verdict-title').textContent = verdictTitle;
+  document.getElementById('r-verdict-text').textContent = verdictText;
+
+  document.querySelector('.tool-shell').style.display = 'none';
+  const res = document.getElementById('result');
+  res.classList.add('is-visible');
+  setTimeout(() => res.scrollIntoView({behavior:'smooth', block:'start'}), 100);
+}
+
+function leadSubmit(e) {
+  e.preventDefault();
+  const form = e.target;
+  const email = form.email.value;
+  // TODO: Replace placeholder with Formspree / Postmark / eigenes Backend.
+  try { localStorage.setItem('mp_tool_lead_struktur', JSON.stringify({ email, answers, ts: Date.now() })); } catch(_) {}
+  form.style.display = 'none';
+  document.getElementById('leadSuccess').classList.add('is-visible');
+  return false;
+}
+
+renderQuiz();
+</script>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","@id":"https://muenker-partner.de/tools/strukturberatung-check/#app","name":"Strukturberatungs-Signale-Check","url":"https://muenker-partner.de/tools/strukturberatung-check/","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"Die 7 Signale für Strukturberatung im Mittelstand als interaktive Selbst-Diagnose mit Ampel-Heatmap.","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"provider":{"@type":"Organization","@id":"https://muenker-partner.de/#organization","name":"Münker & Partner"}}</script>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","@id":"https://muenker-partner.de/tools/strukturberatung-check/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://muenker-partner.de/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://muenker-partner.de/tools/"},{"@type":"ListItem","position":3,"name":"Strukturberatungs-Signale-Check","item":"https://muenker-partner.de/tools/strukturberatung-check/"}]}</script>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","@id":"https://muenker-partner.de/tools/strukturberatung-check/#faq","mainEntity":[{"@type":"Question","name":"Wer sollte den Check ausfüllen?","acceptedAnswer":{"@type":"Answer","text":"Idealerweise Geschäftsführung gemeinsam mit zweiter Führungsebene — Unterschiede in der Einschätzung sind besonders aufschlussreich."}},{"@type":"Question","name":"Ist Ja immer schlecht?","acceptedAnswer":{"@type":"Answer","text":"Nein. Erst bei 2-3 Ja je Signal wird es strukturell relevant. Einzelne gelbe Signale sind Alltag im Mittelstand."}},{"@type":"Question","name":"Was sagt eine rote Ampel konkret aus?","acceptedAnswer":{"@type":"Answer","text":"Das strukturelle Muster ist verfestigt. Sie brauchen einen bewussten Plan — ob intern oder mit externer Unterstützung ist eine Folge-Entscheidung."}},{"@type":"Question","name":"Bekommt man bei mehreren roten Signalen automatisch einen Pitch?","acceptedAnswer":{"@type":"Answer","text":"Nein. Wir melden uns nicht automatisch nach dem Tool. Wir lehnen sogar Mandate ab, an denen wir zweifeln."}},{"@type":"Question","name":"Was, wenn alle Ampeln grün sind?","acceptedAnswer":{"@type":"Answer","text":"Glückwunsch — das ist im Mittelstand selten. In dem Fall ist eher Vertriebs- oder Personalberatung relevant."}}]}</script>
+
+</body>
+</html>
