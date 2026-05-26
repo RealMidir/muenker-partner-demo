@@ -1019,7 +1019,7 @@ p{margin:0 0 1em}
 @media (max-width:760px){.site-footer__grid{grid-template-columns:1fr 1fr;gap:28px}}
 @media (max-width:480px){.site-footer__grid{grid-template-columns:1fr}}
 
-/* === mp-harmonize-v9: Avada/Homepage Design-Harmonization === */
+/* === mp-harmonize-v10: Avada/Homepage Design-Harmonization === */
 
 /* Inline SVG-Icon sizing */
 .mp-icon{width:1em;height:1em;display:inline-block;vertical-align:-0.12em;flex-shrink:0}
@@ -1238,7 +1238,7 @@ p{margin:0 0 1em}
 /* The Final-CTA in the container gets pulled outside the container's padding */
 .container > .final-cta{margin-left:calc(-1 * clamp(20px,4vw,56px));margin-right:calc(-1 * clamp(20px,4vw,56px));}
 
-/* === end mp-harmonize-v9 === */
+/* === end mp-harmonize-v10 === */
 </style>
 </head>
 
@@ -1265,7 +1265,7 @@ p{margin:0 0 1em}
   <div class="hero__breadcrumb"><a href="/">Home</a> · <a href="/tools/">Tools</a> · <span>Strukturberatungs-Signale-Check</span></div>
   <span class="hero__eyebrow">Strukturberatung · Diagnose</span>
   <h1 class="hero__title">Die sieben Signale für Strukturarbeit.</h1>
-  <p class="hero__subtitle">Einundzwanzig Fragen aus dem Geschäftsalltag. Ampel-Heatmap mit priorisiertem Handlungsbedarf — vertraulich, ohne Anmeldung.</p>
+  <p class="hero__subtitle">Einundzwanzig Fragen aus dem Geschäftsalltag. Ampel-Heatmap mit priorisiertem Handlungsbedarf.</p>
   <div class="hero__pills">
     <span class="hero__pill"><span class="hero__pill-dot"></span> 6 Minuten</span>
     <span class="hero__pill"><span class="hero__pill-dot"></span> Ampel-Heatmap</span>
@@ -1281,7 +1281,7 @@ p{margin:0 0 1em}
 <div class="tool-card-main">
 <div class="tool-intro">
 <h2>So funktioniert es</h2>
-<p>Pro Signal drei Ja/Nein-Fragen aus dem Geschäftsalltag. Die Ampel-Heatmap zeigt, wo strukturell alles im Lot ist — und wo Handlungsdruck besteht. <strong>„Ja" bedeutet: Das Symptom ist bei Ihnen präsent.</strong></p>
+<p>Pro Signal drei Ja/Nein-Fragen aus dem Geschäftsalltag. Die Ampel-Heatmap zeigt, wo strukturell alles im Lot ist und wo Handlungsdruck besteht. <strong>„Ja" bedeutet: Das Symptom ist bei Ihnen präsent.</strong></p>
 </div>
 
 <form id="quiz" onsubmit="return false;"></form>
@@ -1301,7 +1301,7 @@ p{margin:0 0 1em}
 </div>
 <div class="tool-side-info">
 <h4>Ampel-Lesart</h4>
-<p><strong style="color:var(--c-green)">Grün</strong> — alle drei Antworten Nein. Signal nicht aktiv.<br><strong style="color:var(--c-amber)">Gelb</strong> — ein Ja. Frühindikator, beobachten.<br><strong style="color:var(--c-red)">Rot</strong> — zwei oder drei Ja. Handlungsbedarf.</p>
+<p><strong style="color:var(--c-green)">Grün:</strong> alle drei Antworten Nein. Signal nicht aktiv.<br><strong style="color:var(--c-amber)">Gelb:</strong> ein Ja. Frühindikator, beobachten.<br><strong style="color:var(--c-red)">Rot:</strong> zwei oder drei Ja. Handlungsbedarf.</p>
 </div>
 </aside>
 
@@ -1311,14 +1311,14 @@ p{margin:0 0 1em}
 <div class="container">
 <div id="result" class="result" aria-live="polite">
 <span class="result__eyebrow">Ihre Diagnose</span>
-<h2 class="result__title" id="r-title">—</h2>
-<p class="result__lead" id="r-lead">—</p>
+<h2 class="result__title" id="r-title">&nbsp;</h2>
+<p class="result__lead" id="r-lead">&nbsp;</p>
 
 <div class="heatmap" id="heatmap"></div>
 
 <div class="result__verdict" id="r-verdict">
-<h3 id="r-verdict-title">—</h3>
-<p id="r-verdict-text">—</p>
+<h3 id="r-verdict-title">&nbsp;</h3>
+<p id="r-verdict-text">&nbsp;</p>
 </div>
 
 <div class="lead-gate" id="leadGate">
@@ -1332,7 +1332,7 @@ p{margin:0 0 1em}
 </form>
 <p class="lead-gate__legal">Mit dem Absenden stimmen Sie zu, dass wir Ihnen den Report einmalig zusenden. <a href="/datenschutzerklaerung/">Datenschutzerklärung</a>.</p>
 <div class="lead-gate__success" id="leadSuccess">
-<strong>Vielen Dank — Ihre Anfrage ist eingegangen.</strong>
+<strong>Vielen Dank. Ihre Anfrage ist eingegangen.</strong>
 Sie bekommen den Report innerhalb von 24 Stunden an Werktagen. Falls Sie direkt sprechen möchten: <a href="/kontakt/" style="color:#fff;text-decoration:underline;">Termin anfragen</a>.
 </div>
 </div>
@@ -1395,7 +1395,7 @@ Sie bekommen den Report innerhalb von 24 Stunden an Werktagen. Falls Sie direkt 
 <div class="section__head">
 <span class="section__eyebrow">Ansprechpartner</span>
 <h2>Strukturberatung aus Düsseldorf.</h2>
-<p class="section__intro">Falls die Heatmap rot leuchtet: vierzig Minuten direkt mit dem Geschäftsführer, vertraulich.</p>
+<p class="section__intro">Falls die Heatmap rot leuchtet: vierzig Minuten direkt mit dem Geschäftsführer.</p>
 </div>
 <div class="lead-card">
 <a href="/team/tobias-muenker/" class="lead-card__photo" aria-label="Profil von Tobias Münker">
@@ -1405,7 +1405,7 @@ Sie bekommen den Report innerhalb von 24 Stunden an Werktagen. Falls Sie direkt 
 <p class="lead-card__eyebrow">Geschäftsführer · Strukturberatung</p>
 <h2>Tobias Münker</h2>
 <p class="lead-card__role">Gründer &amp; Geschäftsführer · Martin-Luther-Platz 22, Düsseldorf</p>
-<p class="lead-card__bio">Gründer und Geschäftsführer von Münker &amp; Partner. Begleitet Struktur- und Generationswechsel-Mandate im DACH-Mittelstand persönlich — vom 7-Signale-Audit über Org-Design bis zur 90-Tage-Begleitung nach Go-Live. Schwerpunkt: Familienunternehmen mit 50 bis 1.000 Mitarbeitenden in Maschinenbau, Chemie, Pharma und IT.</p>
+<p class="lead-card__bio">Gründer und Geschäftsführer von Münker &amp; Partner. Begleitet Struktur- und Generationswechsel-Mandate im DACH-Mittelstand persönlich, vom 7-Signale-Audit über Org-Design bis zur Neunzig-Tage-Begleitung nach Go-Live. Schwerpunkt: Familienunternehmen mit 50 bis 1.000 Mitarbeitenden in Maschinenbau, Chemie, Pharma und IT.</p>
 <div class="lead-card__cta-row">
 <a href="/kontakt/" class="btn btn--primary">Erstgespräch vereinbaren <svg class="mp-icon mp-icon--arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
 <a href="/unternehmensberatung/strukturberatung/" class="btn btn--ghost-light">Strukturberatung</a>
@@ -1420,12 +1420,12 @@ Sie bekommen den Report innerhalb von 24 Stunden an Werktagen. Falls Sie direkt 
 <div class="container">
 <div class="section__head"><span class="section__eyebrow">Häufige Fragen zum Check</span><h2>FAQ</h2></div>
 <div class="faq">
-<details class="faq__item"><summary class="faq__summary">Wer sollte den Check ausfüllen?</summary><div class="faq__body"><p>Idealerweise die Geschäftsführung gemeinsam mit der zweiten Führungsebene. Erfahrungsgemäß sind die größten Erkenntnisse dort, wo GF und 2. Ebene zu unterschiedlichen Einschätzungen kommen — genau dort liegen die strukturellen Sollbruchstellen.</p></div></details>
-<details class="faq__item"><summary class="faq__summary">Ist „Ja" immer schlecht?</summary><div class="faq__body"><p>Nein — manche Signale sind in Wachstums- oder Übergangsphasen normal und auch heilbar. „Ja" heißt nur: <em>Das Symptom ist präsent.</em> Erst wenn pro Signal zwei oder drei Symptome zusammenkommen (Ampel rot), wird es strukturell relevant. Einzelne gelbe Signale sind in den meisten Mittelständlern Alltag.</p></div></details>
-<details class="faq__item"><summary class="faq__summary">Was sagt eine „rote" Ampel konkret aus?</summary><div class="faq__body"><p>Eine rote Ampel auf einem Signal bedeutet: Das strukturelle Muster ist verfestigt, nicht mehr nur ein Frühindikator. Heißt nicht automatisch „Sie brauchen externe Beratung" — aber: Sie brauchen einen bewussten Plan, wie Sie das Thema in den nächsten 6–12 Monaten angehen. Ob intern oder mit externer Unterstützung, ist eine Folge-Entscheidung.</p></div></details>
-<details class="faq__item"><summary class="faq__summary">Bekommt man bei mehreren roten Signalen automatisch einen Pitch?</summary><div class="faq__body"><p>Nein. Wir melden uns nicht automatisch nach dem Tool. Wenn Sie nach dem Tool ein Sondierungsgespräch wollen, fragen Sie es aktiv an. Und auch dann: Wir lehnen Mandate ab, an denen wir zweifeln, dass wir den Unterschied machen — das ist eines unserer drei Versprechen.</p></div></details>
-<details class="faq__item"><summary class="faq__summary">Können wir das Ergebnis als Diskussions-Grundlage in der Geschäftsführung nutzen?</summary><div class="faq__body"><p>Genau dafür ist es gedacht. Der PDF-Report ist so formuliert, dass er als Vorlage für die nächste GF-Klausur oder Beirats-Sitzung funktioniert — ohne dass wir darin auftauchen. Aus der Heatmap lässt sich direkt ein Maßnahmen-Backlog ableiten.</p></div></details>
-<details class="faq__item"><summary class="faq__summary">Was, wenn alle Ampeln grün sind?</summary><div class="faq__body"><p>Dann gratulieren wir aufrichtig — das ist im Mittelstand selten und auf jeden Fall ein guter Moment zur Konsolidierung. In dem Fall ist eher unsere Vertriebs- oder Personalberatung relevant. Das <a href="/tools/vertriebs-check/">Vertriebs-KPI-Check-Tool</a> oder ein Executive-Search-Sondierungsgespräch wären die nächsten logischen Schritte.</p></div></details>
+<details class="faq__item"><summary class="faq__summary">Wer sollte den Check ausfüllen?</summary><div class="faq__body"><p>Idealerweise die Geschäftsführung gemeinsam mit der zweiten Führungsebene. Erfahrungsgemäß sind die größten Erkenntnisse dort, wo GF und 2. Ebene zu unterschiedlichen Einschätzungen kommen. Genau dort liegen die strukturellen Sollbruchstellen.</p></div></details>
+<details class="faq__item"><summary class="faq__summary">Ist „Ja" immer schlecht?</summary><div class="faq__body"><p>Nein. Manche Signale sind in Wachstums- oder Übergangsphasen normal und auch heilbar. „Ja" heißt nur: <em>Das Symptom ist präsent.</em> Erst wenn pro Signal zwei oder drei Symptome zusammenkommen (Ampel rot), wird es strukturell relevant. Einzelne gelbe Signale sind in den meisten Mittelständlern Alltag.</p></div></details>
+<details class="faq__item"><summary class="faq__summary">Was sagt eine „rote" Ampel konkret aus?</summary><div class="faq__body"><p>Eine rote Ampel auf einem Signal bedeutet: Das strukturelle Muster ist verfestigt, nicht mehr nur ein Frühindikator. Heißt nicht automatisch „Sie brauchen externe Beratung". Aber: Sie brauchen einen bewussten Plan, wie Sie das Thema in den nächsten sechs bis zwölf Monaten angehen. Ob intern oder mit externer Unterstützung, ist eine Folge-Entscheidung.</p></div></details>
+<details class="faq__item"><summary class="faq__summary">Bekommt man bei mehreren roten Signalen automatisch einen Pitch?</summary><div class="faq__body"><p>Nein. Wir melden uns nicht automatisch nach dem Tool. Wenn Sie nach dem Tool ein Sondierungsgespräch wollen, fragen Sie es aktiv an. Und auch dann: Wir lehnen Mandate ab, an denen wir zweifeln, dass wir den Unterschied machen. Das ist eines unserer drei Versprechen.</p></div></details>
+<details class="faq__item"><summary class="faq__summary">Können wir das Ergebnis als Diskussions-Grundlage in der Geschäftsführung nutzen?</summary><div class="faq__body"><p>Genau dafür ist es gedacht. Der PDF-Report ist so formuliert, dass er als Vorlage für die nächste GF-Klausur oder Beirats-Sitzung funktioniert, ohne dass wir darin auftauchen. Aus der Heatmap lässt sich direkt ein Maßnahmen-Backlog ableiten.</p></div></details>
+<details class="faq__item"><summary class="faq__summary">Was, wenn alle Ampeln grün sind?</summary><div class="faq__body"><p>Dann gratulieren wir aufrichtig. Das ist im Mittelstand selten und auf jeden Fall ein guter Moment zur Konsolidierung. In dem Fall ist eher unsere Vertriebs- oder Personalberatung relevant. Das <a href="/tools/vertriebs-check/">Vertriebs-KPI-Check-Tool</a> oder ein Executive-Search-Sondierungsgespräch wären die nächsten logischen Schritte.</p></div></details>
 </div>
 </div>
 </section>
