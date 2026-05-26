@@ -1068,7 +1068,7 @@ p{margin:0 0 1em}
   padding:6px 14px;border:1px solid rgba(106,183,229,.4);border-radius:999px;
   margin-bottom:22px;background:rgba(106,183,229,.08);
 }
-/* HOCH-SPEZIFISCH gegen Avada-Cascade — Hero-Text 1:1 wie Homepage: WEISS auf dunklem Pattern */
+/* HOCH-SPEZIFISCH gegen Avada-Cascade, Hero-Text 1:1 wie Homepage: WEISS auf dunklem Pattern */
 .post-content .hero h1.hero__title,
 .post-content .hero .hero__title,
 .hero h1.hero__title,
@@ -1091,7 +1091,7 @@ p{margin:0 0 1em}
 .hero .hero__breadcrumb a:hover{color:#fff !important}
 .post-content .hero .hero__breadcrumb span,
 .hero .hero__breadcrumb span{color:#fff !important;font-weight:500}
-/* Eyebrow ohne Pill — plain white text wie Homepage */
+/* Eyebrow ohne Pill, plain white text wie Homepage */
 .post-content .hero .hero__eyebrow,
 .hero .hero__eyebrow{
   display:inline-block;color:#fff !important;background:transparent !important;
@@ -1121,7 +1121,7 @@ p{margin:0 0 1em}
   transform:translateY(-2px);
   border-color:var(--c-blue-light);
 }
-/* Avada's div-spacing reset im Card-Bereich — ohne globalen Reset (würde Buttons brechen) */
+/* Avada's div-spacing reset im Card-Bereich, ohne globalen Reset (würde Buttons brechen) */
 .tool-card > *{margin-top:0}
 .tool-card__head{margin:0}
 .tool-card__head > *:first-child{margin-top:0}
@@ -1632,7 +1632,7 @@ if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_c
 <script>
 const SIGNALS = [
   { n:1, title:"Wachstumsplateau", hint:"Umsatz und Profitabilität stagnieren oder verflachen.", qs:[
-    "Unser Umsatz stagniert seit mindestens 18 Monaten — trotz stabilem oder wachsendem Markt.",
+    "Unser Umsatz stagniert seit mindestens 18 Monaten, trotz stabilem oder wachsendem Markt.",
     "Unsere EBIT-Marge sinkt, obwohl der Umsatz stabil bleibt.",
     "Wachstumsinitiativen verpuffen wiederholt ohne nachhaltige Wirkung."
   ]},
@@ -1738,22 +1738,22 @@ function auswerten() {
   let title, lead, verdictTitle, verdictText;
   if (totalRed >= 3) {
     title = 'Strukturelle Handlungsdringlichkeit';
-    lead = `Sie haben ${totalRed} Signale im roten Bereich. Das deutet auf strukturelle Muster hin, die sich erfahrungsgemäß nicht von allein auflösen — eher verfestigen sie sich weiter, je länger man wartet.`;
+    lead = `Sie haben ${totalRed} Signale im roten Bereich. Das deutet auf strukturelle Muster hin, die sich erfahrungsgemäß nicht von allein auflösen, eher verfestigen sie sich weiter, je länger man wartet.`;
     verdictTitle = 'Was wir Ihnen empfehlen würden';
-    verdictText = 'Bei drei oder mehr roten Signalen lohnt sich ein externer Blick fast immer — und sei es nur, um die Priorität intern zu schärfen. Ein 45-minütiges Sondierungsgespräch (kostenlos, unverbindlich) ist hier der pragmatische nächste Schritt. Sie verlieren maximal 45 Minuten, gewinnen aber eine externe Einschätzung zu Reihenfolge und Tiefe der Themen.';
+    verdictText = 'Bei drei oder mehr roten Signalen lohnt sich ein externer Blick fast immer, und sei es nur, um die Priorität intern zu schärfen. Ein 45-minütiges Sondierungsgespräch (kostenlos, unverbindlich) ist hier der pragmatische nächste Schritt. Sie verlieren maximal 45 Minuten, gewinnen aber eine externe Einschätzung zu Reihenfolge und Tiefe der Themen.';
   } else if (totalRed >= 1) {
     title = 'Fokussierter Handlungsbedarf';
-    lead = `Sie haben ${totalRed} Signal${totalRed===1?'':'e'} im roten Bereich. Das ist im Mittelstand kein Ausnahmezustand — aber es lohnt sich, das/die Thema/Themen bewusst auf die nächsten Quartals-Agenden zu setzen, bevor weitere Signale „kippen".`;
+    lead = `Sie haben ${totalRed} Signal${totalRed===1?'':'e'} im roten Bereich. Das ist im Mittelstand kein Ausnahmezustand, aber es lohnt sich, das/die Thema/Themen bewusst auf die nächsten Quartals-Agenden zu setzen, bevor weitere Signale „kippen".`;
     verdictTitle = 'Was wir Ihnen empfehlen würden';
-    verdictText = 'Bei einzelnen roten Signalen ist die wichtigste Frage: Haben Sie intern Ressourcen und Kapazität, das Thema in den nächsten 6 Monaten anzugehen? Falls ja — die Heatmap ist Ihre Prioritäten-Liste. Falls nein, oder falls Sie unsicher sind über Reihenfolge und Tiefe: ein Sondierungsgespräch klärt das in 45 Minuten.';
+    verdictText = 'Bei einzelnen roten Signalen ist die wichtigste Frage: Haben Sie intern Ressourcen und Kapazität, das Thema in den nächsten 6 Monaten anzugehen? Falls ja, die Heatmap ist Ihre Prioritäten-Liste. Falls nein, oder falls Sie unsicher sind über Reihenfolge und Tiefe: ein Sondierungsgespräch klärt das in 45 Minuten.';
   } else if (totalAmber >= 3) {
-    title = 'Mehrere Frühindikatoren — Beobachtungs-Modus';
+    title = 'Mehrere Frühindikatoren, Beobachtungs-Modus';
     lead = `Sie haben ${totalAmber} Signale im gelben Bereich und kein einziges im roten. Das ist eine typische Konstellation in Wachstumsphasen: Symptome sind da, aber noch nicht verfestigt.`;
     verdictTitle = 'Was wir Ihnen empfehlen würden';
-    verdictText = 'Jetzt ist der richtige Moment, intern strukturierte Beobachtungs-Routinen zu etablieren — z. B. quartalsweise diese Heatmap neu auszufüllen. Wenn ein gelbes Signal nach 12 Monaten ins Rote rutscht, haben Sie früh genug reagiert. Externe Beratung ist hier in der Regel nicht prioritär.';
+    verdictText = 'Jetzt ist der richtige Moment, intern strukturierte Beobachtungs-Routinen zu etablieren, z. B. quartalsweise diese Heatmap neu auszufüllen. Wenn ein gelbes Signal nach 12 Monaten ins Rote rutscht, haben Sie früh genug reagiert. Externe Beratung ist hier in der Regel nicht prioritär.';
   } else {
     title = 'Strukturell entspannte Lage';
-    lead = `Sie haben überwiegend grüne Signale — das ist im Mittelstand selten und ein gutes Zeichen für die strukturelle Reife Ihres Unternehmens.`;
+    lead = `Sie haben überwiegend grüne Signale, das ist im Mittelstand selten und ein gutes Zeichen für die strukturelle Reife Ihres Unternehmens.`;
     verdictTitle = 'Was wir Ihnen empfehlen würden';
     verdictText = 'Strukturarbeit hat aktuell keine Priorität. Die typischen nächsten Hebel in dieser Konstellation: Vertriebs-System-Reife oder Schlüsselbesetzungen für die nächste Wachstumsphase. Schauen Sie sich gerne unseren Vertriebs-KPI-Check oder Executive-Search-Service an.';
   }
@@ -1787,6 +1787,6 @@ renderQuiz();
 
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","@id":"https://muenker-partner.de/tools/strukturberatung-check/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://muenker-partner.de/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://muenker-partner.de/tools/"},{"@type":"ListItem","position":3,"name":"Strukturberatungs-Signale-Check","item":"https://muenker-partner.de/tools/strukturberatung-check/"}]}</script>
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","@id":"https://muenker-partner.de/tools/strukturberatung-check/#faq","mainEntity":[{"@type":"Question","name":"Wer sollte den Check ausfüllen?","acceptedAnswer":{"@type":"Answer","text":"Idealerweise Geschäftsführung gemeinsam mit zweiter Führungsebene — Unterschiede in der Einschätzung sind besonders aufschlussreich."}},{"@type":"Question","name":"Ist Ja immer schlecht?","acceptedAnswer":{"@type":"Answer","text":"Nein. Erst bei 2-3 Ja je Signal wird es strukturell relevant. Einzelne gelbe Signale sind Alltag im Mittelstand."}},{"@type":"Question","name":"Was sagt eine rote Ampel konkret aus?","acceptedAnswer":{"@type":"Answer","text":"Das strukturelle Muster ist verfestigt. Sie brauchen einen bewussten Plan — ob intern oder mit externer Unterstützung ist eine Folge-Entscheidung."}},{"@type":"Question","name":"Bekommt man bei mehreren roten Signalen automatisch einen Pitch?","acceptedAnswer":{"@type":"Answer","text":"Nein. Wir melden uns nicht automatisch nach dem Tool. Wir lehnen sogar Mandate ab, an denen wir zweifeln."}},{"@type":"Question","name":"Was, wenn alle Ampeln grün sind?","acceptedAnswer":{"@type":"Answer","text":"Glückwunsch — das ist im Mittelstand selten. In dem Fall ist eher Vertriebs- oder Personalberatung relevant."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","@id":"https://muenker-partner.de/tools/strukturberatung-check/#faq","mainEntity":[{"@type":"Question","name":"Wer sollte den Check ausfüllen?","acceptedAnswer":{"@type":"Answer","text":"Idealerweise Geschäftsführung gemeinsam mit zweiter Führungsebene, Unterschiede in der Einschätzung sind besonders aufschlussreich."}},{"@type":"Question","name":"Ist Ja immer schlecht?","acceptedAnswer":{"@type":"Answer","text":"Nein. Erst bei 2-3 Ja je Signal wird es strukturell relevant. Einzelne gelbe Signale sind Alltag im Mittelstand."}},{"@type":"Question","name":"Was sagt eine rote Ampel konkret aus?","acceptedAnswer":{"@type":"Answer","text":"Das strukturelle Muster ist verfestigt. Sie brauchen einen bewussten Plan, ob intern oder mit externer Unterstützung ist eine Folge-Entscheidung."}},{"@type":"Question","name":"Bekommt man bei mehreren roten Signalen automatisch einen Pitch?","acceptedAnswer":{"@type":"Answer","text":"Nein. Wir melden uns nicht automatisch nach dem Tool. Wir lehnen sogar Mandate ab, an denen wir zweifeln."}},{"@type":"Question","name":"Was, wenn alle Ampeln grün sind?","acceptedAnswer":{"@type":"Answer","text":"Glückwunsch, das ist im Mittelstand selten. In dem Fall ist eher Vertriebs- oder Personalberatung relevant."}}]}</script>
 </body>
 </html>

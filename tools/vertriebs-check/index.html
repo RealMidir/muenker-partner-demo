@@ -1065,7 +1065,7 @@ p{margin:0 0 1em}
   padding:6px 14px;border:1px solid rgba(106,183,229,.4);border-radius:999px;
   margin-bottom:22px;background:rgba(106,183,229,.08);
 }
-/* HOCH-SPEZIFISCH gegen Avada-Cascade — Hero-Text 1:1 wie Homepage: WEISS auf dunklem Pattern */
+/* HOCH-SPEZIFISCH gegen Avada-Cascade, Hero-Text 1:1 wie Homepage: WEISS auf dunklem Pattern */
 .post-content .hero h1.hero__title,
 .post-content .hero .hero__title,
 .hero h1.hero__title,
@@ -1088,7 +1088,7 @@ p{margin:0 0 1em}
 .hero .hero__breadcrumb a:hover{color:#fff !important}
 .post-content .hero .hero__breadcrumb span,
 .hero .hero__breadcrumb span{color:#fff !important;font-weight:500}
-/* Eyebrow ohne Pill — plain white text wie Homepage */
+/* Eyebrow ohne Pill, plain white text wie Homepage */
 .post-content .hero .hero__eyebrow,
 .hero .hero__eyebrow{
   display:inline-block;color:#fff !important;background:transparent !important;
@@ -1118,7 +1118,7 @@ p{margin:0 0 1em}
   transform:translateY(-2px);
   border-color:var(--c-blue-light);
 }
-/* Avada's div-spacing reset im Card-Bereich — ohne globalen Reset (würde Buttons brechen) */
+/* Avada's div-spacing reset im Card-Bereich, ohne globalen Reset (würde Buttons brechen) */
 .tool-card > *{margin-top:0}
 .tool-card__head{margin:0}
 .tool-card__head > *:first-child{margin-top:0}
@@ -1640,23 +1640,23 @@ if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_c
 <!-- mp-tool-scripts-and-schema -->
 <script>
 const QUESTIONS = [
-  { n:1,  t:"Wir haben unseren <strong>Ideal Customer Profile (ICP)</strong> schriftlich definiert — Branche, Unternehmensgröße, Persona und Trigger-Events." },
+  { n:1,  t:"Wir haben unseren <strong>Ideal Customer Profile (ICP)</strong> schriftlich definiert, Branche, Unternehmensgröße, Persona und Trigger-Events." },
   { n:2,  t:"Unser <strong>Vertriebsprozess hat klar definierte Stages</strong> mit dokumentierten Übergangs-Kriterien zwischen den Phasen." },
   { n:3,  t:"Wir kennen die <strong>Conversion-Rate je Pipeline-Stage</strong> und nutzen sie aktiv zur Vertriebssteuerung." },
-  { n:4,  t:"Unsere Vertriebsmitarbeitenden <strong>pflegen das CRM täglich vollständig</strong> — ohne Nachhaken durch die Führungskraft." },
+  { n:4,  t:"Unsere Vertriebsmitarbeitenden <strong>pflegen das CRM täglich vollständig</strong>, ohne Nachhaken durch die Führungskraft." },
   { n:5,  t:"Unsere <strong>Quartals-Forecasts treffen zu ≥ 80 %</strong> (Abweichung höchstens ± 20 % auf Quartals-Ende)." },
-  { n:6,  t:"Wir wissen <strong>welche Lead-Quelle wie viel Umsatz produziert</strong> — Channel-ROI ist je Quelle bekannt." },
+  { n:6,  t:"Wir wissen <strong>welche Lead-Quelle wie viel Umsatz produziert</strong>, Channel-ROI ist je Quelle bekannt." },
   { n:7,  t:"Sales und Marketing <strong>teilen wöchentlich Daten</strong> und stimmen sich operativ über SLAs/Lead-Definitionen ab." },
-  { n:8,  t:"Es gibt einen <strong>festen Sales-Cadence</strong> — z. B. Montags-Standup, wöchentlicher Forecast-Call, Pipeline-Review im Quartal." },
+  { n:8,  t:"Es gibt einen <strong>festen Sales-Cadence</strong>, z. B. Montags-Standup, wöchentlicher Forecast-Call, Pipeline-Review im Quartal." },
   { n:9,  t:"Wir analysieren <strong>systematisch Lost-Deals</strong> nach Gründen und ziehen daraus Konsequenzen für ICP/Pricing/Pitch." },
   { n:10, t:"Es gibt ein <strong>Vertriebs-KPI-Dashboard</strong>, das die Geschäftsführung jederzeit live einsehen kann." },
-  { n:11, t:"Vertriebsmitarbeitende bekommen <strong>monatlich strukturiertes Coaching</strong> oder Hospitationen — nicht nur Forecast-Druck." },
+  { n:11, t:"Vertriebsmitarbeitende bekommen <strong>monatlich strukturiertes Coaching</strong> oder Hospitationen, nicht nur Forecast-Druck." },
   { n:12, t:"Unsere <strong>Pipeline-Coverage</strong> beträgt nachweislich mindestens das 3-fache des Quartals-Umsatzziels." }
 ];
 
 const ANSWERS = [
   { v:2, label:"Ja, durchgängig gelebt" },
-  { v:1, label:"Teilweise — vorhanden, aber unvollständig" },
+  { v:1, label:"Teilweise, vorhanden, aber unvollständig" },
   { v:0, label:"Nein, nicht etabliert" }
 ];
 
@@ -1700,7 +1700,7 @@ function showResult() {
   if (score < 34) {
     band = 'rot'; color = '#dc2626';
     title = 'Pipeline-Frühphase';
-    text = 'Ihr Vertrieb läuft auf Engagement statt auf System. Das ist im frühen Mittelstand häufig — und auch okay, solange Sie es bewusst entscheiden. Strukturarbeit zahlt hier 3-fach: bessere Forecasts, geringere Fluktuation, höhere Abschlussquoten.';
+    text = 'Ihr Vertrieb läuft auf Engagement statt auf System. Das ist im frühen Mittelstand häufig, und auch okay, solange Sie es bewusst entscheiden. Strukturarbeit zahlt hier 3-fach: bessere Forecasts, geringere Fluktuation, höhere Abschlussquoten.';
     actions = [
       ['ICP innerhalb von 14 Tagen schriftlich fixieren', 'Branche × Unternehmensgröße × Persona × Trigger-Events. Zwei DIN-A4-Seiten reichen, dafür im Vertriebsteam besprechen und freigeben.'],
       ['Pipeline-Stages mit Übergangs-Kriterien dokumentieren', 'Für jede Stage definieren: Welche Aktion muss erfolgt sein, damit ein Deal weiterrücken darf? Das entkoppelt Forecast von Bauchgefühl.'],
@@ -1709,10 +1709,10 @@ function showResult() {
   } else if (score < 67) {
     band = 'gelb'; color = '#d97706';
     title = 'Solides Fundament';
-    text = 'Sie haben die Basics — Prozess, CRM, Cadence. Die Hebel liegen jetzt in der Steuerungs-Qualität: Conversion-Disziplin, Lost-Reason-Analyse, Coaching. Hier entscheidet sich, ob aus solidem Vertrieb High-Performance-Vertrieb wird.';
+    text = 'Sie haben die Basics, Prozess, CRM, Cadence. Die Hebel liegen jetzt in der Steuerungs-Qualität: Conversion-Disziplin, Lost-Reason-Analyse, Coaching. Hier entscheidet sich, ob aus solidem Vertrieb High-Performance-Vertrieb wird.';
     actions = [
       ['Lost-Reason-Analyse als Quartals-Ritual etablieren', 'Jeden verlorenen Deal ≥ 20.000 € systematisch nachfragen (5 Lost-Reasons, 1 freier Kommentar) und im Quartal mit dem Team durchsprechen.'],
-      ['Conversion-Rates je Stage als KPI in das Dashboard', 'Forecast-Modell auf Conversion-Daten umstellen — statt „der Account-Manager hat 60% drangeschrieben". Genauigkeit steigt erfahrungsgemäß um 15–25 Prozentpunkte.'],
+      ['Conversion-Rates je Stage als KPI in das Dashboard', 'Forecast-Modell auf Conversion-Daten umstellen, statt „der Account-Manager hat 60% drangeschrieben". Genauigkeit steigt erfahrungsgemäß um 15–25 Prozentpunkte.'],
       ['Monatliches Coaching-Format einführen', 'Strukturierte Hospitation oder Deal-Review pro Vertriebsmitarbeitendem. 90 Minuten pro Monat, fokussiert auf eine konkrete Skill-Lücke.']
     ];
   } else {
@@ -1721,7 +1721,7 @@ function showResult() {
     text = 'Ihr Vertrieb spielt in der oberen Liga des Mittelstands. Die meisten Hebel liegen jetzt in der Feinjustierung: Cross-Sell-Systematik, Customer-Health-Score, Account-Strategie für die Top-10 % der Kunden. Hier holt man die letzten 10–15 % Performance raus.';
     actions = [
       ['Top-10-Account-Plan-Workshop mit der Vertriebsleitung', 'Für die umsatzstärksten 10 % der Kunden einen 12-Monats-Account-Plan mit Cross-Sell-Hypothesen und Stakeholder-Map erstellen.'],
-      ['Customer-Health-Score in das KPI-Dashboard integrieren', 'Frühindikatoren für Churn und Expansion (Nutzungs-Daten, NPS, Eskalations-Tickets) als wöchentliches Signal — kein Quartals-Bericht.'],
+      ['Customer-Health-Score in das KPI-Dashboard integrieren', 'Frühindikatoren für Churn und Expansion (Nutzungs-Daten, NPS, Eskalations-Tickets) als wöchentliches Signal, kein Quartals-Bericht.'],
       ['Forecast-Quality-Review als monatlicher Geschäftsführungs-Termin', 'Forecast vs. Ist-Lieferung über die letzten 12 Monate analysieren und systematische Bias erkennen. Bei Forecast-Reife stabilisiert das die Geschäftsführungs-Steuerung enorm.']
     ];
   }
@@ -1766,6 +1766,6 @@ renderQ();
 
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","@id":"https://muenker-partner.de/tools/vertriebs-check/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://muenker-partner.de/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://muenker-partner.de/tools/"},{"@type":"ListItem","position":3,"name":"Vertriebs-KPI-Check","item":"https://muenker-partner.de/tools/vertriebs-check/"}]}</script>
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","@id":"https://muenker-partner.de/tools/vertriebs-check/#faq","mainEntity":[{"@type":"Question","name":"Wer sollte den Check ausfüllen?","acceptedAnswer":{"@type":"Answer","text":"Idealerweise Geschäftsführung und Vertriebsleitung gemeinsam — oder unabhängig voneinander, um die Differenzen zu besprechen."}},{"@type":"Question","name":"Was bedeutet teilweise als Antwort?","acceptedAnswer":{"@type":"Answer","text":"Die Komponente existiert, ist aber nicht durchgängig gelebt oder unvollständig dokumentiert."}},{"@type":"Question","name":"Wie verlässlich ist der Score?","acceptedAnswer":{"@type":"Answer","text":"Selbst-Einschätzung, kein Audit. In über 80 % der Sondierungsgespräche stimmt sie mit der externen Einschätzung überein."}},{"@type":"Question","name":"Bekommen wir eine Branchen-Vergleichszahl?","acceptedAnswer":{"@type":"Answer","text":"Ja, im PDF-Report — für Maschinenbau, IT/Software, Chemie, Pharma und Versicherung."}},{"@type":"Question","name":"Was kostet eine echte Vertriebsberatung bei Münker & Partner?","acceptedAnswer":{"@type":"Answer","text":"Projektbasiert mit optionaler Erfolgshonorar-Komponente. Konkrete Zahlen nach kostenlosem Sondierungsgespräch."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","@id":"https://muenker-partner.de/tools/vertriebs-check/#faq","mainEntity":[{"@type":"Question","name":"Wer sollte den Check ausfüllen?","acceptedAnswer":{"@type":"Answer","text":"Idealerweise Geschäftsführung und Vertriebsleitung gemeinsam, oder unabhängig voneinander, um die Differenzen zu besprechen."}},{"@type":"Question","name":"Was bedeutet teilweise als Antwort?","acceptedAnswer":{"@type":"Answer","text":"Die Komponente existiert, ist aber nicht durchgängig gelebt oder unvollständig dokumentiert."}},{"@type":"Question","name":"Wie verlässlich ist der Score?","acceptedAnswer":{"@type":"Answer","text":"Selbst-Einschätzung, kein Audit. In über 80 % der Sondierungsgespräche stimmt sie mit der externen Einschätzung überein."}},{"@type":"Question","name":"Bekommen wir eine Branchen-Vergleichszahl?","acceptedAnswer":{"@type":"Answer","text":"Ja, im PDF-Report, für Maschinenbau, IT/Software, Chemie, Pharma und Versicherung."}},{"@type":"Question","name":"Was kostet eine echte Vertriebsberatung bei Münker & Partner?","acceptedAnswer":{"@type":"Answer","text":"Projektbasiert mit optionaler Erfolgshonorar-Komponente. Konkrete Zahlen nach kostenlosem Sondierungsgespräch."}}]}</script>
 </body>
 </html>
