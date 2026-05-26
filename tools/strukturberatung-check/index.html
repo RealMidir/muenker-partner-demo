@@ -1019,7 +1019,7 @@ p{margin:0 0 1em}
 @media (max-width:760px){.site-footer__grid{grid-template-columns:1fr 1fr;gap:28px}}
 @media (max-width:480px){.site-footer__grid{grid-template-columns:1fr}}
 
-/* === mp-harmonize-v3: Avada/Homepage Design-Harmonization === */
+/* === mp-harmonize-v4: Avada/Homepage Design-Harmonization === */
 
 /* Inline SVG-Icon sizing */
 .mp-icon{width:1em;height:1em;display:inline-block;vertical-align:-0.12em;flex-shrink:0}
@@ -1088,7 +1088,7 @@ p{margin:0 0 1em}
   display:flex;flex-direction:column;background:#fff;
   border:1px solid var(--c-border-soft);
   border-radius:6px;
-  padding:clamp(28px,3vw,40px);
+  padding:clamp(24px,2.5vw,32px);
   text-decoration:none;color:inherit;
   box-shadow:0 1px 2px rgba(11,43,61,.04);
   transition:box-shadow .25s ease, transform .25s ease, border-color .25s ease;
@@ -1099,23 +1099,31 @@ p{margin:0 0 1em}
   transform:translateY(-2px);
   border-color:var(--c-blue-light);
 }
+/* Avada's div-spacing reset im Card-Bereich */
+.tool-card > *, .tool-card__head > *, .tool-card *{margin-top:0}
+.tool-card__head{margin:0 0 0}
 .tool-card__icon{
-  width:48px;height:48px;display:inline-flex;align-items:center;justify-content:center;
+  width:44px;height:44px;display:inline-flex;align-items:center;justify-content:center;
   color:var(--c-blue);background:rgba(26,127,193,.08);border-radius:6px;
-  margin-bottom:22px;
+  margin:0 0 18px;
 }
-.tool-card__icon svg{width:24px;height:24px}
+.tool-card__icon svg{width:22px;height:22px}
 .tool-card__title{
-  font-size:1.3em;font-weight:700;color:var(--c-dark-2) !important;margin:0 0 14px;line-height:1.28;letter-spacing:-.005em;
-  /* keine Auto-Hyphens — Wörter nur an Bindestrichen brechen */
-  hyphens:manual;-webkit-hyphens:manual;word-break:normal;overflow-wrap:break-word;
+  font-size:1.18em;font-weight:700;color:var(--c-dark-2) !important;margin:0 0 12px !important;line-height:1.3;letter-spacing:-.005em;
+  /* keine Auto-Hyphens — Wörter nicht mitten gebrochen */
+  hyphens:manual !important;-webkit-hyphens:manual !important;word-break:normal !important;overflow-wrap:break-word;
+  text-wrap:balance;
 }
-.tool-card__lead{color:var(--c-text-muted);font-size:.97em;line-height:1.55;margin:0 0 22px}
+.tool-card__lead{
+  color:var(--c-text-muted);font-size:.94em;line-height:1.55;margin:0 0 18px !important;
+  hyphens:manual !important;-webkit-hyphens:manual !important;
+}
 .tool-card__features{
-  list-style:none;padding:0;margin:0 0 26px;display:flex;flex-direction:column;gap:9px;
+  list-style:none;padding:0;margin:0 0 22px !important;display:flex;flex-direction:column;gap:8px;
 }
 .tool-card__features li{
-  position:relative;padding-left:24px;font-size:.92em;color:var(--c-text);line-height:1.45;
+  position:relative;padding-left:22px;font-size:.9em;color:var(--c-text);line-height:1.45;
+  hyphens:manual !important;-webkit-hyphens:manual !important;
 }
 .tool-card__features li::before{
   content:"";position:absolute;left:0;top:.5em;width:14px;height:14px;
@@ -1202,7 +1210,7 @@ p{margin:0 0 1em}
 /* The Final-CTA in the container gets pulled outside the container's padding */
 .container > .final-cta{margin-left:calc(-1 * clamp(20px,4vw,56px));margin-right:calc(-1 * clamp(20px,4vw,56px));}
 
-/* === end mp-harmonize-v3 === */
+/* === end mp-harmonize-v4 === */
 </style>
 </head>
 
