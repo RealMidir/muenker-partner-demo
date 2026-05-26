@@ -1019,7 +1019,7 @@ p{margin:0 0 1em}
 @media (max-width:760px){.site-footer__grid{grid-template-columns:1fr 1fr;gap:28px}}
 @media (max-width:480px){.site-footer__grid{grid-template-columns:1fr}}
 
-/* === mp-harmonize-v6: Avada/Homepage Design-Harmonization === */
+/* === mp-harmonize-v7: Avada/Homepage Design-Harmonization === */
 
 /* Inline SVG-Icon sizing */
 .mp-icon{width:1em;height:1em;display:inline-block;vertical-align:-0.12em;flex-shrink:0}
@@ -1145,12 +1145,15 @@ p{margin:0 0 1em}
 }
 .tool-card__meta-item .mp-icon{color:var(--c-blue);width:14px;height:14px}
 .tool-card__cta{
-  display:inline-flex;align-items:center;gap:10px;
-  margin-top:22px;color:var(--c-blue);font-weight:600;font-size:.96em;
-  letter-spacing:.005em;
+  display:flex !important;align-items:center;justify-content:space-between;gap:10px;
+  margin:14px 0 0 !important;
+  padding:12px 18px !important;
+  background:var(--c-dark) !important;
+  color:#fff !important;font-weight:600;font-size:.92em;letter-spacing:.005em;
+  border-radius:0;
 }
-.tool-card:hover .tool-card__cta{color:var(--c-dark-2)}
-.tool-card__cta .mp-icon{transition:transform .2s ease}
+.tool-card:hover .tool-card__cta{background:var(--c-blue) !important;color:#fff !important}
+.tool-card__cta .mp-icon{transition:transform .2s ease;color:#fff;width:1em;height:1em}
 .tool-card:hover .tool-card__cta .mp-icon{transform:translateX(4px)}
 
 /* --- Buttons: Avada-Button-Style (flat, niedriger Radius, klare Borders) --- */
@@ -1215,7 +1218,7 @@ p{margin:0 0 1em}
 /* The Final-CTA in the container gets pulled outside the container's padding */
 .container > .final-cta{margin-left:calc(-1 * clamp(20px,4vw,56px));margin-right:calc(-1 * clamp(20px,4vw,56px));}
 
-/* === end mp-harmonize-v6 === */
+/* === end mp-harmonize-v7 === */
 </style>
 </head>
 
