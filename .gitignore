@@ -3,5 +3,6 @@
 
 # Internal SEO working files (audits, helper scripts, body templates)
 .seo-audit/
+.claude/
 *.ps1
 
