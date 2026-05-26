@@ -1008,7 +1008,7 @@ p{margin:0 0 1em}
 @media (max-width:760px){.site-footer__grid{grid-template-columns:1fr 1fr;gap:28px}}
 @media (max-width:480px){.site-footer__grid{grid-template-columns:1fr}}
 
-/* === mp-harmonize-v2: Avada/Homepage Design-Harmonization === */
+/* === mp-harmonize-v3: Avada/Homepage Design-Harmonization === */
 
 /* Inline SVG-Icon sizing */
 .mp-icon{width:1em;height:1em;display:inline-block;vertical-align:-0.12em;flex-shrink:0}
@@ -1043,14 +1043,28 @@ p{margin:0 0 1em}
   padding:6px 14px;border:1px solid rgba(106,183,229,.4);border-radius:999px;
   margin-bottom:22px;background:rgba(106,183,229,.08);
 }
-.hero__title{
-  color:#fff;font-size:clamp(2em,4.6vw,3.2em);line-height:1.12;
+/* HOCH-SPEZIFISCH gegen Avada-Cascade (Avada setzt --h1_typography-color als Default) */
+.post-content .hero h1.hero__title,
+.post-content .hero .hero__title,
+.hero h1.hero__title,
+.hero .hero__title{
+  color:#fff !important;font-size:clamp(2em,4.6vw,3.2em);line-height:1.12;
   margin:0 0 .4em;font-weight:700;letter-spacing:-.018em;
+  text-shadow:0 1px 0 rgba(0,0,0,.02);
 }
-.hero__subtitle{
-  color:rgba(255,255,255,.84);font-size:clamp(1.05em,1.7vw,1.22em);line-height:1.55;
+.post-content .hero .hero__subtitle,
+.hero .hero__subtitle{
+  color:rgba(255,255,255,.86) !important;font-size:clamp(1.05em,1.7vw,1.22em);line-height:1.55;
   max-width:680px;margin:0;
 }
+.post-content .hero .hero__breadcrumb,
+.hero .hero__breadcrumb{color:rgba(255,255,255,.62) !important}
+.post-content .hero .hero__breadcrumb a,
+.hero .hero__breadcrumb a{color:rgba(255,255,255,.78) !important}
+.post-content .hero .hero__breadcrumb span,
+.hero .hero__breadcrumb span{color:#fff !important}
+.post-content .hero .hero__eyebrow,
+.hero .hero__eyebrow{color:#a9d1eb !important}
 /* Pills bewusst entfernt für Avada-Look – CSS leer falls noch im DOM */
 .hero__pills, .hero__pill, .hero__pill-dot{display:none !important}
 
@@ -1081,7 +1095,9 @@ p{margin:0 0 1em}
 }
 .tool-card__icon svg{width:24px;height:24px}
 .tool-card__title{
-  font-size:1.35em;font-weight:700;color:var(--c-dark-2);margin:0 0 14px;line-height:1.25;letter-spacing:-.01em;
+  font-size:1.3em;font-weight:700;color:var(--c-dark-2) !important;margin:0 0 14px;line-height:1.28;letter-spacing:-.005em;
+  /* keine Auto-Hyphens — Wörter nur an Bindestrichen brechen */
+  hyphens:manual;-webkit-hyphens:manual;word-break:normal;overflow-wrap:break-word;
 }
 .tool-card__lead{color:var(--c-text-muted);font-size:.97em;line-height:1.55;margin:0 0 22px}
 .tool-card__features{
@@ -1151,8 +1167,9 @@ p{margin:0 0 1em}
   pointer-events:none;
 }
 .final-cta > *{position:relative;z-index:1}
+.post-content .final-cta h2,
 .final-cta h2{
-  color:#fff;font-size:clamp(1.6em,3vw,2.3em);margin:0 0 .4em;
+  color:#fff !important;font-size:clamp(1.6em,3vw,2.3em);margin:0 0 .4em;
   font-weight:700;letter-spacing:-.012em;
 }
 .final-cta__intro{
@@ -1160,6 +1177,10 @@ p{margin:0 0 1em}
   max-width:620px;margin:0 auto 2em;
 }
 .final-cta .cta-row{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+.post-content .final-cta a.btn,
+.final-cta a.btn{color:#fff !important}
+.final-cta a.btn--primary{background:var(--c-blue) !important}
+.final-cta a.btn--ghost-light{background:transparent !important;border-color:rgba(255,255,255,.32) !important}
 
 /* Wizard-Nav (vertriebs-check) icon-spacing */
 .q-nav__btn{display:inline-flex;align-items:center;gap:8px}
@@ -1170,7 +1191,7 @@ p{margin:0 0 1em}
 /* The Final-CTA in the container gets pulled outside the container's padding */
 .container > .final-cta{margin-left:calc(-1 * clamp(20px,4vw,56px));margin-right:calc(-1 * clamp(20px,4vw,56px));}
 
-/* === end mp-harmonize-v2 === */
+/* === end mp-harmonize-v3 === */
 </style>
 </head>
 
