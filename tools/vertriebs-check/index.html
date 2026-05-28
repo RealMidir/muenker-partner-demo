@@ -1016,7 +1016,7 @@ p{margin:0 0 1em}
 @media (max-width:760px){.site-footer__grid{grid-template-columns:1fr 1fr;gap:28px}}
 @media (max-width:480px){.site-footer__grid{grid-template-columns:1fr}}
 
-/* === mp-harmonize-v12: Avada/Homepage Design-Harmonization === */
+/* === mp-harmonize-v13: Avada/Homepage Design-Harmonization === */
 
 /* Inline SVG-Icon sizing */
 .mp-icon{width:1em;height:1em;display:inline-block;vertical-align:-0.12em;flex-shrink:0}
@@ -1266,7 +1266,37 @@ p{margin:0 0 1em}
 /* The Final-CTA in the container gets pulled outside the container's padding */
 .container > .final-cta{margin-left:calc(-1 * clamp(20px,4vw,56px));margin-right:calc(-1 * clamp(20px,4vw,56px));}
 
-/* === end mp-harmonize-v12 === */
+/* === Wizard-Nav (Signal-Stepper für struktur/nachfolge) === */
+.q-wizard-nav{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:24px;flex-wrap:wrap}
+.q-wizard-nav__step{font-size:.82em;font-weight:700;color:#1a7fc1;letter-spacing:.08em;text-transform:uppercase}
+.mp-tool-content .q-nav__btn{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:999px;border:1.5px solid #d1d5db;background:#fff;color:#003f5c;font-weight:700;font-size:.9em;cursor:pointer;transition:all .15s ease;font-family:inherit}
+.mp-tool-content .q-nav__btn:hover{border-color:#1a7fc1;color:#1a7fc1}
+.mp-tool-content .q-nav__btn--next{background:#003f5c;color:#fff;border-color:#003f5c}
+.mp-tool-content .q-nav__btn--next:hover{background:#1a7fc1;border-color:#1a7fc1;color:#fff}
+.mp-tool-content .q-nav__btn:disabled{opacity:.4;cursor:not-allowed}
+.mp-tool-content .q-nav__btn:disabled:hover{border-color:#d1d5db;color:#003f5c}
+.q-nav__btn .q-nav__icon{display:inline-flex;align-items:center}
+.q-nav__btn .q-nav__icon svg{width:1em;height:1em}
+
+/* === Organische Rundungen der Form-Elemente (Submit-CTA bleibt eckig) === */
+.mp-tool-content .q-btn{border-radius:999px !important}
+.mp-tool-content .q-item{border-radius:16px !important}
+.mp-tool-content .signal-block{border-radius:20px !important}
+.mp-tool-content .tool-input{border-radius:14px !important}
+.mp-tool-content .tool-radio__box{border-radius:16px !important}
+.mp-tool-content .q-card{border-radius:20px !important}
+.mp-tool-content .q-answer__box{border-radius:14px !important}
+.mp-tool-content .lead-card{border-radius:20px !important}
+.mp-tool-content .lead-card__photo{border-radius:16px !important}
+
+/* Partner-Foto (Tobias/Maximilian): hoher Portrait-Crop, Gesicht sichtbar */
+.mp-tool-content .lead-card__photo img{object-position:50% 16% !important}
+
+/* Sektions-Hintergründe vereinheitlichen, keine sichtbaren Bänder */
+.mp-tool-content .video-section,
+.mp-tool-content .section--alt{background:transparent !important}
+
+/* === end mp-harmonize-v13 === */
 </style>
 </head>
 

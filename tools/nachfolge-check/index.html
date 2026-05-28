@@ -1022,7 +1022,7 @@ p{margin:0 0 1em}
 @media (max-width:760px){.site-footer__grid{grid-template-columns:1fr 1fr;gap:28px}}
 @media (max-width:480px){.site-footer__grid{grid-template-columns:1fr}}
 
-/* === mp-harmonize-v12: Avada/Homepage Design-Harmonization === */
+/* === mp-harmonize-v13: Avada/Homepage Design-Harmonization === */
 
 /* Inline SVG-Icon sizing */
 .mp-icon{width:1em;height:1em;display:inline-block;vertical-align:-0.12em;flex-shrink:0}
@@ -1272,7 +1272,37 @@ p{margin:0 0 1em}
 /* The Final-CTA in the container gets pulled outside the container's padding */
 .container > .final-cta{margin-left:calc(-1 * clamp(20px,4vw,56px));margin-right:calc(-1 * clamp(20px,4vw,56px));}
 
-/* === end mp-harmonize-v12 === */
+/* === Wizard-Nav (Signal-Stepper für struktur/nachfolge) === */
+.q-wizard-nav{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:24px;flex-wrap:wrap}
+.q-wizard-nav__step{font-size:.82em;font-weight:700;color:#1a7fc1;letter-spacing:.08em;text-transform:uppercase}
+.mp-tool-content .q-nav__btn{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:999px;border:1.5px solid #d1d5db;background:#fff;color:#003f5c;font-weight:700;font-size:.9em;cursor:pointer;transition:all .15s ease;font-family:inherit}
+.mp-tool-content .q-nav__btn:hover{border-color:#1a7fc1;color:#1a7fc1}
+.mp-tool-content .q-nav__btn--next{background:#003f5c;color:#fff;border-color:#003f5c}
+.mp-tool-content .q-nav__btn--next:hover{background:#1a7fc1;border-color:#1a7fc1;color:#fff}
+.mp-tool-content .q-nav__btn:disabled{opacity:.4;cursor:not-allowed}
+.mp-tool-content .q-nav__btn:disabled:hover{border-color:#d1d5db;color:#003f5c}
+.q-nav__btn .q-nav__icon{display:inline-flex;align-items:center}
+.q-nav__btn .q-nav__icon svg{width:1em;height:1em}
+
+/* === Organische Rundungen der Form-Elemente (Submit-CTA bleibt eckig) === */
+.mp-tool-content .q-btn{border-radius:999px !important}
+.mp-tool-content .q-item{border-radius:16px !important}
+.mp-tool-content .signal-block{border-radius:20px !important}
+.mp-tool-content .tool-input{border-radius:14px !important}
+.mp-tool-content .tool-radio__box{border-radius:16px !important}
+.mp-tool-content .q-card{border-radius:20px !important}
+.mp-tool-content .q-answer__box{border-radius:14px !important}
+.mp-tool-content .lead-card{border-radius:20px !important}
+.mp-tool-content .lead-card__photo{border-radius:16px !important}
+
+/* Partner-Foto (Tobias/Maximilian): hoher Portrait-Crop, Gesicht sichtbar */
+.mp-tool-content .lead-card__photo img{object-position:50% 16% !important}
+
+/* Sektions-Hintergründe vereinheitlichen, keine sichtbaren Bänder */
+.mp-tool-content .video-section,
+.mp-tool-content .section--alt{background:transparent !important}
+
+/* === end mp-harmonize-v13 === */
 </style>
 </head>
 
@@ -1693,7 +1723,7 @@ function renderQuiz() {
   const quiz = document.getElementById('quiz');
   let html = '';
   SIGNALS.forEach((sig,si) => {
-    html += `<div class="signal-block">
+    html += `<div class="signal-block" data-step="${si}">
       <div class="signal-block__head">
         <span class="signal-block__num">${sig.n}</span>
         <h3 class="signal-block__title">Signal ${sig.n}: ${sig.title}</h3>
@@ -1711,7 +1741,45 @@ function renderQuiz() {
     });
     html += '</div>';
   });
+  const arrowL = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>';
+  const arrowR = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>';
+  html += `<div class="q-wizard-nav">
+      <button type="button" class="q-nav__btn q-nav__btn--prev" id="navPrev" onclick="goStep(curStep-1)"><span class="q-nav__icon">${arrowL}</span>Zurück</button>
+      <span class="q-wizard-nav__step" id="navStep"></span>
+      <button type="button" class="q-nav__btn q-nav__btn--next" id="navNext" onclick="goStep(curStep+1)">Weiter<span class="q-nav__icon">${arrowR}</span></button>
+    </div>`;
   quiz.innerHTML = html;
+  showStep(0);
+}
+
+let curStep = 0;
+
+function blockDone(si){ return SIGNALS[si].qs.every((_,qi) => answers[`s${si}_q${qi}`] !== undefined); }
+
+function showStep(n) {
+  const last = SIGNALS.length - 1;
+  curStep = Math.max(0, Math.min(last, n));
+  document.querySelectorAll('.signal-block').forEach(b => {
+    b.style.display = (Number(b.dataset.step) === curStep) ? '' : 'none';
+  });
+  const stepEl = document.getElementById('navStep');
+  if (stepEl) stepEl.textContent = `Signal ${curStep + 1} von ${SIGNALS.length}`;
+  const prev = document.getElementById('navPrev');
+  const next = document.getElementById('navNext');
+  const sub = document.querySelector('.tool-submit');
+  if (prev) prev.style.visibility = (curStep === 0) ? 'hidden' : 'visible';
+  if (curStep === last) {
+    if (next) next.style.display = 'none';
+    if (sub) sub.style.display = '';
+  } else {
+    if (next) { next.style.display = ''; next.disabled = !blockDone(curStep); }
+    if (sub) sub.style.display = 'none';
+  }
+}
+
+function goStep(n) {
+  if (n > curStep && !blockDone(curStep)) return;
+  showStep(n);
 }
 
 function setAns(id, val) {
@@ -1721,8 +1789,12 @@ function setAns(id, val) {
     if (btn.dataset.val === val) btn.classList.add('is-active-' + val);
   });
   const cnt = Object.keys(answers).length;
-  document.getElementById('progLabel').textContent = `${cnt} von ${TOTAL_QS} Fragen beantwortet`;
-  document.getElementById('btnSubmit').disabled = cnt < TOTAL_QS;
+  const pl = document.getElementById('progLabel');
+  if (pl) pl.textContent = `${cnt} von ${TOTAL_QS} Fragen beantwortet`;
+  const btn = document.getElementById('btnSubmit');
+  if (btn) btn.disabled = cnt < TOTAL_QS;
+  const next = document.getElementById('navNext');
+  if (next && curStep < SIGNALS.length - 1) next.disabled = !blockDone(curStep);
 }
 
 function auswerten() {
