@@ -81,10 +81,11 @@ Projektbasiert. Nach einem unverbindlichen, kostenlosen Sondierungsgespräch ers
 
 Drei interaktive Online-Tools für Geschäftsführer im Mittelstand. Sofortige Auswertung im Browser, ohne Anmeldung, mit optionalem PDF-Report per E-Mail.
 
-- [Tools-Hub](https://muenker-partner.de/tools/): Übersicht aller drei Tools
+- [Tools-Hub](https://muenker-partner.de/tools/): Übersicht aller vier Tools
 - [Recruiting-Kosten-Rechner](https://muenker-partner.de/tools/recruiting-kosten-rechner/): Direkte Kosten, Opportunitätskosten und Fehlbesetzungs-Risiko einer offenen Stelle im Mittelstand — in 60 Sekunden zur Gesamtsumme. Ansprechpartner: Tobias Münker.
 - [Vertriebs-KPI-Check](https://muenker-partner.de/tools/vertriebs-check/): 12 Ja/Teilweise/Nein-Fragen zu ICP, Pipeline, Forecast, KPI-Disziplin und Coaching-Kultur. Sofort-Score 0–100 mit Performance-Band und drei konkreten Sofortmaßnahmen. Ansprechpartner: Maximilian Binderberger.
 - [Strukturberatungs-Signale-Check](https://muenker-partner.de/tools/strukturberatung-check/): Die 7 typischen Signale für Strukturberatung als 21 Ja/Nein-Fragen mit Ampel-Heatmap und priorisiertem Handlungsbedarf. Ansprechpartner: Tobias Münker.
+- [Nachfolge-Readiness-Check](https://muenker-partner.de/tools/nachfolge-check/): Sieben Felder zur Übergabe-Reife im Familienunternehmen als 21 Ja/Nein-Fragen mit Ampel-Heatmap und priorisiertem Übergabe-Fahrplan. Ansprechpartner: Tobias Münker.
 
 ## Standorte mit dedizierten Landing-Pages
 
