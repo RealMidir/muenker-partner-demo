@@ -1655,7 +1655,7 @@ const SIGNALS = [
   ]},
   { n:2, title:"Verantwortlichkeits-Konfusion", hint:"Unklarheit, wer entscheidet.", qs:[
     "Es ist unklar, wer wichtige Entscheidungen final treffen darf.",
-    "Wichtige Themen „fallen runter", weil sich niemand zuständig fühlt.",
+    "Wichtige Themen „fallen runter“, weil sich niemand zuständig fühlt.",
     "Doppelarbeit zwischen Teams oder Bereichen kommt regelmäßig vor."
   ]},
   { n:3, title:"Prozess-Reibungen", hint:"Standardvorgänge dauern überproportional lange.", qs:[
@@ -1671,7 +1671,7 @@ const SIGNALS = [
   { n:5, title:"Tool-Patchwork", hint:"Daten leben in vielen Systemen ohne Synchronität.", qs:[
     "Wichtige Daten leben in mehreren Tools oder Excel-Listen ohne saubere Synchronität.",
     "Reporting kostet wöchentlich mehr als 4 Stunden reine Sammelarbeit.",
-    "Es gibt keine „eine Wahrheit" für die wichtigsten Kennzahlen."
+    "Es gibt keine „eine Wahrheit“ für die wichtigsten Kennzahlen."
   ]},
   { n:6, title:"Reporting-Lücken", hint:"Steuerung erfolgt mit Verzug oder nach Bauchgefühl.", qs:[
     "Wir merken erst spät, wenn ein Quartals- oder Jahresziel verfehlt wird.",
@@ -1760,7 +1760,7 @@ function auswerten() {
     verdictText = 'Bei drei oder mehr roten Signalen lohnt sich ein externer Blick fast immer, und sei es nur, um die Priorität intern zu schärfen. Ein 45-minütiges Sondierungsgespräch (kostenlos, unverbindlich) ist hier der pragmatische nächste Schritt. Sie verlieren maximal 45 Minuten, gewinnen aber eine externe Einschätzung zu Reihenfolge und Tiefe der Themen.';
   } else if (totalRed >= 1) {
     title = 'Fokussierter Handlungsbedarf';
-    lead = `Sie haben ${totalRed} Signal${totalRed===1?'':'e'} im roten Bereich. Das ist im Mittelstand kein Ausnahmezustand, aber es lohnt sich, das/die Thema/Themen bewusst auf die nächsten Quartals-Agenden zu setzen, bevor weitere Signale „kippen".`;
+    lead = `Sie haben ${totalRed} Signal${totalRed===1?'':'e'} im roten Bereich. Das ist im Mittelstand kein Ausnahmezustand, aber es lohnt sich, das/die Thema/Themen bewusst auf die nächsten Quartals-Agenden zu setzen, bevor weitere Signale „kippen“.`;
     verdictTitle = 'Was wir Ihnen empfehlen würden';
     verdictText = 'Bei einzelnen roten Signalen ist die wichtigste Frage: Haben Sie intern Ressourcen und Kapazität, das Thema in den nächsten 6 Monaten anzugehen? Falls ja, die Heatmap ist Ihre Prioritäten-Liste. Falls nein, oder falls Sie unsicher sind über Reihenfolge und Tiefe: ein Sondierungsgespräch klärt das in 45 Minuten.';
   } else if (totalAmber >= 3) {
