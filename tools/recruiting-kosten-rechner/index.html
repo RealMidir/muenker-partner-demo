@@ -1008,107 +1008,118 @@ p{margin:0 0 1em}
 @media (max-width:760px){.site-footer__grid{grid-template-columns:1fr 1fr;gap:28px}}
 @media (max-width:480px){.site-footer__grid{grid-template-columns:1fr}}
 
-/* === mp-harmonize-v11: Avada/Homepage Design-Harmonization === */
+/* === mp-harmonize-v12: Avada/Homepage Design-Harmonization === */
 
 /* Inline SVG-Icon sizing */
 .mp-icon{width:1em;height:1em;display:inline-block;vertical-align:-0.12em;flex-shrink:0}
 .mp-icon--arrow{width:1.05em;height:1.05em;vertical-align:-0.16em}
 
-/* --- HERO: 1:1 Avada-Homepage-Hero (full-bleed, dunkel mit 3d-pattern, weißer Text) --- */
-/* Hero komplett aus dem .container ausbrechen (full-bleed wie Homepage) */
+/* --- HERO/ENTRY: helle, organisch-runde Entry im Ratgeber-mp-card-Stil --- */
+/* Vorherigen Full-Bleed (dunkler Pattern-Hero) neutralisieren */
 .post-content .container > .hero{
-  margin-left:calc(-50vw + 50%);
-  margin-right:calc(-50vw + 50%);
-  width:100vw;
-  max-width:100vw;
+  margin-left:0;margin-right:0;width:auto;max-width:none;
 }
 .hero{
-  background-color: #0e3e58;
-  background-image:
-    linear-gradient(100deg, rgba(11,43,61,.55) 0%, rgba(11,43,61,.25) 45%, rgba(11,43,61,.05) 75%, rgba(11,43,61,0) 100%),
-    url('/wp-content/uploads/2025/04/3d-pattern.jpg');
-  background-size: cover, cover;
-  background-position: center, center top;
-  background-repeat: no-repeat, no-repeat;
-  color:#fff;
-  padding: clamp(120px,12vw,200px) 0 clamp(120px,12vw,200px);
-  position:relative;
-  overflow:hidden;
-  margin:0 0 clamp(48px,6vw,80px);
-  border-radius: 0;
-  min-height: clamp(420px, 55vh, 640px);
-  display:flex;align-items:center;
-}
-.hero__inner{
-  position:relative;z-index:1;
-  max-width:1200px;margin:0 auto;
-  padding:0 clamp(20px,4vw,56px);
+  background:transparent !important;
+  background-image:none !important;
+  color:inherit;
+  padding:clamp(24px,3.5vw,48px) 0 0 !important;
+  margin:0 0 clamp(40px,5vw,64px);
+  border-radius:0;
+  min-height:0;
+  display:block;
+  overflow:visible;
 }
 .hero::before{content:none}
-.hero__inner{position:relative;z-index:1;max-width:880px}
-.hero__breadcrumb{color:rgba(255,255,255,.62);font-size:.92em;margin-bottom:24px;letter-spacing:.01em}
-.hero__breadcrumb a{color:rgba(255,255,255,.78);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .15s ease}
-.hero__breadcrumb a:hover{border-bottom-color:rgba(255,255,255,.45)}
-.hero__breadcrumb span{color:#fff}
-.hero__breadcrumb .mp-icon{width:.72em;height:.72em;margin:0 .55em;opacity:.55}
-.hero__eyebrow{
-  display:inline-block;font-size:.78em;font-weight:600;letter-spacing:.14em;
-  text-transform:uppercase;color:var(--c-blue-light);
-  padding:6px 14px;border:1px solid rgba(106,183,229,.4);border-radius:999px;
-  margin-bottom:22px;background:rgba(106,183,229,.08);
+/* .hero__inner = die weiße runde Karte (image links, Text rechts) */
+.hero .hero__inner{
+  position:relative;z-index:auto;
+  display:grid;
+  grid-template-columns:0.9fr 1.1fr;
+  align-items:stretch;
+  background:#fff;
+  border-radius:16px;
+  box-shadow:0 2px 12px rgba(0,0,0,.07), 0 0 0 1px rgba(0,0,0,.04);
+  overflow:hidden;
+  max-width:none;margin:0;padding:0;
 }
-/* HOCH-SPEZIFISCH gegen Avada-Cascade, Hero-Text 1:1 wie Homepage: WEISS auf dunklem Pattern */
+/* Bilderplatz (grauer Platzhalter, links) */
+.hero__media{
+  position:relative;min-height:320px;
+  background:linear-gradient(135deg,#eef2f6 0%, #e4eaf0 100%);
+  display:flex;align-items:center;justify-content:center;
+}
+.hero__media-ph{
+  display:flex;flex-direction:column;align-items:center;gap:12px;
+  color:#9aa7b4;text-align:center;padding:24px;
+}
+.hero__media-ph svg{width:48px;height:48px;opacity:.75}
+.hero__media-ph span{
+  font-size:.72em;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+}
+/* Text-Spalte (rechts) */
+.hero__text{
+  padding:clamp(28px,4vw,52px);
+  display:flex;flex-direction:column;justify-content:center;gap:16px;
+}
+/* Texte: dunkel auf weiß (mp-card-Stil), gegen Avada-Cascade abgesichert */
 .post-content .hero h1.hero__title,
 .post-content .hero .hero__title,
 .hero h1.hero__title,
 .hero .hero__title{
-  color:#fff !important;font-size:clamp(2.4em,5.6vw,4.2em);line-height:1.08;
-  margin:0 0 .4em !important;font-weight:700;letter-spacing:-.018em;
+  color:#003f5c !important;font-size:clamp(1.9em,3.4vw,2.8em);line-height:1.14;
+  margin:0 0 .1em !important;font-weight:800;letter-spacing:-.02em;
+  hyphens:manual !important;-webkit-hyphens:manual !important;word-break:normal !important;overflow-wrap:break-word;
 }
 .post-content .hero .hero__subtitle,
 .hero .hero__subtitle{
-  color:rgba(255,255,255,.92) !important;font-size:clamp(1em,1.4vw,1.15em);line-height:1.6;
-  max-width:580px;margin:0;
+  color:#4b5563 !important;font-size:clamp(1em,1.25vw,1.12em);line-height:1.7;
+  max-width:none;margin:0;
+}
+.post-content .hero .hero__eyebrow,
+.hero .hero__eyebrow{
+  display:inline-block;color:#1a7fc1 !important;background:transparent !important;
+  border:none !important;padding:0 !important;margin:0 0 2px !important;
+  font-size:.74em;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
 }
 .post-content .hero .hero__breadcrumb,
 .hero .hero__breadcrumb{
-  color:rgba(255,255,255,.62) !important;margin:0 0 24px !important;font-size:.92em;
+  color:#9ca3af !important;margin:0 0 4px !important;font-size:.84em;letter-spacing:.01em;
 }
 .post-content .hero .hero__breadcrumb a,
-.hero .hero__breadcrumb a{color:rgba(255,255,255,.85) !important;border-bottom:none;text-decoration:none}
+.hero .hero__breadcrumb a{color:#1a7fc1 !important;text-decoration:none;border-bottom:none}
 .post-content .hero .hero__breadcrumb a:hover,
-.hero .hero__breadcrumb a:hover{color:#fff !important}
+.hero .hero__breadcrumb a:hover{color:#003f5c !important}
 .post-content .hero .hero__breadcrumb span,
-.hero .hero__breadcrumb span{color:#fff !important;font-weight:500}
-/* Eyebrow ohne Pill, plain white text wie Homepage */
-.post-content .hero .hero__eyebrow,
-.hero .hero__eyebrow{
-  display:inline-block;color:#fff !important;background:transparent !important;
-  border:none !important;padding:0 !important;margin:0 0 14px !important;
-  font-size:1em;font-weight:600;letter-spacing:0;text-transform:none;
-}
-/* Pills bewusst entfernt für Avada-Look, CSS leer falls noch im DOM */
+.hero .hero__breadcrumb span{color:#6b7280 !important;font-weight:500}
+/* Pills nicht mehr Teil des Markups, defensiv ausblenden */
 .hero__pills, .hero__pill, .hero__pill-dot{display:none !important}
 
-/* Hero-CTA-Button: Conversion-Anker direkt im Hero (Homepage-Stil) */
+/* Hero-CTA-Button: mp-cta-btn-Stil (dunkel, runder Radius, Hover hellblau) */
 .post-content .hero .hero__cta,
-.hero .hero__cta{margin:32px 0 0}
+.hero .hero__cta{margin:12px 0 0}
 .post-content .hero .hero__cta .btn,
 .hero .hero__cta .btn{
-  display:inline-flex;align-items:center;gap:12px;
-  padding:16px 32px;font-size:1.02em;font-weight:600;
-  background:var(--c-dark) !important;color:#fff !important;
-  border:2px solid var(--c-dark) !important;border-radius:0;
-  text-decoration:none;transition:all .2s ease;letter-spacing:.005em;
+  display:inline-flex;align-items:center;gap:8px;
+  padding:13px 26px;font-size:.95em;font-weight:700;
+  background:#003f5c !important;color:#fff !important;
+  border:none !important;border-radius:8px;
+  text-decoration:none;transition:background .18s ease;letter-spacing:.005em;
 }
 .post-content .hero .hero__cta .btn:hover,
 .hero .hero__cta .btn:hover{
-  background:#fff !important;color:var(--c-dark) !important;border-color:#fff !important;
+  background:#1a7fc1 !important;color:#fff !important;
 }
 .post-content .hero .hero__cta .btn .mp-icon,
 .hero .hero__cta .btn .mp-icon{width:1.05em;height:1.05em;transition:transform .2s ease}
 .post-content .hero .hero__cta .btn:hover .mp-icon,
 .hero .hero__cta .btn:hover .mp-icon{transform:translateX(4px)}
+
+/* Responsive: stapeln (Bild oben, Text unten) wie Ratgeber-Card mobil */
+@media (max-width:920px){
+  .hero .hero__inner{grid-template-columns:1fr}
+  .hero__media{min-height:200px}
+}
 
 /* --- TOOL-HUB Tool-Cards: Avada-Service-Card-Style --- */
 .tools-grid{
@@ -1247,7 +1258,7 @@ p{margin:0 0 1em}
 /* The Final-CTA in the container gets pulled outside the container's padding */
 .container > .final-cta{margin-left:calc(-1 * clamp(20px,4vw,56px));margin-right:calc(-1 * clamp(20px,4vw,56px));}
 
-/* === end mp-harmonize-v11 === */
+/* === end mp-harmonize-v12 === */
 </style>
 </head>
 
@@ -1268,21 +1279,7 @@ p{margin:0 0 1em}
 <div class="fusion-row" style="max-width:100%;">
 <section id="content" style="">
 <div class="post-content mp-tool-content" id="mp-tool-recruiting-kosten-rechner">
-<section class="hero">
-<div class="container">
-<div class="hero__inner">
-  <div class="hero__breadcrumb"><a href="/">Home</a> · <a href="/tools/">Tools</a> · <span>Recruiting-Kosten-Rechner</span></div>
-  <span class="hero__eyebrow">Personalberatung · Kalkulator</span>
-  <h1 class="hero__title">Was eine Vakanz wirklich kostet.</h1>
-  <p class="hero__subtitle">Direktkosten, Opportunitätskosten und Fehlbesetzungs-Risiko in einem Modell. Sechzig Sekunden bis zum belastbaren Betrag.</p><div class="hero__cta"><a href="#rechner" class="btn">Jetzt berechnen <svg class="mp-icon mp-icon--arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
-  <div class="hero__pills">
-    <span class="hero__pill"><span class="hero__pill-dot"></span> 60 Sekunden</span>
-    <span class="hero__pill"><span class="hero__pill-dot"></span> Sofort-Ergebnis</span>
-    <span class="hero__pill"><span class="hero__pill-dot"></span> Detailreport optional</span>
-  </div>
-</div>
-</div>
-</section>
+<section class="hero"><div class="container"><div class="hero__inner"><div class="hero__media" aria-hidden="true"><div class="hero__media-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2.5"/><circle cx="8.5" cy="8.5" r="1.6"/><polyline points="21 15 16 10 5 21"/></svg><span>Bild folgt</span></div></div><div class="hero__text"><div class="hero__breadcrumb"><a href="/">Home</a> · <a href="/tools/">Tools</a> · <span>Recruiting-Kosten-Rechner</span></div><span class="hero__eyebrow">Personalberatung · Kalkulator</span><h1 class="hero__title">Was eine Vakanz wirklich kostet.</h1><p class="hero__subtitle">Direktkosten, Opportunitätskosten und Fehlbesetzungs-Risiko in einem Modell. Sechzig Sekunden bis zum belastbaren Betrag.</p><div class="hero__cta"><a href="#rechner" class="btn">Jetzt berechnen <svg class="mp-icon mp-icon--arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div></div></div></div></section>
 
 <div class="container">
 <div class="tool-shell">
