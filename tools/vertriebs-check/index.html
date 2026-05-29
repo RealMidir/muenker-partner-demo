@@ -1402,7 +1402,7 @@ p{margin:0 0 1em}
 <div class="lead-gate__inner">
 <p class="lead-gate__eyebrow">Detailreport</p>
 <h3>Auswertung als PDF per E-Mail.</h3>
-<p class="lead-gate__lead">Sechs Seiten mit Auswertung pro Frage, Mittelstands-Benchmark für Maschinenbau, IT, Chemie, Pharma und Versicherung und einem 90-Tage-Plan zur Schließung der wichtigsten Lücken.</p>
+<p class="lead-gate__lead">Sechs Seiten mit Auswertung je Frage, Mittelstands-Benchmark und einem 90-Tage-Plan für die wichtigsten Lücken in Ihrem Vertriebssystem.</p>
 <form class="lead-gate__form" id="leadForm" onsubmit="leadSubmit(event)">
   <input type="email" name="email" placeholder="Ihre geschäftliche E-Mail" required>
   <button type="submit">Report anfordern</button>
@@ -1500,7 +1500,7 @@ Sie bekommen den Report innerhalb von 24 Stunden an Werktagen. Wenn Sie lieber d
 <details class="faq__item"><summary class="faq__summary">Wer sollte den Check ausfüllen?</summary><div class="faq__body"><p>Idealerweise die Geschäftsführung oder Vertriebsleitung gemeinsam. Erfahrungsgemäß ist es aufschlussreich, wenn beide Rollen den Check unabhängig voneinander ausfüllen und dann die Differenzen besprechen. Diese liegen häufig dort, wo die Steuerungs-Lücken sind.</p></div></details>
 <details class="faq__item"><summary class="faq__summary">Was bedeutet „teilweise" als Antwort?</summary><div class="faq__body"><p>„Teilweise" wählen Sie, wenn die Komponente existiert, aber nicht durchgängig gelebt oder unvollständig dokumentiert ist. Beispiel ICP: Eine ICP-Definition gibt es im Kopf des Vertriebsleiters, ist aber nicht schriftlich fixiert und im Team verankert. In dem Fall ist „teilweise" die ehrliche Antwort.</p></div></details>
 <details class="faq__item"><summary class="faq__summary">Wie verlässlich ist der Score?</summary><div class="faq__body"><p>Der Score ist eine Selbst-Einschätzung. In über achtzig Prozent unserer Sondierungsgespräche stimmt der Selbst-Score erfahrungsgemäß mit unserer externen Einschätzung nach 2 Stunden Interview überein. Größere Abweichungen treten meistens bei den Themen Forecast-Genauigkeit und Lost-Reason-Analyse auf. Dort wird intern oft zu optimistisch bewertet.</p></div></details>
-<details class="faq__item"><summary class="faq__summary">Bekommen wir auch eine Branchen-Vergleichszahl?</summary><div class="faq__body"><p>Ja. Im PDF-Report ist der Mittelstands-Benchmark für die fünf von uns betreuten Schwerpunkt-Branchen enthalten (Maschinenbau, IT/Software, Chemie, Pharma, Versicherung). Das ist eine wertvolle Ergänzung, weil sich „guter" Vertrieb je nach Branche und Sales-Cycle unterschiedlich darstellt.</p></div></details>
+<details class="faq__item"><summary class="faq__summary">Bekommen wir auch eine Branchen-Vergleichszahl?</summary><div class="faq__body"><p>Ja. Der PDF-Report enthält einen Mittelstands-Benchmark, der zeigt, wo vergleichbare Unternehmen stehen. Das ist hilfreich, weil sich ein guter Vertrieb je nach Branche und Sales-Cycle unterschiedlich darstellt.</p></div></details>
 <details class="faq__item"><summary class="faq__summary">Sind unsere Antworten anonym?</summary><div class="faq__body"><p>Ja, solange Sie keine E-Mail-Adresse für den Report eingeben. Die Antworten werden ausschließlich im Browser ausgewertet, nicht an einen Server geschickt. Wenn Sie den PDF-Report anfordern, schicken wir die Auswertung zusammen mit Ihrer E-Mail einmalig an unser System. Ohne Verknüpfung mit Drittdiensten wie Tracking-Pixeln.</p></div></details>
 <details class="faq__item"><summary class="faq__summary">Was kostet eine echte Vertriebsberatung bei Münker &amp; Partner?</summary><div class="faq__body"><p>Wir arbeiten projektbasiert, mit erfolgsabhängiger Honorar-Komponente. Für Vertriebsmandate bieten wir zusätzlich eine erfolgsabhängige Honorar-Komponente: Basis-Fee plus erfolgsabhängiger Anteil an der KPI-Erreichung. Konkrete Zahlen entstehen nach dem Sondierungsgespräch und sind auf Anlass, Tiefe und Unternehmensgröße zugeschnitten.</p></div></details>
 </div>
@@ -1768,9 +1768,9 @@ function showResult() {
   if (score < 34) {
     band = 'rot'; color = '#dc2626';
     title = 'Pipeline-Frühphase';
-    text = 'Ihr Vertrieb läuft auf Engagement statt auf System. Das ist im frühen Mittelstand häufig, und auch okay, solange Sie es bewusst entscheiden. Strukturarbeit zahlt hier 3-fach: bessere Forecasts, geringere Fluktuation, höhere Abschlussquoten.';
+    text = 'Ihr Vertrieb läuft auf Engagement statt auf System. Das ist im frühen Mittelstand häufig und nicht zwingend ein Problem, solange Sie es bewusst so halten. Strukturarbeit zahlt sich hier dreifach aus: bessere Forecasts, geringere Fluktuation, höhere Abschlussquoten.';
     actions = [
-      ['ICP innerhalb von 14 Tagen schriftlich fixieren', 'Branche × Unternehmensgröße × Persona × Trigger-Events. Zwei DIN-A4-Seiten reichen, dafür im Vertriebsteam besprechen und freigeben.'],
+      ['ICP innerhalb von 14 Tagen schriftlich fixieren', 'Branche × Unternehmensgröße × Persona × Trigger-Events. Zwei DIN-A4-Seiten reichen. Anschließend im Vertriebsteam besprechen und freigeben.'],
       ['Pipeline-Stages mit Übergangs-Kriterien dokumentieren', 'Für jede Stage definieren: Welche Aktion muss erfolgt sein, damit ein Deal weiterrücken darf? Das entkoppelt Forecast von Bauchgefühl.'],
       ['Wöchentlicher Forecast-Call mit der Vertriebsleitung', 'Maximal 30 Minuten, fester Termin, gleiche Slide-Struktur. Innerhalb von 8 Wochen sehen Sie Forecast-Genauigkeit signifikant steigen.']
     ];
@@ -1786,11 +1786,11 @@ function showResult() {
   } else {
     band = 'grün'; color = '#16a34a';
     title = 'High Performer';
-    text = 'Ihr Vertrieb spielt in der oberen Liga des Mittelstands. Die meisten Hebel liegen jetzt in der Feinjustierung: Cross-Sell-Systematik, Customer-Health-Score, Account-Strategie für die Top-10 % der Kunden. Hier holt man die letzten 10 bis 15 % Performance raus.';
+    text = 'Ihr Vertrieb gehört zur oberen Liga im Mittelstand. Die Hebel liegen jetzt in der Feinjustierung: Cross-Sell-Systematik, Customer-Health-Score, Account-Strategie für die umsatzstärksten Kunden. Hier liegt noch eine Performance-Reserve von 10 bis 15 %.';
     actions = [
       ['Top-10-Account-Plan-Workshop mit der Vertriebsleitung', 'Für die umsatzstärksten 10 % der Kunden einen 12-Monats-Account-Plan mit Cross-Sell-Hypothesen und Stakeholder-Map erstellen.'],
       ['Customer-Health-Score in das KPI-Dashboard integrieren', 'Frühindikatoren für Churn und Expansion (Nutzungs-Daten, NPS, Eskalations-Tickets) als wöchentliches Signal, kein Quartals-Bericht.'],
-      ['Forecast-Quality-Review als monatlicher Geschäftsführungs-Termin', 'Forecast vs. Ist-Lieferung über die letzten 12 Monate analysieren und systematische Bias erkennen. Bei Forecast-Reife stabilisiert das die Geschäftsführungs-Steuerung enorm.']
+      ['Forecast-Quality-Review als monatlicher Geschäftsführungs-Termin', 'Forecast vs. Ist-Ergebnis über die letzten 12 Monate analysieren und systematische Abweichungen erkennen. Genaue Forecasts stabilisieren die Steuerung auf Geschäftsführungs-Ebene erheblich.']
     ];
   }
 
@@ -1893,7 +1893,7 @@ renderQ();
       "name": "Bekommen wir eine Branchen-Vergleichszahl?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, im PDF-Report, für Maschinenbau, IT/Software, Chemie, Pharma und Versicherung."
+        "text": "Ja. Der PDF-Report enthält einen Mittelstands-Benchmark, der zeigt, wo vergleichbare Unternehmen stehen."
       }
     },
     {
