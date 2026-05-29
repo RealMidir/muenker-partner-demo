@@ -974,6 +974,18 @@ html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 .teaser-card:hover{border-color:var(--c-blue);box-shadow:var(--shadow-sm)}
 .teaser-card__label{font-size:.74em;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--c-blue)}
 .teaser-card__title{font-weight:600;color:var(--c-dark-2)}
+/* Hero: kompakte HELLE Entry statt dunklem Vollbild-Hero */
+.mp-loc-content .hero{background:#fff !important;background-image:none !important;color:var(--c-text) !important;padding:clamp(28px,4vw,52px) 0 clamp(4px,1.5vw,12px) !important;min-height:0 !important}
+.mp-loc-content .hero::before{display:none !important}
+.mp-loc-content .hero .hero__inner{max-width:860px}
+.mp-loc-content .hero .hero__title--kicker{color:var(--c-blue) !important;font-size:.95rem !important;font-weight:700 !important;letter-spacing:.12em;text-transform:uppercase;margin:0 0 .55em !important;line-height:1.3}
+.mp-loc-content .hero .hero__claim{color:var(--c-dark-2) !important;font-size:clamp(2em,4.2vw,3.1em) !important}
+.mp-loc-content .hero .hero__sitedesc{color:var(--c-text-muted) !important}
+.mp-loc-content .hero .hero__subtitle{color:var(--c-text-muted) !important}
+.mp-loc-content .hero .btn--ghost-light{border-color:var(--c-dark-2) !important;color:var(--c-dark-2) !important}
+.mp-loc-content .hero .btn--ghost-light:hover{background:var(--c-dark-2) !important;color:#fff !important}
+/* KPI-Zahlen nicht fett */
+.mp-loc-content .value__number{font-weight:500 !important}
 </style>
 
 <!-- HERO -->
@@ -1098,18 +1110,6 @@ html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 <a href="/tools/vertriebs-check/" class="teaser-card"><span class="teaser-card__label">Tool</span><span class="teaser-card__title">Vertriebs-KPI-Check</span></a>
 <a href="/tools/strukturberatung-check/" class="teaser-card"><span class="teaser-card__label">Tool</span><span class="teaser-card__title">Strukturberatungs-Check</span></a>
 <a href="/ratgeber/" class="teaser-card"><span class="teaser-card__label">Ratgeber</span><span class="teaser-card__title">Alle Fachartikel ansehen</span></a>
-</div>
-</div></section>
-
-<!-- FINAL CTA -->
-<section class="section"><div class="container">
-<div class="final-cta">
-<h2>Bereit für Ihre kostenlose Erstberatung?</h2>
-<p class="final-cta__intro">Vierzig Minuten, unverbindlich, direkt mit Tobias Münker. Vor Ort in Düsseldorf oder online, wie es für Sie passt.</p>
-<div class="hero__cta-row" style="justify-content:center;">
-<a href="#awb-open-oc__2454" class="btn btn--primary">Termin anfragen <span class="btn__arrow">&#8594;</span></a>
-<a href="tel:+492115455610" class="btn btn--ghost-light">+49 211 545561-0</a>
-</div>
 </div>
 </div></section>
 
