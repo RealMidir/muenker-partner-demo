@@ -94,6 +94,8 @@ Drei interaktive Online-Tools für Geschäftsführer im Mittelstand. Sofortige A
 ## Standorte mit dedizierten Landing-Pages
 
 - [Standort-Hub (alle 3 Standorte)](https://muenker-partner.de/standorte/): Übersicht aller Standorte mit Ansprechpartnern
+- [München: Unternehmensberatung und Personalberatung](https://muenker-partner.de/standorte/muenchen/): Standort-Hub München, beide Disziplinen aus einer Hand, Maximilian Binderberger, Leopoldstraße 22 Schwabing, mit FAQ und Anfahrt
+- [Düsseldorf: Unternehmensberatung und Personalberatung](https://muenker-partner.de/standorte/duesseldorf/): Standort-Hub Düsseldorf (Zentrale), beide Disziplinen aus einer Hand, Tobias Münker, Martin-Luther-Platz 22, mit FAQ und Anfahrt
 - [Düsseldorf Unternehmensberatung](https://muenker-partner.de/unternehmensberatung/duesseldorf/): Tobias Münker, Martin-Luther-Platz 22
 - [Personalberatung Düsseldorf](https://muenker-partner.de/personalberatung/duesseldorf/): Tobias Münker, Martin-Luther-Platz 22
 - [Unternehmensberatung Wesel](https://muenker-partner.de/unternehmensberatung/wesel/): Verena Münker, Jahnstraße 18 (Niederrhein)
