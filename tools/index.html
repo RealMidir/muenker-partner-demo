@@ -908,7 +908,7 @@ p{margin:0 0 1em}
 @media (max-width:760px){.site-footer__grid{grid-template-columns:1fr 1fr;gap:28px}}
 @media (max-width:480px){.site-footer__grid{grid-template-columns:1fr}}
 
-/* === mp-harmonize-v13: Avada/Homepage Design-Harmonization === */
+/* === mp-harmonize-v14: Avada/Homepage Design-Harmonization === */
 
 /* Inline SVG-Icon sizing */
 .mp-icon{width:1em;height:1em;display:inline-block;vertical-align:-0.12em;flex-shrink:0}
@@ -1188,7 +1188,24 @@ p{margin:0 0 1em}
 .mp-tool-content .video-section,
 .mp-tool-content .section--alt{background:transparent !important}
 
-/* === end mp-harmonize-v13 === */
+/* === Keyword-Zeile als (kleine) H1 + grosser Claim im Tool-Entry === */
+.post-content .hero h1.hero__title--kicker,
+.hero h1.hero__title--kicker{
+  color:#1a7fc1 !important;font-size:.92rem !important;font-weight:700 !important;
+  letter-spacing:.12em;text-transform:uppercase;line-height:1.3;
+  margin:0 0 .55em !important;
+}
+.post-content .hero .hero__claim,
+.hero .hero__claim{
+  color:#003f5c !important;font-size:clamp(1.9em,3.4vw,2.8em);line-height:1.14;
+  margin:0 0 .15em;font-weight:800;letter-spacing:-.02em;
+  hyphens:manual;-webkit-hyphens:manual;word-break:normal;overflow-wrap:break-word;
+}
+
+/* Form-Shell klar vom Hero-Entry absetzen (kein Anstossen/Ueberlappen) */
+.mp-tool-content .tool-shell{margin-top:clamp(40px,5vw,64px) !important}
+
+/* === end mp-harmonize-v14 === */
 </style>
 </head>
 
@@ -1209,7 +1226,7 @@ p{margin:0 0 1em}
 <div class="fusion-row" style="max-width:100%;">
 <section id="content" style="">
 <div class="post-content mp-tool-content" id="mp-tool-">
-<section class="hero"><div class="container"><div class="hero__inner"><div class="hero__media" aria-hidden="true"><div class="hero__media-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2.5"/><circle cx="8.5" cy="8.5" r="1.6"/><polyline points="21 15 16 10 5 21"/></svg><span>Bild folgt</span></div></div><div class="hero__text"><span class="hero__eyebrow">Strategie Tools</span><h1 class="hero__title">Diagnose vor Entscheidung.</h1><p class="hero__subtitle">Kostenlose Werkzeuge für Geschäftsführungen im Mittelstand: Recruiting-Kosten, Vertriebs-Performance und strukturelle Engpässe in wenigen Minuten fundiert einschätzen.</p><div class="hero__cta"><a href="#tools" class="btn">Tool wählen <svg class="mp-icon mp-icon--arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div></div></div></div></section>
+<section class="hero"><div class="container"><div class="hero__inner"><div class="hero__media" aria-hidden="true"><div class="hero__media-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2.5"/><circle cx="8.5" cy="8.5" r="1.6"/><polyline points="21 15 16 10 5 21"/></svg><span>Bild folgt</span></div></div><div class="hero__text"><h1 class="hero__title hero__title--kicker">Strategie Tools</h1><p class="hero__claim">Diagnose vor Entscheidung.</p><p class="hero__subtitle">Kostenlose Werkzeuge für Geschäftsführungen im Mittelstand: Recruiting-Kosten, Vertriebs-Performance und strukturelle Engpässe in wenigen Minuten fundiert einschätzen.</p><div class="hero__cta"><a href="#tools" class="btn">Tool wählen <svg class="mp-icon mp-icon--arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div></div></div></div></section>
 
 <section class="section" id="tools">
 <div class="container">
