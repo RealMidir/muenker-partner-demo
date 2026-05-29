@@ -1330,20 +1330,172 @@ p{margin:0 0 1em}
 <div class="section__head">
 <span class="section__eyebrow">Hintergrund</span>
 <h2>Aus der Beratungspraxis abgeleitet.</h2>
-<p class="section__intro">Die vier Tools spiegeln die Fragen, mit denen Geschäftsführungen im Mittelstand in Sondierungsgesprächen am häufigsten kommen. In ein Modell übersetzt, damit Sie die Antwort vor dem Gespräch haben.</p>
+<p class="section__intro">Die vier Tools spiegeln die Fragen, die in unseren Beratungsgesprächen am häufigsten kommen. Wir haben sie in ein Modell übersetzt, damit Sie eine fundierte Einschätzung haben, bevor Sie externe Berater hinzuziehen.</p>
 </div>
 <div class="intro-grid">
 <div class="intro-item"><div class="intro-item__num">100 %</div><h3 class="intro-item__title">Mittelstand-Fokus</h3><p class="intro-item__text">Scoring und Benchmarks ausschließlich aus DACH-Mittelstand-Mandaten. Keine Konzern- oder Startup-Verzerrung.</p></div>
 <div class="intro-item"><div class="intro-item__num">25</div><h3 class="intro-item__title">Jahre Beratungspraxis</h3><p class="intro-item__text">Scoring-Logik und Benchmarks aus realen Mittelstands-Mandaten, nicht aus Lehrbüchern.</p></div>
-<div class="intro-item"><div class="intro-item__num">1×</div><h3 class="intro-item__title">Sondierungsgespräch</h3><p class="intro-item__text">Direkt im Anschluss buchen, vierzig Minuten mit dem Senior-Partner.</p></div>
+<div class="intro-item"><div class="intro-item__num">1×</div><h3 class="intro-item__title">Sondierungsgespräch optional</h3><p class="intro-item__text">Wer nach dem Check mit uns sprechen möchte, kann ein Gespräch anfragen. Vierzig Minuten, direkt mit dem Senior-Partner.</p></div>
 <div class="intro-item"><div class="intro-item__num">24 h</div><h3 class="intro-item__title">Antwortzeit</h3><p class="intro-item__text">Antwort innerhalb von vierundzwanzig Stunden an Werktagen.</p></div>
 </div>
 </div>
 </section>
 
-<section class="section">
+<style id="mp-hub-extra">
+.promise-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:clamp(20px,2.5vw,32px);margin-top:clamp(32px,4vw,48px)}
+.promise-item{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:clamp(20px,2.5vw,32px)}
+.promise-item__icon{width:44px;height:44px;border-radius:10px;background:rgba(26,127,193,.09);color:#1a7fc1;display:inline-flex;align-items:center;justify-content:center;margin-bottom:16px}
+.promise-item__icon svg{width:22px;height:22px}
+.promise-item h3{font-size:1.05em;font-weight:700;color:#003f5c;margin:0 0 10px}
+.promise-item p{font-size:.92em;color:#4b5563;line-height:1.65;margin:0}
+.outcome-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(16px,2vw,24px);margin-top:clamp(28px,3.5vw,40px)}
+.outcome-item{background:#fff;border-left:3px solid #1a7fc1;border-radius:0 8px 8px 0;padding:18px 22px}
+.outcome-item__tool{font-size:.73em;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#1a7fc1;margin:0 0 6px;display:block}
+.outcome-item p{font-size:.93em;color:#374151;line-height:1.6;margin:0}
+.hub-faq{max-width:800px;margin:clamp(32px,4vw,48px) auto 0}
+.hub-faq__item{background:#fff;border:1px solid #e5e7eb;border-radius:10px;margin-bottom:10px;overflow:hidden}
+.hub-faq__item:hover{border-color:#b8c8da}
+.hub-faq__summary{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:18px 24px;font-size:1em;font-weight:600;color:#003f5c;cursor:pointer;list-style:none;user-select:none}
+.hub-faq__summary::-webkit-details-marker{display:none}
+.hub-faq__summary::after{content:"+";font-size:1.6em;font-weight:300;color:#1a7fc1;flex-shrink:0;transition:transform .25s ease;line-height:1}
+.hub-faq__item[open] .hub-faq__summary{background:#eef4fb}
+.hub-faq__item[open] .hub-faq__summary::after{transform:rotate(45deg)}
+.hub-faq__body{padding:4px 24px 20px;font-size:.93em;line-height:1.75;color:#4b5563;border-top:1px solid #f3f4f6}
+.hub-ratgeber-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:clamp(14px,2vw,22px);margin-top:clamp(28px,3.5vw,40px)}
+.hub-ratgeber-link{background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:20px 24px;text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:6px;transition:border-color .2s ease,box-shadow .2s ease}
+.hub-ratgeber-link:hover{border-color:#1a7fc1;box-shadow:0 4px 16px rgba(26,127,193,.1)}
+.hub-ratgeber-link__label{font-size:.73em;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#1a7fc1}
+.hub-ratgeber-link__title{font-size:.95em;font-weight:600;color:#003f5c;line-height:1.4}
+.hub-ratgeber-link__arrow{margin-top:auto;padding-top:10px;color:#9ca3af;font-size:.85em;font-weight:600;display:flex;align-items:center;gap:5px}
+</style>
+
+<section class="section" id="versprechen">
 <div class="container">
+<div class="section__head">
+<span class="section__eyebrow">Unser Versprechen</span>
+<h2>Kein Pitch. Kein automatischer Rückruf.</h2>
+<p class="section__intro">Wir bieten diese Tools an, weil wir Beratungsmandate nur aufnehmen, wenn sie sich für beide Seiten wirklich lohnen. Das bedeutet konkret drei Dinge.</p>
 </div>
+<div class="promise-grid">
+<div class="promise-item">
+<div class="promise-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+<h3>Ihre Antworten bleiben bei Ihnen</h3>
+<p>Die Checks laufen vollständig im Browser. Wir sehen Ihre Antworten nicht, solange Sie keinen PDF-Report anfordern.</p>
+</div>
+<div class="promise-item">
+<div class="promise-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+<h3>Alles kostenlos, ohne Bedingungen</h3>
+<p>Weder die Tools noch die PDF-Reports kosten etwas. Keine versteckten Voraussetzungen, kein Abo, keine Pflicht zur Kontaktaufnahme.</p>
+</div>
+<div class="promise-item">
+<div class="promise-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+<h3>Kein automatischer Kontakt</h3>
+<p>Wenn Sie nach dem Check nichts von uns hören möchten, hören Sie nichts. Ein Gespräch fragen Sie aktiv an, wenn Sie möchten, und auch dann nur, wenn wir glauben, Ihnen wirklich helfen zu können.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section section--alt" id="ergebnisse">
+<div class="container">
+<div class="section__head">
+<span class="section__eyebrow">Ergebnisse</span>
+<h2>Was Sie nach dem Check wissen.</h2>
+<p class="section__intro">Jedes Tool gibt Ihnen ein konkretes Ergebnis, mit dem Sie sofort weiterarbeiten können, intern oder mit einem Berater.</p>
+</div>
+<div class="outcome-list">
+<div class="outcome-item">
+<span class="outcome-item__tool">Recruiting-Kosten-Rechner</span>
+<p>Sie wissen, was Ihre aktuelle Vakanz tatsächlich kostet. Direktkosten, Opportunitätsverlust und Fehlbesetzungsrisiko in einem Betrag, den Sie intern sachlich vertreten können.</p>
+</div>
+<div class="outcome-item">
+<span class="outcome-item__tool">Vertriebs-KPI-Check</span>
+<p>Sie sehen, in welchem Ergebnisband Ihr Vertrieb liegt und welche drei Bausteine zuerst angegangen werden sollten, damit aus einem soliden Vertrieb ein steuerbarer wird.</p>
+</div>
+<div class="outcome-item">
+<span class="outcome-item__tool">Strukturberatungs-Signale-Check</span>
+<p>Sie erhalten eine Ampel-Heatmap über sieben Signale und wissen, welches strukturelle Thema in Ihrem Unternehmen zuerst Aufmerksamkeit braucht.</p>
+</div>
+<div class="outcome-item">
+<span class="outcome-item__tool">Nachfolge-Readiness-Check</span>
+<p>Sie sehen, in welchen Feldern Ihre Übergabe gut aufgestellt ist und wo Sie vor dem Generationswechsel noch ansetzen sollten, bevor die Zeit knapper wird.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="faq-tools">
+<div class="container">
+<div class="section__head">
+<span class="section__eyebrow">Häufige Fragen</span>
+<h2>Was Sie über die Tools wissen sollten.</h2>
+</div>
+<div class="hub-faq">
+<details class="hub-faq__item">
+<summary class="hub-faq__summary">Für wen sind diese Tools geeignet?</summary>
+<div class="hub-faq__body">
+<p>Für Inhaber und Geschäftsführer im Mittelstand, die eine konkrete Frage beantworten wollen, ohne sofort externe Berater einzubeziehen. Die Tools sind auf den DACH-Mittelstand ausgerichtet, also Unternehmen mit etwa zwanzig bis fünfhundert Mitarbeitern, in denen die Geschäftsführung operative Verantwortung trägt.</p>
+</div>
+</details>
+<details class="hub-faq__item">
+<summary class="hub-faq__summary">Sind meine Antworten vertraulich?</summary>
+<div class="hub-faq__body">
+<p>Ja. Die Checks laufen vollständig im Browser. Ihre Antworten werden nicht an einen Server übertragen, solange Sie keinen PDF-Report anfordern. Wenn Sie den Report anfordern, schicken wir Ihnen die Auswertung per E-Mail, ohne Weitergabe an Dritte oder Tracking-Dienste.</p>
+</div>
+</details>
+<details class="hub-faq__item">
+<summary class="hub-faq__summary">Wie verlässlich sind die Ergebnisse?</summary>
+<div class="hub-faq__body">
+<p>Die Tools basieren auf Benchmarks aus unseren Mandaten im DACH-Mittelstand. Sie ersetzen keine Beratung, zeigen aber zuverlässig, wo eine Situation verbesserungswürdig ist. In unseren Sondierungsgesprächen stimmt die Selbsteinschätzung aus den Tools in den meisten Fällen mit unserer externen Einschätzung überein.</p>
+</div>
+</details>
+<details class="hub-faq__item">
+<summary class="hub-faq__summary">Was passiert, wenn ich nach dem Check Kontakt aufnehme?</summary>
+<div class="hub-faq__body">
+<p>Sie können ein Sondierungsgespräch anfragen: vierzig Minuten mit dem zuständigen Senior-Partner. Wir klären gemeinsam, ob und wie wir Ihnen weiterhelfen können. Wenn wir nicht der richtige Partner für Ihre Situation sind, sagen wir das direkt. Wir nehmen keine Mandate an, an denen wir zweifeln.</p>
+</div>
+</details>
+<details class="hub-faq__item">
+<summary class="hub-faq__summary">Passen die Benchmarks zu unserer Branche?</summary>
+<div class="hub-faq__body">
+<p>Die Tools sind auf Branchen ausgerichtet, in denen wir schwerpunktmäßig beraten: Maschinenbau, IT und Software, Chemie und Pharma sowie Versicherungswirtschaft. In stark regulierten oder tarifgebundenen Bereichen können die Werte abweichen. Der PDF-Report enthält Branchen-Vergleichswerte, soweit verfügbar.</p>
+</div>
+</details>
+</div>
+</div>
+</section>
+
+<section class="section section--alt" id="weiterlesen">
+<div class="container">
+<div class="section__head">
+<span class="section__eyebrow">Ratgeber</span>
+<h2>Tiefer einsteigen.</h2>
+<p class="section__intro">Zu jedem Tool haben wir einen Ratgeber-Artikel mit dem fachlichen Hintergrund aus unserer Beratungspraxis geschrieben.</p>
+</div>
+<div class="hub-ratgeber-grid">
+<a href="/ratgeber/kosten-unbesetzte-stelle/" class="hub-ratgeber-link">
+<span class="hub-ratgeber-link__label">Personalberatung</span>
+<span class="hub-ratgeber-link__title">Was eine unbesetzte Stelle wirklich kostet</span>
+<span class="hub-ratgeber-link__arrow">Zum Artikel <svg class="mp-icon mp-icon--arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+</a>
+<a href="/ratgeber/vertrieb-standortbestimmung/" class="hub-ratgeber-link">
+<span class="hub-ratgeber-link__label">Vertriebsberatung</span>
+<span class="hub-ratgeber-link__title">Vertrieb im Mittelstand: Wo stehen Sie wirklich?</span>
+<span class="hub-ratgeber-link__arrow">Zum Artikel <svg class="mp-icon mp-icon--arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+</a>
+<a href="/ratgeber/wann-strukturberatung/" class="hub-ratgeber-link">
+<span class="hub-ratgeber-link__label">Strukturberatung</span>
+<span class="hub-ratgeber-link__title">Sieben Signale, die Strukturberatung anzeigen</span>
+<span class="hub-ratgeber-link__arrow">Zum Artikel <svg class="mp-icon mp-icon--arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+</a>
+<a href="/ratgeber/unternehmensnachfolge-vorbereiten/" class="hub-ratgeber-link">
+<span class="hub-ratgeber-link__label">Nachfolge</span>
+<span class="hub-ratgeber-link__title">Unternehmensnachfolge vorbereiten: Die 7 Felder der Übergabe-Reife</span>
+<span class="hub-ratgeber-link__arrow">Zum Artikel <svg class="mp-icon mp-icon--arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+</a>
+</div>
+</div>
+</section>
 </div>
 </section>
 </div>
